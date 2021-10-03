@@ -1,0 +1,103 @@
+$h1_font_size: 2.5em;
+$h2_font_size: 2em;
+$h3_font_size: 1.5em;
+$Primary_button_font_size: 2.5em;
+$Seconday_Button_font_size: 1.7em;
+$Parapgrah_font_size: 1.4em;
+
+$PrimaryFont: "Lato", sans-serif;
+$SecondaryFont: "Merriweather", serif;
+
+// !Buttons Section Start
+
+#About {
+	Button {
+		font-size: $Primary_button_font_size;
+	
+	}
+}
+#ProjectSection,
+#CardContainer {
+	Button {
+		font-size: $Seconday_Button_font_size;
+		padding: 0px 20px;
+	}
+}
+
+// ! ButtonSection End
+// font-family: 'Lato', sans-serif;
+
+// font-family: 'Merriweather', serif;
+h1,
+h2,
+h3 {
+	font-family: $PrimaryFont;
+}
+h1 {
+	font-weight: 700;
+}
+h2,
+h3 {
+	font-weight: 600;
+}
+
+button,
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: $SecondaryFont;
+}
+
+button {
+	font-weight: 500;
+}
+#About {
+	h1 {
+		font-size: $h1_font_size + 1em;
+	}
+}
+
+h1 {
+	font-size: $h1_font_size;
+}
+
+h2 {
+	font-size: $h2_font_size;
+}
+h3 {
+	font-size: $h3_font_size;
+}
+p {
+	font-size: $Parapgrah_font_size;
+}
+
+// ! Font Awesome / Icons - Start
+
+$font_awesome-Color: white;
+$font_awesome-Size: 2.5em;
+
+@mixin PersonalFontAwesome {
+	font-size: $font_awesome-Size;
+	color: $font_awesome-Color;
+	text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6);
+	vertical-align: middle;
+}
+
+.fab,
+.fas {
+	@include PersonalFontAwesome;
+}
+.fa-bars {
+	font-size: 1.75em;
+}
+// ! Font Awesome / Icons - End
+
+$Navigation-Horizontal-Font-Size: 26px;
+// ! Navigation
+#NavBarHorizontal {
+	#logo-nav,
+	#nav-links,
+	#nav-contact-btn {
+		font-family: $PrimaryFont;
+		font-size: $Navigation-Horizontal-Font-Size;
+	}
+}

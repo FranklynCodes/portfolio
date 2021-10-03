@@ -1,0 +1,31 @@
+#ProjectSection {
+	display: flex;
+	justify-content: center;
+	background-color: aqua;
+}
+
+.Project-Section-Inner {
+	display: flex;
+	width: 1500px;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: aquamarine;
+}
+.Project-AreaA-Section {
+	max-height: 500px;
+}
+
+.Project-AreaB-Section {
+	max-width: 500px;
+}
+
+.Btn-Container-Horizontal-Flex {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.Project-Image {
+	width: 100%;
+	height: auto;
+    display: block;
+}

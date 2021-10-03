@@ -1,0 +1,99 @@
+// Form Spacing Start
+
+#ContactForm {
+	h1 {
+		text-align: center;
+	}
+	.Social_Container_Contact {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	#Form {
+		button {
+			padding: 0px 20px;
+		}
+	}
+
+	#form_container {
+		max-width: 800px;
+		margin: 2rem auto;
+		border: 2px solid black;
+		padding: 2rem;
+
+		#button {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	label {
+		display: block;
+		padding: 1rem 0 0.25rem;
+	}
+
+	.form-example {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+
+		label,
+		input {
+			width: 500px;
+		}
+		textarea {
+			width: 500px;
+			height: 200px;
+		}
+		input,
+		textarea {
+			padding: 0.25rem;
+			font-size: 18px;
+		}
+
+		textarea {
+			font-family: inherit;
+		}
+
+		#sendButton {
+			box-sizing: content-box;
+			border: 0;
+			padding: 0.25rem;
+			padding: 0.5rem;
+			margin: 1rem 0;
+			text-transform: uppercase;
+			cursor: pointer;
+			border-radius: 100rem;
+			font-size: 30px;
+		}
+	}
+}
+
+// Form Spacing End
+
+// Form Color Start
+
+#ContactForm {
+	// background-color: purple;
+
+	.form-example {
+		input,
+		textarea {
+			border: 2px solid #0099ff;
+			background-color: whitesmoke;
+
+			&:focus {
+				background-color: rgb(236, 248, 255);
+			}
+		}
+		#sendButton {
+			background-color: #3300ff;
+			color: white;
+			&:hover {
+				background-color: #0099ff;
+			}
+		}
+	}
+}
+
+// Form Color End

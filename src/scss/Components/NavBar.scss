@@ -1,0 +1,140 @@
+// ! Recieved from C:\Coding\Html\2 - Personal Portfolio\Portfolio\secretcomponents\src\scss\NavBar\Sort\Nav_Bar_Vertical.scss
+
+$Width_Right_Nav: 291.233px;
+$nav-icon-box-width: 100.6px;
+
+#NavBarHorizontal {
+	top: 0px;
+	position: sticky;
+	z-index: 10;
+}
+
+#NavBar-Horizontal-Flex {
+	min-height: 80px;
+	height: 7vh;
+	max-height: 100px;
+	max-width: 1500px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	.flex-start {
+		display: flex;
+		justify-content: flex-start;
+
+		flex-basis: $Width_Right_Nav;
+		padding-left: 20px;
+	}
+	.flex-center {
+		display: flex;
+		justify-content: space-evenly;
+
+		.align-padding {
+			padding: 0px 1em;
+		}
+
+		flex-grow: 1;
+		// flex-shrink: 1;
+		// flex-basis: 200px;
+		max-width: 600px;
+	}
+	.flex-end {
+		display: flex;
+		justify-content: flex-end;
+		flex-basis: 200px;
+		align-items: center;
+		margin-left: 20px;
+	}
+	#nav-icon-box {
+		display: flex;
+		margin-right: 20px;
+		margin-left: 20px;
+		width: $nav-icon-box-width;
+
+		a:nth-child(1) {
+			margin-right: 25px;
+		}
+	}
+
+	#nav-contact-btn {
+		background-color: white;
+		color: rgb(46, 45, 45);
+		padding: 0.45em 1.5em;
+		border: 2px solid #000;
+		text-decoration: none;
+		// 		margin-right: 20px;
+	}
+}
+
+// # NavBar Colors
+$PurpleBackground-NavBar: linear-gradient(90deg, #2c0b4c 12.5%, #500f83, #2c0b4c);
+
+.NavBar-Colors {
+	background: $PurpleBackground-NavBar;
+	color: white;
+	text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
+
+	nav {
+		// 		background-color: green;
+
+		ol {
+			display: flex;
+			justify-content: space-evenly;
+			background-color: red;
+
+			li {
+				background-color: hotpink;
+				list-style-type: none;
+
+				& {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+// # Navigation Break Points
+// ~ Media Querry for Nav_Bar_Vertical - Horizontal Nav Bar
+#Hamburger-block {
+	display: none;
+}
+
+@media screen and (max-width: 900px) {
+	#NavBarHorizontal {
+		#logo-nav {
+			display: none;
+		}
+		.flex-center {
+			display: none;
+		}
+		#nav-icon-box {
+			display: none;
+		}
+		.icon {
+			display: block;
+		}
+		nav {
+			display: none;
+		}
+	}
+	#Hamburger-block {
+		display: block;
+		margin-right: 24px;
+		// font-size: 28px;
+	}
+
+	#NavBar-Horizontal-Flex {
+		.flex-end {
+			display: block;
+			margin-left: 24px;
+		}
+	}
+}
+
+.fas,
+.fa-bars {
+	font-size: 50px;
+}

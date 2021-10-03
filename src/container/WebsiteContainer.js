@@ -13,7 +13,12 @@ import ProjectSectionH from "../components/ProjectSection/ProjectSectionH";
 import TechStack from "../components/TechStack";
 import ContactForm from "../components/ContactForm";
 import CardContainer from "../components/CardContainer";
+
+import ParticlesBackground from "../components/Particles/ParticlesBackground.jsx";
+
 import About from "../components/About";
+
+import { tsParticles } from "tsparticles";
 
 export default function WebsiteContainer() {
 	return (
@@ -30,8 +35,9 @@ export default function WebsiteContainer() {
 			<ProjectSectionH />
 			<TechStack />
 			<ContactForm />
+			<ParticlesBackground></ParticlesBackground>
+
 			<LandingPage />
-			{/* <CardContainer /> */}
 		</div>
 	);
 }

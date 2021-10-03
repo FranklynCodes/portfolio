@@ -307,8 +307,8 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
-#ContactForm #Form button {
-  padding: 0px 20px;
+#ContactForm form {
+  background-color: white;
 }
 #ContactForm #form_container {
   max-width: 800px;

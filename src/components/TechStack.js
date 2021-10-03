@@ -26,7 +26,19 @@ import DotNet from "../image/TechStackImages/back/DotNET.svg";
 import NodeJS from "../image/TechStackImages/back/NodeJS.svg";
 import Express from "../image/TechStackImages/back/express.png";
 import ReduxSVG from "../image/TechStackImages/back/Redux.svg";
+
+// Database
 import MongoDBSVG from "../image/TechStackImages/back/mongodb.svg";
+import MySQL from "../image/TechStackImages/back/mysql-4.svg";
+
+// Hosting / Cloud
+import FireBase from "../image/TechStackImages/back/Firebase_Logo_Logomark.svg";
+import Netlify from "../image/TechStackImages/back/Netlify-logomark-light.svg";
+
+// Promised based handlding frameworks
+
+import NextJS from "../image/TechStackImages/back/next-js.svg";
+import Axios from "../image/TechStackImages/back/axios.svg";
 
 // Source Control
 
@@ -37,10 +49,8 @@ import GitLab from "../image/TechStackImages/back/GitLab.svg";
 /**
  * | Commented out GitLab
  * | Commented out DotNet
- * | Commented out CPP
- * | 
- * 
- *  
+ *
+ *
  */
 
 export default function TechStack() {
@@ -68,10 +78,10 @@ export default function TechStack() {
 					<img className="img_logos" src={CHashTag} alt=" " />
 					<h3>C#</h3>
 				</div>
-				{/* <div className="cards_container_Inner_B">
+				<div className="cards_container_Inner_B">
 					<img className="img_logos" src={CPP} alt=" " />
 					<h3>C++</h3>
-				</div> */}
+				</div>
 			</div>
 
 			<h2>Front End</h2>
@@ -118,6 +128,17 @@ export default function TechStack() {
 					</div>
 					<div className="cards_container_Inner_B">
 						{/* <!-- <h4>Back End</h4> --> */}
+						<img className="img_logos" src={Axios} alt=" " />
+						<h3>Axios</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						{/* <!-- <h4>Back End</h4> --> */}
+						<img className="img_logos" src={NextJS} alt=" " />
+						<h3>NextJS</h3>
+					</div>
+
+					<div className="cards_container_Inner_B">
+						{/* <!-- <h4>Back End</h4> --> */}
 						<img className="img_logos" src={ReduxSVG} alt=" " />
 						<h3>Redux</h3>
 					</div>
@@ -126,10 +147,22 @@ export default function TechStack() {
 						<img className="img_logos" src={MongoDBSVG} alt=" " />
 						<h3>MongoDB</h3>
 					</div>
+					<div className="cards_container_Inner_B">
+						{/* <!-- <h4>Back End</h4> --> */}
+						<img className="img_logos" src={MySQL} alt=" " />
+						<h3>MySQL</h3>
+					</div>
 				</div>
-
-				{/* <!-- TechStack Testing alignment --> */}
-
+				<div className="card_container_Outer_A">
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={FireBase} alt=" " />
+						<h3>FireBase</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={Netlify} alt=" " />
+						<h3>Netlify</h3>
+					</div>
+				</div>
 				<div className="card_container_Outer_A">
 					<div className="cards_container_Inner_B">
 						<img className="img_logos" src={Git} alt=" " />

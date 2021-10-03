@@ -26,6 +26,7 @@ export default function NavBarHorizontalReact() {
 					<div className="align-padding">GitHub</div>
 					<div className="align-padding">Projects</div>
 					<div className="align-padding">Resume</div>
+					<div className="align-padding">Skills</div>
 				</nav>
 				<div className="flex-end">
 					<div id="nav-icon-box">

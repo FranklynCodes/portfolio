@@ -30,13 +30,8 @@ export default function WebsiteContainer() {
 			<ProjectSectionH />
 			<TechStack />
 			<ContactForm />
-			<CardContainer />
-
 			<LandingPage />
-
-			{/* <About/>
-			<Projects/>
-			<Contact/>			 */}
+			{/* <CardContainer /> */}
 		</div>
 	);
 }

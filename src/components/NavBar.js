@@ -22,11 +22,25 @@ export default function NavBarHorizontalReact() {
 					Franklyn C
 				</div>
 				<nav id="nav-links" className="flex-center">
-					<div className="align-padding">About</div>
-					<div className="align-padding">GitHub</div>
-					<div className="align-padding">Projects</div>
-					<div className="align-padding">Resume</div>
-					<div className="align-padding">Skills</div>
+					<div className="align-padding">
+						<a href="#About">About</a>
+					</div>
+					<div className="align-padding">
+						<a href="https://github.com/franklyn-c" target="_blank">
+							GitHub
+						</a>
+					</div>
+					<div className="align-padding">
+						<a href="#ProjectSection">Projects</a>
+					</div>
+					<div className="align-padding">
+						<a href="/#" target="_blank">
+							Resume
+						</a>
+					</div>
+					<div className="align-padding">
+						<a href="#TechStack">TechStack</a>
+					</div>
 				</nav>
 				<div className="flex-end">
 					<div id="nav-icon-box">

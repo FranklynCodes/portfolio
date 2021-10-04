@@ -7,7 +7,8 @@
 }
 
 #ProjectSection Button,
-#CardContainer Button {
+#CardContainer Button,
+#Certification Button {
   font-size: 1.7em;
   padding: 0px 20px;
 }
@@ -76,11 +77,27 @@ p {
   font-size: 26px;
 }
 
-* {
-  line-height: 1.4;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+#About,
+#CardContainer,
+#ContactForm,
+#ProjectSection,
+#SocialContainer,
+#TechStack {
+  scroll-margin-top: 10vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:any-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* WebKit browsers */
+a:-webkit-any-link {
+  text-decoration: none;
 }
 
 html {
@@ -110,8 +127,19 @@ html ::-webkit-scrollbar-corner {
   background: #000;
 }
 
+* {
+  line-height: 1.4;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+Button {
+  cursor: pointer;
 }
 
 #Social_Container {
@@ -228,6 +256,43 @@ body {
 .fas,
 .fa-bars {
   font-size: 50px;
+}
+
+#Certification {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+#Certification img {
+  height: 400px;
+}
+#Certification p {
+  max-width: 650px;
+}
+#Certification .align-L {
+  text-align: left;
+}
+#Certification .underline {
+  text-decoration: underline;
+}
+#Certification .Certification-Padding-A {
+  margin-bottom: 12px;
+}
+#Certification .Certification-Padding-B {
+  margin-bottom: 10px;
+}
+#Certification .Certification-Padding-C {
+  margin-bottom: 20px;
+}
+
+.Certification-Container-flex {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+#ProjectContainer .ProjectTitle {
+  text-align: center;
+  background-color: aqua;
 }
 
 #ProjectSection {

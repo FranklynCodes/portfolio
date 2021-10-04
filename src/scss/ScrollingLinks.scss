@@ -1,0 +1,68 @@
+// File to hold anything related to links/anchors and scrolling
+
+// Scrolling Snap
+#About,
+#CardContainer,
+#ContactForm,
+#ProjectSection,
+#SocialContainer,
+#TechStack {
+	scroll-margin-top: 10vh;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+// Anchor/Links
+a:any-link {
+	// border: 1px solid blue;
+	// color: orange;
+	color: white;
+	text-decoration: none;
+}
+
+/* WebKit browsers */
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
+// ScrollBar
+@mixin FireFoxScrollBarCSS {
+	scrollbar-color: #662763 #e4e4e4;
+	scrollbar-width: thin;
+
+	::-moz-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+	}
+}
+
+@mixin GoogleChromeScrollBar() {
+	::-webkit-scrollbar {
+		height: 12px;
+		width: 12px;
+		background: #000;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #393812;
+		-webkit-border-radius: 1ex;
+		-webkit-box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.75);
+	}
+	::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 1px rgb(255, 0, 0, 0.3);
+		border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-corner {
+		background: #000;
+	}
+}
+
+html {
+	@include FireFoxScrollBarCSS();
+	@include GoogleChromeScrollBar();
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior

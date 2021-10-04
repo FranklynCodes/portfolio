@@ -1,37 +1,50 @@
 import React from "react";
+import styled from "styled-components";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
+
+	Aos.init({ duration: 1000 });
 	return (
 		<div id="About">
 			<div className="AboutContainer">
 				{/* <h1>Hello there, I'm Franklyn C</h1> */}
-				<h1>Hi, I'm Franklyn C</h1>
-				<h2>Full Stack Web Developer based in New York City</h2>
-				<p>
+				<h1 data-aos="fade-up" data-aos-delay="500">
+					Hi, I'm Franklyn C
+				</h1>
+				<h2 data-aos="fade-up" data-aos-delay="750">
+					Full Stack Web Developer based in New York City
+				</h2>
+				<p data-aos="fade-up" data-aos-delay="900">
 					l enjoy building everything from small bussiness sites to rich interactive web
 					apps. If you are a bussiness seeking a web presence, are looking to hire or
 					anything else that l can help with contact me.
 				</p>
-				<div style={{ display: "flex", justifyContent: "center" }}>
+				<div
+					data-aos="zoom-out"
+					data-aos-delay="1150"
+					style={{ display: "flex", justifyContent: "center" }}
+				>
 					<button>Contact</button>
 				</div>
 				<div id="Social_Container" className="About_Social">
-					<div>
+					<div data-aos="fade-up" data-aos-delay="1250">
 						<a href="/#/" target="">
 							<i className="fab fa-instagram"></i>
 						</a>
 					</div>
-					<div>
+					<div data-aos="fade-up" data-aos-delay="1300">
 						<a href="/#/" target="">
 							<i className="fab fa-twitter-square"></i>
 						</a>
 					</div>
-					<div>
+					<div data-aos="fade-up" data-aos-delay="1350">
 						<a href="/#/" target="">
 							<i className="fab fa-linkedin"></i>
 						</a>
 					</div>
-					<div>
+					<div data-aos="fade-up" data-aos-delay="1400">
 						<a href="/#/" target="">
 							<i className="fab fa-youtube"></i>
 						</a>

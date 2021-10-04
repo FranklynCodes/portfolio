@@ -45,6 +45,7 @@ import Axios from "../image/TechStackImages/back/axios.svg";
 import Git from "../image/TechStackImages/back/GIT.svg";
 import GitHub from "../image/TechStackImages/back/GitHub.svg";
 import GitLab from "../image/TechStackImages/back/GitLab.svg";
+import Certifications from "./Certification";
 
 /**
  * | Commented out GitLab
@@ -178,6 +179,7 @@ export default function TechStack() {
 					</div> */}
 				</div>
 			</div>
+			<Certifications></Certifications>
 		</div>
 	);
 }

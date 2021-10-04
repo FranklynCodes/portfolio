@@ -1,3 +1,10 @@
+#ProjectContainer {
+	.ProjectTitle {
+		text-align: center;
+		background-color: aqua;
+	}
+}
+
 #ProjectSection {
 	display: flex;
 	justify-content: center;
@@ -27,5 +34,5 @@
 .Project-Image {
 	width: 100%;
 	height: auto;
-    display: block;
+	display: block;
 }

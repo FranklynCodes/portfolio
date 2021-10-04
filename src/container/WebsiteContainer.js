@@ -19,24 +19,17 @@ import ParticlesBackground from "../components/Particles/ParticlesBackground.jsx
 import About from "../components/About";
 
 import { tsParticles } from "tsparticles";
+import ProjectContainer from "../components/ProjectSection/ProjectContainer";
 
 export default function WebsiteContainer() {
 	return (
 		<div id="WebsiteContainer">
 			<NavBar />
 			<About />
-			<ProjectSectionA />
-			<ProjectSectionB />
-			<ProjectSectionC />
-			<ProjectSectionD />
-			<ProjectSectionE />
-			<ProjectSectionF />
-			<ProjectSectionG />
-			<ProjectSectionH />
+			<ProjectContainer />
 			<TechStack />
 			<ContactForm />
 			<ParticlesBackground></ParticlesBackground>
-
 			<LandingPage />
 		</div>
 	);

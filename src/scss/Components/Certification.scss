@@ -1,0 +1,34 @@
+#Certification {
+	max-width: 1500px;
+	margin: 0 auto;
+
+	img {
+		height: 400px;
+		// width: auto;
+	}
+	p {
+		max-width: 650px;
+	}
+
+	.align-L {
+		text-align: left;
+	}
+	.underline {
+		text-decoration: underline;
+	}
+	.Certification-Padding-A {
+		margin-bottom: 12px;
+	}
+	.Certification-Padding-B {
+		margin-bottom: 10px;
+	}
+	.Certification-Padding-C {
+		margin-bottom: 20px;
+	}
+}
+
+.Certification-Container-flex {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+}

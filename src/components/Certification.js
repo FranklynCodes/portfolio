@@ -24,6 +24,7 @@ export default function Certification() {
 								<a
 									href="https://aws.amazon.com/certification/certified-cloud-practitioner/"
 									target="_blank"
+									rel="noreferrer"
 								>
 									Amazon Web Services Training and Certification
 								</a>

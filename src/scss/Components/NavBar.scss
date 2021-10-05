@@ -16,6 +16,7 @@ $nav-icon-box-width: 100.6px;
 	max-width: 1500px;
 	margin: 0 auto;
 
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -30,6 +31,7 @@ $nav-icon-box-width: 100.6px;
 	.flex-center {
 		display: flex;
 		justify-content: space-evenly;
+		margin-top: 3px;
 
 		.align-padding {
 			padding: 0px 1em;

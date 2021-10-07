@@ -13,6 +13,7 @@ import About from "../components/About";
 
 import { tsParticles } from "tsparticles";
 import ProjectContainer from "../components/ProjectSection/ProjectContainer";
+import ContactFormNetlify from "../components/ContactFormNetlify";
 
 export default function WebsiteContainer() {
 	return (
@@ -22,6 +23,7 @@ export default function WebsiteContainer() {
 			<ProjectContainer />
 			<TechStack />
 			<ContactForm />
+			<ContactFormNetlify />
 			<ParticlesBackground></ParticlesBackground>
 			<LandingPage />
 		</div>

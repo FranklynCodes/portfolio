@@ -2,6 +2,8 @@
 
 import React from "react";
 import styled from "styled-components";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import { Link as Links } from "react-scroll";
 
@@ -63,11 +65,12 @@ function faBarsClick() {
 }
 
 export default function NavBarHorizontalReact() {
+	Aos.init();
 	return (
 		<div id="NavBarHorizontal" className="NavBar-Colors">
 			<div id="NavBar-Horizontal-Flex" data-aos="fade">
 				<div id="logo-nav" className="flex-start">
-					Franklyn C
+					Franklyn
 				</div>
 				<nav id="nav-links" className="flex-center">
 					<div className="align-padding">

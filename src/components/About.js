@@ -34,7 +34,7 @@ export default function About() {
 						</a>
 					</div>
 					<div data-aos="fade-up" data-aos-delay="1250">
-						<a href="/#/" target="">
+						<a href="https://github.com/franklyncodes" target="_blank" rel="noreferrer">
 							<i className="fab fa-github"></i>
 						</a>
 					</div>
@@ -44,7 +44,7 @@ export default function About() {
 						</a>
 					</div> */}
 					<div data-aos="fade-up" data-aos-delay="1300">
-						<a href="/#/" target="">
+						<a href="https://twitter.com/FranklynCodes" target="_blank">
 							<i className="fab fa-twitter-square"></i>
 						</a>
 					</div>

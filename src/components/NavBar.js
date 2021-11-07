@@ -89,7 +89,7 @@ export default function NavBarHorizontalReact() {
 						</a>
 					</div>
 					<div className="align-padding">
-						<a href="https://www.google.com/drive/" target="_blank">
+						<a href="https://www.google.com/drive/" target="_blank"  rel="noreferrer">
 							<NavHover>Resume</NavHover>
 						</a>
 					</div>

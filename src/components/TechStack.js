@@ -25,32 +25,47 @@ import Sass from "../image/TechStackImages/front/Sass.svg";
 import DotNet from "../image/TechStackImages/back/DotNET.svg";
 import NodeJS from "../image/TechStackImages/back/NodeJS.svg";
 import Express from "../image/TechStackImages/back/express.png";
+import Stripe from "../image/TechStackImages/back/stripe-4.svg";
 import ReduxSVG from "../image/TechStackImages/back/Redux.svg";
 
 // Database
 import MongoDBSVG from "../image/TechStackImages/back/mongodb.svg";
 import MySQL from "../image/TechStackImages/back/mysql-4.svg";
+import PostgreSQL from "../image/TechStackImages/back/postgresql.svg";
 
 // Hosting / Cloud
 import FireBase from "../image/TechStackImages/back/Firebase_Logo_Logomark.svg";
 import Netlify from "../image/TechStackImages/back/Netlify-logomark-light.svg";
+import Aws from "../image/TechStackImages/back/aws-2.svg";
+import Heroku from "../image/TechStackImages/back/heroku-1.svg";
 
-// Promised based handlding frameworks
-
+// Promised based handling frameworks
 import NextJS from "../image/TechStackImages/back/next-js.svg";
 import Axios from "../image/TechStackImages/back/axios.svg";
+
+// Query Technologies
+
+import PostMan from "../image/TechStackImages/back/postman.svg";
+import Apollo from "../image/TechStackImages/back/apollo-graphql-compact.svg";
+import GraphQLSVG from "../image/TechStackImages/back/graphql-logo-2.svg";
 
 // Source Control
 
 import Git from "../image/TechStackImages/back/GIT.svg";
 import GitHub from "../image/TechStackImages/back/GitHub.svg";
 import GitLab from "../image/TechStackImages/back/GitLab.svg";
+
+// Enviorment / Testing
+
+import Docker from "../image/TechStackImages/back/docker-3.svg";
+
+// Certifications
 import Certifications from "./Certification";
 
 /**
  * | Commented out GitLab
  * | Commented out DotNet
- *
+ * | Commented out Docker ?
  *
  */
 
@@ -61,7 +76,6 @@ export default function TechStack() {
 			{/* <!-- ! TechStack Testing --> */}
 			{/* <!-- Languages --> */}
 			<h2>Languages</h2>
-
 			<div className="card_container_Outer_A">
 				<div className="cards_container_Inner_B">
 					<img className="img_logos" src={Javascript} alt=" " />
@@ -84,9 +98,7 @@ export default function TechStack() {
 					<h3>C++</h3>
 				</div>
 			</div>
-
 			<h2>Front End</h2>
-
 			<div className="card_container_Outer_A">
 				<div className="cards_container_Inner_B">
 					<img className="img_logos" src={html_5} alt=" " />
@@ -109,7 +121,6 @@ export default function TechStack() {
 					<h3>Figma</h3>
 				</div>
 			</div>
-
 			<h2>Back End</h2>
 			<div className="wrapper">
 				<div className="card_container_Outer_A">
@@ -118,52 +129,37 @@ export default function TechStack() {
 						<h3>Dot Net</h3>
 					</div> */}
 					<div className="cards_container_Inner_B">
-						{/* <!-- <h4>Back End</h4> --> */}
 						<img className="img_logos" src={NodeJS} alt=" " />
 						<h3>Node JS</h3>
 					</div>
 					<div className="cards_container_Inner_B">
-						{/* <!-- <h4>Back End</h4> --> */}
 						<img className="img_logos" src={Express} alt=" " />
 						<h3>Express</h3>
 					</div>
 					<div className="cards_container_Inner_B">
-						{/* <!-- <h4>Back End</h4> --> */}
+						<img className="img_logos" src={NextJS} alt=" " />
+						<h3>NextJS</h3>
+					</div>
+					<div className="cards_container_Inner_B">
 						<img className="img_logos" src={Axios} alt=" " />
 						<h3>Axios</h3>
 					</div>
 					<div className="cards_container_Inner_B">
-						{/* <!-- <h4>Back End</h4> --> */}
-						<img className="img_logos" src={NextJS} alt=" " />
-						<h3>NextJS</h3>
+						<img className="img_logos" src={Stripe} alt="Stripe" />
+						<h3>Stripe</h3>
 					</div>
 
+					{/* <div className="cards_container_Inner_B">
+						<img className="img_logos" src={Docker} alt="Docker" />
+						<h3>Docker</h3>
+					</div> */}
+
 					<div className="cards_container_Inner_B">
-						{/* <!-- <h4>Back End</h4> --> */}
 						<img className="img_logos" src={ReduxSVG} alt=" " />
 						<h3>Redux</h3>
 					</div>
-					<div className="cards_container_Inner_B">
-						{/* <!-- <h4>Back End</h4> --> */}
-						<img className="img_logos" src={MongoDBSVG} alt=" " />
-						<h3>MongoDB</h3>
-					</div>
-					<div className="cards_container_Inner_B">
-						{/* <!-- <h4>Back End</h4> --> */}
-						<img className="img_logos" src={MySQL} alt=" " />
-						<h3>MySQL</h3>
-					</div>
 				</div>
-				<div className="card_container_Outer_A">
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={FireBase} alt=" " />
-						<h3>FireBase</h3>
-					</div>
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={Netlify} alt=" " />
-						<h3>Netlify</h3>
-					</div>
-				</div>
+
 				<div className="card_container_Outer_A">
 					<div className="cards_container_Inner_B">
 						<img className="img_logos" src={Git} alt=" " />
@@ -177,6 +173,62 @@ export default function TechStack() {
 						<img className="img_logos" src={GitLab} alt=" " />
 						<h3>Git Lab</h3>
 					</div> */}
+				</div>
+			</div>
+			{/* // DataBase */}
+			<h2>Data Base</h2>
+			<div className="wrapper">
+				<div className="card_container_Outer_A">
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={MongoDBSVG} alt=" " />
+						<h3>MongoDB</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={MySQL} alt=" " />
+						<h3>MySQL</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={PostgreSQL} alt=" " />
+						<h3>PostgreSQL</h3>
+					</div>
+				</div>
+			</div>
+			<h2>Query Technologies</h2>
+			<div className="wrapper">
+				<div className="card_container_Outer_A">
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={PostMan} alt="PostMan" />
+						<h3>PostMan</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={Apollo} alt="Apollo" />
+						<h3>Apollo</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={GraphQLSVG} alt="GraphQL" />
+						<h3>GraphQL</h3>
+					</div>
+				</div>
+			</div>
+			<h2>Hosting</h2>
+			<div className="wrapper">
+				<div className="card_container_Outer_A">
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={FireBase} alt=" " />
+						<h3>FireBase</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={Netlify} alt=" " />
+						<h3>Netlify</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={Aws} alt=" " />
+						<h3>AWS</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={Heroku} alt=" " />
+						<h3>Herkou</h3>
+					</div>
 				</div>
 			</div>
 			<Certifications></Certifications>

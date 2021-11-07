@@ -15,6 +15,9 @@ import { tsParticles } from "tsparticles";
 import ProjectContainer from "../components/ProjectSection/ProjectContainer";
 import ContactFormNetlify from "../components/ContactFormNetlify";
 
+// Certifications
+import Certifications from "../components/Certification";
+
 export default function WebsiteContainer() {
 	return (
 		<div id="WebsiteContainer">
@@ -22,6 +25,8 @@ export default function WebsiteContainer() {
 			<About />
 			<ProjectContainer />
 			<TechStack />
+
+			<Certifications></Certifications>
 			<ContactForm />
 			<ContactFormNetlify />
 			<ParticlesBackground></ParticlesBackground>

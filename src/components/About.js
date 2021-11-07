@@ -29,7 +29,7 @@ export default function About() {
 				</div>
 				<div id="Social_Container" className="About_Social">
 					<div data-aos="fade-up" data-aos-delay="1250">
-						<a href="mailto:franklynhire@gmail.com" target={"_blank"}>
+						<a href="mailto:franklynhire@gmail.com" target={"_blank"} rel="noreferrer">
 							<i class="far fab fa-envelope"></i>
 						</a>
 					</div>
@@ -44,7 +44,11 @@ export default function About() {
 						</a>
 					</div> */}
 					<div data-aos="fade-up" data-aos-delay="1300">
-						<a href="https://twitter.com/FranklynCodes" target="_blank">
+						<a
+							href="https://twitter.com/FranklynCodes"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<i className="fab fa-twitter-square"></i>
 						</a>
 					</div>

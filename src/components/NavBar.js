@@ -76,7 +76,7 @@ export default function NavBarHorizontalReact() {
 						</a>
 					</div>
 					<div className="align-padding">
-						<a href="https://github.com/franklyn-c" target="_blank" rel="noreferrer">
+						<a href="https://github.com/franklyncodes" target="_blank" rel="noreferrer">
 							<NavHover>GitHub</NavHover>
 						</a>
 					</div>
@@ -86,7 +86,7 @@ export default function NavBarHorizontalReact() {
 						</a>
 					</div>
 					<div className="align-padding">
-						<a href="/#" target="_blank">
+						<a href="https://www.google.com/drive/" target="_blank">
 							<NavHover>Resume</NavHover>
 						</a>
 					</div>
@@ -101,12 +101,12 @@ export default function NavBarHorizontalReact() {
 						{/* <a href="/#" target="">
 							<i className="fab fa-twitter-square"></i>
 						</a> */}
-						<a href="/#" target="">
+						<a href="https://www.linkedin.com/in/franklyncodes/" target="">
 							<i className="fab fa-linkedin"></i>
 						</a>
 					</div>
 
-					<a id="nav-contact-btn" href="/#" target="">
+					<a id="nav-contact-btn" href="#ContactForm" target="">
 						Contact
 					</a>
 

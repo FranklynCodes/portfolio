@@ -528,16 +528,18 @@ Button {
 }
 
 #About {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  height: 100vw;
+  max-height: 1000px;
   background: radial-gradient(50vw 200% at 50% 50%, rgba(162, 50, 255, 0.3), rgba(44, 11, 76, 0) 87.5%), linear-gradient(90deg, rgba(44, 11, 76, 0.9), rgba(80, 15, 131, 0.5) 60%, rgba(44, 11, 76, 0.9)), linear-gradient(35deg, rgba(44, 11, 76, 0.3), rgba(80, 15, 131, 0.3) 37%, rgba(44, 11, 76, 0.3) 0, rgba(80, 15, 131, 0.3) 76%, rgba(44, 11, 76, 0.3) 0, rgba(80, 15, 131, 0.3)), linear-gradient(90deg, #2c0b4c, #500f83 60%, #2c0b4c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #About .AboutContainer {
   background-color: aqua;
   height: fit-content;
   text-align: left;
   max-width: 800px;
-  margin: 0 auto;
   background: linear-gradient(175deg, #9621ff, #461989);
   background-size: auto;
   color: #fffeff;
@@ -549,9 +551,13 @@ Button {
 }
 #About h2 {
   padding: 0px 0px 20px 0px;
+  text-align: center;
 }
 #About p {
   padding: 0px 0px 18px 0px;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
 }
 #About button {
   text-align: center;

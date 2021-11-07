@@ -4,7 +4,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function About() {
-
 	Aos.init({ duration: 1000 });
 	return (
 		<div id="About">
@@ -26,29 +25,39 @@ export default function About() {
 					data-aos-delay="1150"
 					style={{ display: "flex", justifyContent: "center" }}
 				>
-					<button>Contact</button>
+					{/* <button>Contact</button> */}
 				</div>
 				<div id="Social_Container" className="About_Social">
 					<div data-aos="fade-up" data-aos-delay="1250">
+						<a href="mailto:franklynhire@gmail.com" target={"_blank"}>
+							<i class="far fab fa-envelope"></i>
+						</a>
+					</div>
+					<div data-aos="fade-up" data-aos-delay="1250">
+						<a href="/#/" target="">
+							<i className="fab fa-github"></i>
+						</a>
+					</div>
+					{/* <div data-aos="fade-up" data-aos-delay="1250">
 						<a href="/#/" target="">
 							<i className="fab fa-instagram"></i>
 						</a>
-					</div>
+					</div> */}
 					<div data-aos="fade-up" data-aos-delay="1300">
 						<a href="/#/" target="">
 							<i className="fab fa-twitter-square"></i>
 						</a>
 					</div>
-					<div data-aos="fade-up" data-aos-delay="1350">
+					{/* <div data-aos="fade-up" data-aos-delay="1350">
 						<a href="/#/" target="">
 							<i className="fab fa-linkedin"></i>
 						</a>
-					</div>
-					<div data-aos="fade-up" data-aos-delay="1400">
+					</div> */}
+					{/* <div data-aos="fade-up" data-aos-delay="1400">
 						<a href="/#/" target="">
 							<i className="fab fa-youtube"></i>
 						</a>
-					</div>
+					</div> */}
 					{/* <div>
 						<a href="/#/" target="">
 							<i className="fab fa-twitch"></i>

@@ -1,10 +1,14 @@
+$A-Certifcation-Margin: 12px;
+$B-Certifcation-Margin: 10px;
+$C-Certifcation-Margin: 20px;
+
 #Certification {
-	max-width: 1500px;
-	margin: 0 auto;
+	h1 {
+		text-align: center;
+	}
 
 	img {
-		height: 400px;
-		// width: auto;
+		max-height: 150px;
 	}
 	p {
 		max-width: 650px;
@@ -25,10 +29,33 @@
 	.Certification-Padding-C {
 		margin-bottom: 20px;
 	}
+	a {
+		width: 100%;
+		max-width: 425px;
+		button {
+			width: 100%;
+		}
+	}
 }
 
 .Certification-Container-flex {
 	display: flex;
 	justify-content: center;
-	gap: 25px;
+	align-items: center;
+}
+
+$Cert-Margin-Sides: 40px;
+
+.Cert-Btm-Margin {
+	margin-left: $Cert-Margin-Sides;
+	margin-right: $Cert-Margin-Sides;
+	margin-bottom: 50px;
+	margin-top: 25px;
+}
+
+$Cert-Container-Width: 606px;
+.Cert-Container-Width {
+	// min-width: max-content;
+	width: 100%;
+	max-width: $Cert-Container-Width;
 }

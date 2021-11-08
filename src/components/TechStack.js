@@ -303,8 +303,6 @@ export default function TechStack() {
 			<div className="Skills-Card-Flex Skills-ContainerC">
 				<BackEnd />
 			</div>
-
-			<Certifications></Certifications>
 		</div>
 	);
 }

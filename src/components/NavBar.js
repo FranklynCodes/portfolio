@@ -65,10 +65,16 @@ function faBarsClick() {
 }
 
 export default function NavBarHorizontalReact() {
-	Aos.init();
+	Aos.init({ duration: 1000 });
 	return (
 		<div id="NavBarHorizontal" className="NavBar-Colors">
-			<div id="NavBar-Horizontal-Flex" data-aos="fade">
+			<div
+				id="NavBar-Horizontal-Flex"
+				className="fade-in-fwdA"
+				// className="fade-in-fwdB"
+				// data-aos="fade-up"
+				// data-aos-anchor-placement="center-center"
+			>
 				<div id="logo-nav" className="flex-start">
 					Franklyn
 				</div>
@@ -89,7 +95,7 @@ export default function NavBarHorizontalReact() {
 						</a>
 					</div>
 					<div className="align-padding">
-						<a href="https://www.google.com/drive/" target="_blank"  rel="noreferrer">
+						<a href="https://www.google.com/drive/" target="_blank" rel="noreferrer">
 							<NavHover>Resume</NavHover>
 						</a>
 					</div>

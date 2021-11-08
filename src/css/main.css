@@ -77,6 +77,20 @@ p {
   font-size: 26px;
 }
 
+.fade-in-fwdA {
+  animation: fade-in-fwdA 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 150ms both;
+}
+
+@keyframes fade-in-fwdA {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 #About,
 #CardContainer,
 #ContactForm,
@@ -91,7 +105,7 @@ html {
 }
 
 a:any-link {
-  color: white;
+  color: orange;
   text-decoration: none;
 }
 
@@ -259,12 +273,11 @@ Button {
   font-size: 50px;
 }
 
-#Certification {
-  max-width: 1500px;
-  margin: 0 auto;
+#Certification h1 {
+  text-align: center;
 }
 #Certification img {
-  height: 400px;
+  max-height: 150px;
 }
 #Certification p {
   max-width: 650px;
@@ -284,11 +297,30 @@ Button {
 #Certification .Certification-Padding-C {
   margin-bottom: 20px;
 }
+#Certification a {
+  width: 100%;
+  max-width: 425px;
+}
+#Certification a button {
+  width: 100%;
+}
 
 .Certification-Container-flex {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  align-items: center;
+}
+
+.Cert-Btm-Margin {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+.Cert-Container-Width {
+  width: 100%;
+  max-width: 606px;
 }
 
 #ProjectContainer .ProjectTitle {

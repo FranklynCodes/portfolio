@@ -22,15 +22,16 @@ export default function WebsiteContainer() {
 	return (
 		<div id="WebsiteContainer">
 			<NavBar />
-			<About />
-			<ProjectContainer />
-			<TechStack />
-
-			<Certifications></Certifications>
-			<ContactForm />
-			<ContactFormNetlify />
-			<ParticlesBackground></ParticlesBackground>
-			<LandingPage />
+			<div>
+				<About />
+				<ProjectContainer />
+				<TechStack />
+				<Certifications></Certifications>
+				<ContactForm />
+				<ContactFormNetlify />
+				<ParticlesBackground></ParticlesBackground>
+				<LandingPage />
+			</div>
 		</div>
 	);
 }

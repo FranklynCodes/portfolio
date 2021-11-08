@@ -67,117 +67,160 @@ import Certifications from "./Certification";
  * | Commented out DotNet
  * | Commented out Docker ?
  *
+ *
+ *
+ *
  */
 
 export default function TechStack() {
-	return (
-		<div id="TechStack">
-			<h1 id="h1_TechStack">TechStack</h1>
-			{/* <!-- ! TechStack Testing --> */}
-			{/* <!-- Languages --> */}
-			<h2>Languages</h2>
-			<div className="card_container_Outer_A">
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={Javascript} alt=" " />
-					<h3>JavaScript</h3>
-				</div>
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={TypeScript} alt=" " />
-					<h3>Typescript</h3>
-				</div>
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={Python} alt=" " />
-					<h3>Python</h3>
-				</div>
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={CHashTag} alt=" " />
-					<h3>C#</h3>
-				</div>
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={CPP} alt=" " />
-					<h3>C++</h3>
-				</div>
-			</div>
-			<h2>Front End</h2>
-			<div className="card_container_Outer_A">
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={html_5} alt=" " />
-					<h3>HTML</h3>
-				</div>
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={CSS3} alt=" " />
-					<h3>CSS</h3>
-				</div>
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={ReactSVG} alt=" " />
-					<h3>React</h3>
-				</div>
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={Sass} alt=" " />
-					<h3>Sass</h3>
-				</div>
-				<div className="cards_container_Inner_B">
-					<img className="img_logos" src={Figma} alt=" " />
-					<h3>Figma</h3>
-				</div>
-			</div>
-			<h2>Back End</h2>
-			<div className="wrapper">
+	function Languages() {
+		return (
+			<div id="Skill-Container">
+				<h2>Languages</h2>
+
 				<div className="card_container_Outer_A">
-					{/* <div className="cards_container_Inner_B">
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={Javascript} alt=" " />
+						<h3>JavaScript</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={TypeScript} alt=" " />
+						<h3>Typescript</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={Python} alt=" " />
+						<h3>Python</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={CHashTag} alt=" " />
+						<h3>C#</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={CPP} alt=" " />
+						<h3>C++</h3>
+					</div>
+				</div>
+			</div>
+		);
+	}
+	function LanguagesVarationTwo() {
+		return (
+			<div id="LanguagesTwo">
+				<div>
+					<h2>Languages</h2>
+				</div>
+				<div className="Flex-Card-Container">
+					<div className="Flex-Card-Items">
+						<img className="img_logos" src={Javascript} alt=" " />
+						<h3>Javascript</h3>
+					</div>
+					<div className="Flex-Card-Items">
+						<img className="img_logos" src={TypeScript} alt=" " />
+						<h3>TypeScript</h3>
+					</div>
+					<div className="Flex-Card-Items">
+						<img className="img_logos" src={Python} alt=" " />
+						<h3>Python</h3>
+					</div>
+				</div>
+			</div>
+		);
+	}
+
+	function FrontEnd() {
+		return (
+			<div id="Skill-Container">
+				<h2>Front End</h2>
+				<div className="card_container_Outer_A">
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={html_5} alt=" " />
+						<h3>HTML</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={CSS3} alt=" " />
+						<h3>CSS</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={ReactSVG} alt=" " />
+						<h3>React</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={Sass} alt=" " />
+						<h3>Sass</h3>
+					</div>
+					<div className="cards_container_Inner_B">
+						<img className="img_logos" src={Figma} alt=" " />
+						<h3>Figma</h3>
+					</div>
+				</div>
+			</div>
+		);
+	}
+
+	function BackEnd() {
+		return (
+			<div id="Skill-Container">
+				<h2>Back End</h2>
+				<div className="wrapper">
+					<div className="card_container_Outer_A">
+						{/* <div className="cards_container_Inner_B">
 						<img className="img_logos" src={DotNet} alt=" " />
 						<h3>Dot Net</h3>
 					</div> */}
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={NodeJS} alt=" " />
-						<h3>Node JS</h3>
-					</div>
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={Express} alt=" " />
-						<h3>Express</h3>
-					</div>
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={NextJS} alt=" " />
-						<h3>NextJS</h3>
-					</div>
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={Axios} alt=" " />
-						<h3>Axios</h3>
-					</div>
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={Stripe} alt="Stripe" />
-						<h3>Stripe</h3>
-					</div>
+						<div className="cards_container_Inner_B">
+							<img className="img_logos" src={NodeJS} alt=" " />
+							<h3>Node JS</h3>
+						</div>
+						<div className="cards_container_Inner_B">
+							<img className="img_logos" src={Express} alt=" " />
+							<h3>Express</h3>
+						</div>
+						<div className="cards_container_Inner_B">
+							<img className="img_logos" src={NextJS} alt=" " />
+							<h3>NextJS</h3>
+						</div>
+						<div className="cards_container_Inner_B">
+							<img className="img_logos" src={Axios} alt=" " />
+							<h3>Axios</h3>
+						</div>
+						<div className="cards_container_Inner_B">
+							<img className="img_logos" src={Stripe} alt="Stripe" />
+							<h3>Stripe</h3>
+						</div>
 
-					{/* <div className="cards_container_Inner_B">
+						{/* <div className="cards_container_Inner_B">
 						<img className="img_logos" src={Docker} alt="Docker" />
 						<h3>Docker</h3>
 					</div> */}
 
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={ReduxSVG} alt=" " />
-						<h3>Redux</h3>
+						<div className="cards_container_Inner_B">
+							<img className="img_logos" src={ReduxSVG} alt=" " />
+							<h3>Redux</h3>
+						</div>
 					</div>
-				</div>
 
-				<div className="card_container_Outer_A">
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={Git} alt=" " />
-						<h3>Git</h3>
-					</div>
-					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={GitHub} alt=" " />
-						<h3>Git Hub</h3>
-					</div>
-					{/* <div className="cards_container_Inner_B">
+					<div className="card_container_Outer_A">
+						<div className="cards_container_Inner_B">
+							<img className="img_logos" src={Git} alt=" " />
+							<h3>Git</h3>
+						</div>
+						<div className="cards_container_Inner_B">
+							<img className="img_logos" src={GitHub} alt=" " />
+							<h3>Git Hub</h3>
+						</div>
+						{/* <div className="cards_container_Inner_B">
 						<img className="img_logos" src={GitLab} alt=" " />
 						<h3>Git Lab</h3>
 					</div> */}
+					</div>
 				</div>
 			</div>
-			{/* // DataBase */}
-			<h2>Data Base</h2>
-			<div className="wrapper">
+		);
+	}
+	function Database() {
+		return (
+			<div id="Skill-Container">
+				<h2>Database</h2>
 				<div className="card_container_Outer_A">
 					<div className="cards_container_Inner_B">
 						<img className="img_logos" src={MongoDBSVG} alt=" " />
@@ -193,8 +236,12 @@ export default function TechStack() {
 					</div>
 				</div>
 			</div>
-			<h2>Query Technologies</h2>
-			<div className="wrapper">
+		);
+	}
+	function QueryTech() {
+		return (
+			<div id="Skill-Container">
+				<h2>Query Tech</h2>
 				<div className="card_container_Outer_A">
 					<div className="cards_container_Inner_B">
 						<img className="img_logos" src={PostMan} alt="PostMan" />
@@ -210,8 +257,12 @@ export default function TechStack() {
 					</div>
 				</div>
 			</div>
-			<h2>Hosting</h2>
-			<div className="wrapper">
+		);
+	}
+	function Hosting() {
+		return (
+			<div id="Skill-Container">
+				<h2>Hosting</h2>
 				<div className="card_container_Outer_A">
 					<div className="cards_container_Inner_B">
 						<img className="img_logos" src={FireBase} alt=" " />
@@ -231,6 +282,28 @@ export default function TechStack() {
 					</div>
 				</div>
 			</div>
+		);
+	}
+
+	return (
+		<div id="TechStack">
+			<h1 id="h1_TechStack">TechStack</h1>
+
+			<div className="Skills-Card-Flex Skills-ContainerA">
+				<Languages />
+				{/* <LanguagesVarationTwo /> */}
+				<QueryTech />
+				<Database />
+			</div>
+			<div className="Skills-Card-Flex Skills-ContainerB">
+				<Hosting />
+				<FrontEnd />
+			</div>
+
+			<div className="Skills-Card-Flex Skills-ContainerC">
+				<BackEnd />
+			</div>
+
 			<Certifications></Certifications>
 		</div>
 	);

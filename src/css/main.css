@@ -332,13 +332,13 @@ Button {
 #TechStack {
   background-color: aqua;
 }
-#TechStack h1, #TechStack h2 {
+#TechStack h1,
+#TechStack h2 {
   text-align: center;
 }
 
 .wrapper {
   display: flex;
-  max-width: fit-content;
   justify-content: space-evenly;
   margin: 0 auto;
 }
@@ -364,6 +364,52 @@ Button {
 .card_container_Outer_A .img_logos {
   width: 110px;
   height: 110px;
+}
+
+#LanguagesTwo {
+  background-color: red;
+  border: black 10px solid;
+  max-width: max-content;
+}
+#LanguagesTwo .Flex-Card-Container {
+  display: flex;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+}
+#LanguagesTwo .Flex-Card-Container .Flex-Card-Items {
+  margin: 0px 25px;
+}
+#LanguagesTwo .Flex-Card-Container .Flex-Card-Items img {
+  width: 110px;
+  height: 110px;
+}
+#LanguagesTwo .Flex-Card-Container .Flex-Card-Items h3 {
+  text-align: center;
+}
+
+#Skill-Container {
+  background-color: red !important;
+  border: black 5px solid;
+  max-width: max-content;
+}
+
+.Skills-Card-Flex {
+  display: flex;
+  justify-content: center;
+}
+
+.Skills-ContainerA {
+  display: flex;
+  max-width: 1600px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.Skills-ContainerB {
+  display: flex;
+  max-width: 1255px;
+  justify-content: space-between;
+  margin: auto;
 }
 
 #ContactForm h1 {

@@ -197,9 +197,6 @@ export default function TechStack() {
 							<img className="img_logos" src={ReduxSVG} alt=" " />
 							<h3>Redux</h3>
 						</div>
-					</div>
-
-					<div className="card_container_Outer_A">
 						<div className="cards_container_Inner_B">
 							<img className="img_logos" src={Git} alt=" " />
 							<h3>Git</h3>
@@ -213,6 +210,8 @@ export default function TechStack() {
 						<h3>Git Lab</h3>
 					</div> */}
 					</div>
+
+					{/* <div className="card_container_Outer_A"></div> */}
 				</div>
 			</div>
 		);

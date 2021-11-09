@@ -16,7 +16,6 @@ $nav-icon-box-width: 100.6px;
 	max-width: 1500px;
 	margin: 0 auto;
 
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -74,28 +73,10 @@ $nav-icon-box-width: 100.6px;
 $PurpleBackground-NavBar: linear-gradient(90deg, #2c0b4c 12.5%, #500f83, #2c0b4c);
 
 .NavBar-Colors {
-	background: $PurpleBackground-NavBar;
-	color: white;
+	// background: $PurpleBackground-NavBar;
+	color: black;
+	background-color: white;
 	text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
-
-	nav {
-		// 		background-color: green;
-
-		ol {
-			display: flex;
-			justify-content: space-evenly;
-			background-color: red;
-
-			li {
-				background-color: hotpink;
-				list-style-type: none;
-
-				& {
-					cursor: pointer;
-				}
-			}
-		}
-	}
 }
 
 // # Navigation Break Points

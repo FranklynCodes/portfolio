@@ -45,7 +45,8 @@ const NavHover = styled.span`
 		height: 3px;
 		left: 50%;
 		// position: absolute;
-		background: ${(props) => (props.light ? "black" : "white")};
+		// background: ${(props) => (props.light ? "black" : "white")};
+		background: black;
 		transition: width 0.3s ease 0s, left 0.3s ease 0s;
 		width: 0;
 	}

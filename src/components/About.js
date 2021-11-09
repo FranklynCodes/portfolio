@@ -6,8 +6,8 @@ import "aos/dist/aos.css";
 export default function About() {
 	Aos.init({ duration: 1000 });
 	return (
-		<div id="About">
-			<div className="AboutContainer">
+		<div id="About" className="About-Color">
+			<div className="About-Container">
 				{/* <h1>Hello there, I'm Franklyn C</h1> */}
 				<h1 data-aos="fade-up" data-aos-delay="500">
 					Hi, I'm Franklyn C

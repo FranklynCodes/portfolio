@@ -11,16 +11,17 @@ import ProjectSectionH from "./ProjectSectionH";
 export default function ProjectContainer() {
 	return (
 		<div id="ProjectContainer" className="ProjectContainer">
-			<h1 className="ProjectTitle">Projects</h1>
-
-			<ProjectSectionA />
-			<ProjectSectionB />
-			<ProjectSectionC />
-			<ProjectSectionD />
-			<ProjectSectionE />
-			<ProjectSectionF />
-			<ProjectSectionG />
-			<ProjectSectionH />
+			<h1 className="Project-Title ">Projects</h1>
+			<div className="Project-Color">
+				<ProjectSectionA />
+				<ProjectSectionB />
+				<ProjectSectionC />
+				<ProjectSectionD />
+				<ProjectSectionE />
+				<ProjectSectionF />
+				<ProjectSectionG />
+				<ProjectSectionH />
+			</div>
 		</div>
 	);
 }

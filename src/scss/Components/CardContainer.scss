@@ -6,12 +6,6 @@
 
 // Module/Cards
 
-.card_container_Outer_A,
-.cards_vertical_500px,
-.cards_vertical {
-	border: black solid;
-}
-
 // ! cardsProject Start
 
 @mixin borderstyle_Cards {
@@ -104,4 +98,10 @@
 	button {
 		padding: 0px 18px;
 	}
+}
+
+// Colors / Borders
+
+.card_container_Outer_A {
+	border: black solid 1px;
 }

@@ -61,8 +61,8 @@ p {
 .fab,
 .fas {
   font-size: 2.5em;
-  color: white;
   text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.411);
   vertical-align: middle;
 }
 
@@ -105,7 +105,7 @@ html {
 }
 
 a:any-link {
-  color: orange;
+  color: black;
   text-decoration: none;
 }
 
@@ -220,21 +220,9 @@ Button {
 }
 
 .NavBar-Colors {
-  background: linear-gradient(90deg, #2c0b4c 12.5%, #500f83, #2c0b4c);
-  color: white;
+  color: black;
+  background-color: white;
   text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
-}
-.NavBar-Colors nav ol {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: red;
-}
-.NavBar-Colors nav ol li {
-  background-color: hotpink;
-  list-style-type: none;
-}
-.NavBar-Colors nav ol li {
-  cursor: pointer;
 }
 
 #Hamburger-block {
@@ -323,30 +311,24 @@ Button {
   max-width: 606px;
 }
 
-#ProjectContainer .ProjectTitle {
+#ProjectContainer .Project-Title {
   text-align: center;
-  background-color: aqua;
 }
 
 #ProjectSection {
   display: flex;
   justify-content: center;
-  background-color: aqua;
 }
-
-.Project-Section-Inner {
+#ProjectSection .Project-Section-Inner {
   display: flex;
   width: 1500px;
   justify-content: space-evenly;
   align-items: center;
-  background-color: aquamarine;
 }
-
-.Project-AreaA-Section {
+#ProjectSection .Project-Section-Inner .Project-AreaA-Section {
   max-height: 500px;
 }
-
-.Project-AreaB-Section {
+#ProjectSection .Project-Section-Inner .Project-AreaB-Section {
   max-width: 500px;
 }
 
@@ -361,22 +343,48 @@ Button {
   display: block;
 }
 
-#TechStack {
+.Project-Title {
   background-color: aqua;
+  background-color: white;
 }
+
+.Project-Color #ProjectSection {
+  background-color: white;
+}
+.Project-Color #ProjectSection .Project-Section-Inner {
+  background-color: aquamarine;
+  background-color: white;
+}
+
 #TechStack h1,
 #TechStack h2 {
   text-align: center;
 }
-
-.wrapper {
+#TechStack .Skills-Card-Flex {
+  display: flex;
+  justify-content: center;
+}
+#TechStack .Skills-ContainerA {
+  display: flex;
+  max-width: 1600px;
+  justify-content: space-between;
+  margin: auto;
+}
+#TechStack .Skills-ContainerB {
+  display: flex;
+  max-width: 1255px;
+  justify-content: space-between;
+  margin: auto;
+}
+#Skill-Container {
+  max-width: max-content;
+}
+#Skill-Container .wrapper {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
 }
-
-.card_container_Outer_A {
-  background-color: aquamarine;
+#Skill-Container .card_container_Outer_A {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -384,23 +392,19 @@ Button {
   margin: 0px auto;
   padding: 20px 10px 3px 20px;
   box-sizing: content-box;
-  border-color: black;
-  border-style: solid;
-  border-width: 5px;
 }
-.card_container_Outer_A .cards_container_Inner_B {
+#Skill-Container .card_container_Outer_A .cards_container_Inner_B {
   flex: 1 0 100px;
   text-align: center;
   padding: 0px 8px;
 }
-.card_container_Outer_A .img_logos {
+#Skill-Container .card_container_Outer_A .img_logos {
   width: 110px;
   height: 110px;
 }
 
 #LanguagesTwo {
-  background-color: red;
-  border: black 10px solid;
+  border: black 5px solid;
   max-width: max-content;
 }
 #LanguagesTwo .Flex-Card-Container {
@@ -419,29 +423,21 @@ Button {
   text-align: center;
 }
 
-#Skill-Container {
-  background-color: red !important;
-  border: black 5px solid;
-  max-width: max-content;
+#TechStack {
+  background-color: aqua;
+  background-color: white;
 }
-
-.Skills-Card-Flex {
-  display: flex;
-  justify-content: center;
+#TechStack .card_container_Outer_A {
+  background-color: aquamarine;
+  background-color: white;
 }
-
-.Skills-ContainerA {
-  display: flex;
-  max-width: 1600px;
-  justify-content: space-between;
-  margin: auto;
+#TechStack #LanguagesTwo {
+  background-color: red;
+  background-color: white;
 }
-
-.Skills-ContainerB {
-  display: flex;
-  max-width: 1255px;
-  justify-content: space-between;
-  margin: auto;
+#TechStack #Skill-Container {
+  background-color: red;
+  background-color: white;
 }
 
 #ContactForm h1 {
@@ -450,9 +446,6 @@ Button {
 #ContactForm .Social_Container_Contact {
   max-width: 600px;
   margin: 0 auto;
-}
-#ContactForm form {
-  background-color: white;
 }
 #ContactForm #form_container {
   max-width: 800px;
@@ -463,6 +456,7 @@ Button {
 #ContactForm #form_container #button {
   display: flex;
   justify-content: center;
+  max-width: 300px;
 }
 #ContactForm label {
   display: block;
@@ -492,9 +486,6 @@ Button {
 }
 #ContactForm .form-example #sendButton {
   box-sizing: content-box;
-  border: 0;
-  padding: 0.25rem;
-  padding: 0.5rem;
   margin: 1rem 0;
   text-transform: uppercase;
   cursor: pointer;
@@ -502,31 +493,20 @@ Button {
   font-size: 30px;
 }
 
-#ContactForm .form-example input,
-#ContactForm .form-example textarea {
-  border: 2px solid #0099ff;
-  background-color: whitesmoke;
+#ContactForm form {
+  background-color: white;
 }
-#ContactForm .form-example input:focus,
-#ContactForm .form-example textarea:focus {
-  background-color: #ecf8ff;
+#ContactForm #button {
+  background-color: blue;
+  background-color: white;
 }
-#ContactForm .form-example #sendButton {
-  background-color: #3300ff;
-  color: white;
-}
-#ContactForm .form-example #sendButton:hover {
-  background-color: #0099ff;
+#ContactForm #sendButton {
+  background-color: white;
+  border: solid 1px black;
 }
 
 #CardContainer h1 {
   text-align: center;
-}
-
-.card_container_Outer_A,
-.cards_vertical_500px,
-.cards_vertical {
-  border: black solid;
 }
 
 .card_container .cards_vertical {
@@ -605,23 +585,23 @@ Button {
   padding: 0px 18px;
 }
 
+.card_container_Outer_A {
+  border: black solid 1px;
+}
+
 #About {
   height: 100vw;
   max-height: 1000px;
-  background: radial-gradient(50vw 200% at 50% 50%, rgba(162, 50, 255, 0.3), rgba(44, 11, 76, 0) 87.5%), linear-gradient(90deg, rgba(44, 11, 76, 0.9), rgba(80, 15, 131, 0.5) 60%, rgba(44, 11, 76, 0.9)), linear-gradient(35deg, rgba(44, 11, 76, 0.3), rgba(80, 15, 131, 0.3) 37%, rgba(44, 11, 76, 0.3) 0, rgba(80, 15, 131, 0.3) 76%, rgba(44, 11, 76, 0.3) 0, rgba(80, 15, 131, 0.3)), linear-gradient(90deg, #2c0b4c, #500f83 60%, #2c0b4c);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#About .AboutContainer {
-  background-color: aqua;
+#About .About-Container {
   height: fit-content;
+  border-radius: 30px;
   text-align: left;
   max-width: 800px;
-  background: linear-gradient(175deg, #9621ff, #461989);
   background-size: auto;
-  color: #fffeff;
-  border-radius: 30px;
   padding: 20px;
 }
 #About h1 {
@@ -647,6 +627,11 @@ Button {
 }
 #About .About_Social {
   margin-top: 25px;
+}
+
+.About-Color .About-Container {
+  color: #fffeff;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,28 +1,40 @@
+#address-block {
+	margin: auto auto;
+	width: fit-content;
+	address {
+		display: inline-block;
+	}
+}
+
 #ContactForm {
+	height: 92vh;
+	#FormContainer {
+		width: fit-content;
+		margin: 0px auto 0px auto;
+	}
+
 	h1 {
 		text-align: center;
 	}
 	.Social_Container_Contact {
-		max-width: 600px;
-		margin: 0 auto;
+		margin-bottom: 2em;
 	}
 
 	#form_container {
-		max-width: 800px;
-		margin: 2rem auto;
-		border: 2px solid black;
-		padding: 2rem;
+		padding: 25px;
+		border-radius: 20px;
 
 		#button {
 			display: flex;
 			justify-content: center;
-			max-width: 300px;
+			width: 250px;
+			// min-width: 100%;
 		}
 	}
 
 	label {
 		display: block;
-		padding: 1rem 0 0.25rem;
+		padding: 1rem 0 0.5rem 0em;
 	}
 
 	.form-example {
@@ -32,69 +44,41 @@
 		flex-direction: column;
 
 		label,
-		input {
-			width: 500px;
-		}
+		input,
 		textarea {
 			width: 500px;
-			height: 200px;
+		}
+
+		textarea {
+			height: 250px;
+			vertical-align: top;
 		}
 		input,
 		textarea {
-			padding: 0.25rem;
-			font-size: 18px;
+			padding: 0.4em;
+			font-size: 19px;
 		}
 
 		textarea {
 			font-family: inherit;
+			resize: none;
 		}
 
 		#sendButton {
 			box-sizing: content-box;
+			// margin-top: 25px;
+			margin-top: 30px;
+
 			// padding: 0.25rem;
 			// padding: 0.5rem;
-			margin: 1rem 0;
-			text-transform: uppercase;
+			// margin: 1rem 0;
 			cursor: pointer;
-			border-radius: 100rem;
+			border-radius: 20px;
 			font-size: 30px;
 		}
 	}
-}
-
-// # ContactForm Color
-#ContactForm {
-	// background-color: purple;
-	form {
-		background-color: white;
-	}
-
-	.form-example {
-		input,
-		textarea {
-			// border: 2px solid #0099ff;
-			// background-color: whitesmoke;
-
-			&:focus {
-				// background-color: rgb(236, 248, 255);
-			}
-		}
-		#sendButton {
-			// background-color: #3300ff;
-			// color: white;
-			&:hover {
-				// background-color: #0099ff;
-			}
-		}
-	}
-	#button {
-		// border: solid 5px black;
-		background-color: blue;
-		background-color: white;
-	}
-
-	#sendButton {
-		background-color: white;
-		border: solid 1px black;
+	address {
+		text-decoration: underline;
+		font-weight: bold;
 	}
 }

@@ -1,6 +1,5 @@
 import React from "react";
 
-import LandingPage from "../components/LandingPage";
 import NavBar from "../components/NavBar";
 
 import TechStack from "../components/TechStack";
@@ -22,16 +21,13 @@ export default function WebsiteContainer() {
 	return (
 		<div id="WebsiteContainer">
 			<NavBar />
-			<div>
-				<About />
-				<ProjectContainer />
-				<TechStack />
-				<Certifications></Certifications>
-				<ContactForm />
-				<ContactFormNetlify />
-				<ParticlesBackground></ParticlesBackground>
-				<LandingPage />
-			</div>
+			<About />
+			<ProjectContainer />
+			<TechStack />
+			<Certifications></Certifications>
+			<ContactForm />
+			{/* <ContactFormNetlify /> */}
+			<ParticlesBackground></ParticlesBackground>
 		</div>
 	);
 }

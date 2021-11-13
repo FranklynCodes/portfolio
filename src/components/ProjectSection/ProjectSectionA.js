@@ -9,7 +9,7 @@ export default function ProjectSectionA() {
 				<div className="Project-AreaA-Section">
 					<img
 						className="Project-Image"
-						src={GreenHills}
+						src={"https://picsum.photos/600/400"}
 						alt="Green Hills https://picsum.photos/500/500"
 					/>
 				</div>

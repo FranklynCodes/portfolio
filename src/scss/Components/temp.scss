@@ -1,4 +1,6 @@
-// Overview of TechStack
+Overview of TechStack
+
+$Width-SubCard: 100px;
 .TechStack-Title {
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -7,9 +9,6 @@
 	h1,
 	h2 {
 		text-align: center;
-	}
-	h2 {
-		padding-bottom: 0.5em;
 	}
 	.Skills-Card-Flex {
 		display: flex;
@@ -24,18 +23,18 @@
 	}
 	.Skills-ContainerB {
 		display: flex;
-		max-width: 1248px;
+		max-width: 1255px;
 		justify-content: space-between;
 	}
 }
 
 #Skill-Container {
+	// 	border: black 5px solid;
 	border-radius: 15px;
-
-	padding: 1.5em;
+	max-width: max-content;
 	.wrapper {
 		display: flex;
-		// max-width: fit-content;
+		// ~ max-width: fit-content;
 		justify-content: space-evenly;
 		margin: 0 auto;
 	}
@@ -53,12 +52,7 @@
 		.cards_container_Inner_B {
 			flex: 1 0 110px;
 			text-align: center;
-			// TODO: Update this padding to be removed on smaller screens
-			// TODO: Take approach of updating each speciifc card item to give margin too leave first and last element with no margin, other items will do the work. Will save 4px in the long run s
-
-			// padding: 0px 2px;
-			margin: 0px 7px;
-			// margin:
+			padding: 0px 8px;
 		}
 
 		.img_logos {
@@ -67,11 +61,5 @@
 			display: block;
 			margin: 0 auto;
 		}
-	}
-	.cards_container_Inner_B:first-of-type {
-		margin-left: 0px;
-	}
-	.cards_container_Inner_B:last-of-type {
-		margin-right: 0px;
 	}
 }

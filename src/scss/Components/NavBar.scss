@@ -60,23 +60,12 @@ $nav-icon-box-width: 100.6px;
 	}
 
 	#nav-contact-btn {
-		background-color: white;
-		color: rgb(46, 45, 45);
-		padding: 0.45em 1.5em;
-		border: 2px solid #000;
+// 		padding: 0.45em 1.5em;
+		padding: 0.40em 1.25em;
+		border: 1.5px solid #000;
+		border-radius: 5px;
 		text-decoration: none;
-		// 		margin-right: 20px;
 	}
-}
-
-// # NavBar Colors
-$PurpleBackground-NavBar: linear-gradient(90deg, #2c0b4c 12.5%, #500f83, #2c0b4c);
-
-.NavBar-Colors {
-	// background: $PurpleBackground-NavBar;
-	color: black;
-	background-color: white;
-	text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
 }
 
 // # Navigation Break Points
@@ -112,7 +101,7 @@ $PurpleBackground-NavBar: linear-gradient(90deg, #2c0b4c 12.5%, #500f83, #2c0b4c
 	#NavBar-Horizontal-Flex {
 		.flex-end {
 			display: block;
-			margin-left: 24px;
+			margin-left: 15px;
 		}
 	}
 }

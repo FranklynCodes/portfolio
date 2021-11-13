@@ -1,2 +1,228 @@
-$TestColorA: "orange";
-$TestColorB: "aqua";
+// ! Refactor About variables to be more percises 
+// Elements Primary
+$Background-1-OffPurple: #232946;
+$Header-1-A--OffWhite: #fffffe;
+$Header-1-B--OffWhite: #fff4ff;
+$Header-1-C--OffWhite: #fffffe;
+// $Paragraph-1: #c2cbfa;
+$Paragraph-1: #b8c1ec;
+$Button-1: #eebbc3;
+$Button-1-Text: #232946;
+
+// Elements Secondary
+
+$Background-2-OffPurple: #d4d8f0;
+$Background-2-OffWhite: #fffffe;
+
+$Header-2-A--OffPurple: #232946;
+$Header-2-B--OffPurple: #232946;
+$Header-2-C--OffWhite: #fffffe;
+
+$CardHeading-2: #232946;
+$Paragraph-2: #232946;
+
+$Button-2: #eebbc3;
+$Button-2-Text: #232946;
+
+// ! Color UNIQUE
+$Header-Sub-Title: #d4939d;
+
+// # .NavBar-Colors
+
+$NavBar-PurpleBackground: linear-gradient(90deg, #2c0b4c 12.5%, #500f83, #2c0b4c);
+$NavBar-BackGround-Color: #0f0e17; // ! Add This is darker
+$NavBar-BackGround-Color: #17171b;
+$NavBar-BackGround-Color: #7f5af0;
+$NavBar-BackGround-Color: #8d6cf2;
+$NavBar-BackGround-Color: #9b7ef3; // Shift
+$NavBar-BackGround-Color: $Background-1-OffPurple;
+$NavBar-BackGround-Btn-Color: #eebbc3;
+$NavBar-Btn-Color-Text: #232946;
+$NavBar-Text: aliceblue;
+
+.NavBar-Colors {
+	// background: $NavBar-PurpleBackground-;
+	background-color: $NavBar-BackGround-Color;
+	color: aliceblue;
+
+	text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
+
+	#nav-contact-btn {
+		background-color: $NavBar-BackGround-Btn-Color;
+		color: $NavBar-Btn-Color-Text;
+	}
+}
+
+// # Font Awesome
+.fab {
+	// text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6);
+	// text-shadow: 0 0 2.5px rgb(0, 0, 0, , 50%);
+	text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+	color: $Button-1;
+}
+
+// # .About-Color
+.About-Color {
+	background: $Background-1-OffPurple;
+
+	h1,
+	h2 {
+		color: $Header-1-A--OffWhite;
+		// color: $Header-1-B--OffWhite;
+		// color: $Header-1-C--OffWhite;
+	}
+	p {
+		color: $Paragraph-1;
+	}
+}
+
+// # .Project-Title
+
+.Project-Color {
+	.Project-Title {
+		background-color: $Background-2-OffPurple;
+	}
+	#ProjectSection {
+		background-color: $Background-2-OffPurple;
+	}
+	.Project-Section-Inner {
+		background-color: $Background-2-OffWhite;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: $Header-2-A--OffPurple;
+	}
+	p {
+		color: $Paragraph-2;
+	}
+	button {
+		background-color: $Button-2;
+		color: $Button-2-Text;
+	}
+}
+
+// # Anchors
+
+// Anchor/Links
+a:any-link {
+	color: $NavBar-Text;
+}
+
+/* WebKit browsers */
+a:-webkit-any-link {
+	color: $NavBar-Text;
+}
+
+// #TechStack - Colors
+
+$TechStack-BG-Color: #eebbc3;
+$TechStack-Card-BG-Color: #fffffe;
+$TechStack-Header-Color: #232946; // ! Add
+$TechStack-SubHeader-Color: #d4939d; // ! ADD
+
+#TechStack {
+	background-color: $TechStack-BG-Color;
+	#Skill-Container {
+		background-color: $TechStack-Card-BG-Color;
+	}
+	h1,
+	h2,
+	h3 {
+		color: $TechStack-Header-Color;
+	}
+}
+
+$Cert-Bg-Color: #232946;
+$Cert-Top-Header: #fffffe;
+$Cert-Card-Bg-Color: #fffffe;
+$Cert-Header-Color: #232946; // ! ADD
+$Cert-SubHeader-Color: #232946;
+$Cert-Button-Bg-Color: #232946;
+$Cert-Button-Text-Color: #b8c1ec;
+
+#Certification {
+	background-color: $Cert-Bg-Color;
+	h1 {
+		color: $Cert-Top-Header;
+	}
+	h2,
+	h3,
+	h4,
+	a {
+		color: $Cert-Header-Color;
+	}
+	.Cert-Container-Width {
+		background-color: $Cert-Card-Bg-Color;
+	}
+	button {
+		background-color: $Cert-Button-Bg-Color;
+		color: $Cert-Button-Text-Color;
+		text-shadow: 0 0 1px white;
+	}
+}
+
+// # ContactForm Color
+$ContactForm-Bg-Color: #d4d8f0;
+$Contact-Heading-Color: #232946;
+$Contact-Card-Bg-Color: #fffffe;
+
+$Contact-Btn-Color: #121629;
+$Contact-Icon-Color: #232946;
+$Contact-Input-Text-Color: #121629;
+$Contact-Input-Border-Color: #232946;
+$Contact-Input-Outline-Color: #232946;
+$Contact-Btn-Bg-Color: #b8c1ec;
+$Contact-Btn-Bg-Color: #eebbc3;
+$Contact-Send-Btn-Bg-Color-Hover: #232946;
+$Contact-Send-Btn-Color-Hover: #fffffe;
+
+#ContactForm {
+	h1 {
+		color: $Contact-Heading-Color;
+	}
+	background-color: $ContactForm-Bg-Color;
+
+	#form_container {
+		background-color: $Contact-Card-Bg-Color;
+	}
+
+	label,
+	input,
+	select,
+	address,
+	textarea {
+		color: $Contact-Input-Text-Color;
+	}
+
+	.form-example {
+		input,
+		textarea {
+			border: 2.5px solid $Contact-Input-Border-Color;
+			background-color: $ContactForm-Bg-Color;
+
+			&:focus {
+				border: 2.5px solid $Contact-Input-Text-Color;
+				background-color: $Contact-Card-Bg-Color;
+				border-radius: 5px;
+				outline: 1px solid $Contact-Input-Outline-Color;
+			}
+		}
+	}
+	#sendButton {
+		background-color: $Contact-Btn-Bg-Color;
+		border: solid 2.5px $Contact-Input-Text-Color;
+		&:hover {
+			border: solid 2.5px white;
+			background-color: $Contact-Send-Btn-Bg-Color-Hover;
+			color: $Contact-Send-Btn-Color-Hover;
+		}
+	}
+
+	.fab {
+		color: $Contact-Icon-Color;
+		text-shadow: 0px 0px 2px $Contact-Btn-Color;
+	}
+}

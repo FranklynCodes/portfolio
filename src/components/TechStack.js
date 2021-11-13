@@ -3,6 +3,7 @@ import React from "react";
 // Languages
 
 import CPP from "../image/TechStackImages/languages/Cpp.svg";
+import CPPCropped from "../image/TechStackImages/languages/Cpp-cropped.svg";
 import Javascript from "../image/TechStackImages/languages/JavaScript.svg";
 import CHashTag from "../image/TechStackImages/languages/C-sharp.svg";
 import Python from "../image/TechStackImages/languages/Python.svg";
@@ -96,31 +97,8 @@ export default function TechStack() {
 						<h3>C#</h3>
 					</div>
 					<div className="cards_container_Inner_B">
-						<img className="img_logos" src={CPP} alt=" " />
+						<img className="img_logos" src={CPPCropped} alt=" " />
 						<h3>C++</h3>
-					</div>
-				</div>
-			</div>
-		);
-	}
-	function LanguagesVarationTwo() {
-		return (
-			<div id="LanguagesTwo">
-				<div>
-					<h2>Languages</h2>
-				</div>
-				<div className="Flex-Card-Container">
-					<div className="Flex-Card-Items">
-						<img className="img_logos" src={Javascript} alt=" " />
-						<h3>Javascript</h3>
-					</div>
-					<div className="Flex-Card-Items">
-						<img className="img_logos" src={TypeScript} alt=" " />
-						<h3>TypeScript</h3>
-					</div>
-					<div className="Flex-Card-Items">
-						<img className="img_logos" src={Python} alt=" " />
-						<h3>Python</h3>
 					</div>
 				</div>
 			</div>
@@ -286,11 +264,10 @@ export default function TechStack() {
 
 	return (
 		<div id="TechStack">
-			<h1 id="h1_TechStack">TechStack</h1>
+			<h1 className="TechStack-Title">TechStack</h1>
 
 			<div className="Skills-Card-Flex Skills-ContainerA">
 				<Languages />
-				{/* <LanguagesVarationTwo /> */}
 				<QueryTech />
 				<Database />
 			</div>
@@ -299,7 +276,7 @@ export default function TechStack() {
 				<FrontEnd />
 			</div>
 
-			<div className="Skills-Card-Flex Skills-ContainerC">
+			<div className="Skills-Card-Flex">
 				<BackEnd />
 			</div>
 		</div>

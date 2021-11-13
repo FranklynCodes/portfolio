@@ -1,7 +1,3 @@
-#About {
-  font-family: "Times New Roman", Times, serif;
-}
-
 #About Button {
   font-size: 2.5em;
 }
@@ -61,8 +57,6 @@ p {
 .fab,
 .fas {
   font-size: 2.5em;
-  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6);
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.411);
   vertical-align: middle;
 }
 
@@ -75,6 +69,139 @@ p {
 #NavBarHorizontal #nav-contact-btn {
   font-family: "Lato", sans-serif;
   font-size: 26px;
+}
+
+.NavBar-Colors {
+  background-color: #232946;
+  color: aliceblue;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
+}
+.NavBar-Colors #nav-contact-btn {
+  background-color: #eebbc3;
+  color: #232946;
+}
+
+.fab {
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  color: #eebbc3;
+}
+
+.About-Color {
+  background: #232946;
+}
+.About-Color h1,
+.About-Color h2 {
+  color: #fffffe;
+}
+.About-Color p {
+  color: #b8c1ec;
+}
+
+.Project-Color .Project-Title {
+  background-color: #d4d8f0;
+}
+.Project-Color #ProjectSection {
+  background-color: #d4d8f0;
+}
+.Project-Color .Project-Section-Inner {
+  background-color: #fffffe;
+}
+.Project-Color h1,
+.Project-Color h2,
+.Project-Color h3,
+.Project-Color h4 {
+  color: #232946;
+}
+.Project-Color p {
+  color: #232946;
+}
+.Project-Color button {
+  background-color: #eebbc3;
+  color: #232946;
+}
+
+a:any-link {
+  color: aliceblue;
+}
+
+/* WebKit browsers */
+a:-webkit-any-link {
+  color: aliceblue;
+}
+
+#TechStack {
+  background-color: #eebbc3;
+}
+#TechStack #Skill-Container {
+  background-color: #fffffe;
+}
+#TechStack h1,
+#TechStack h2,
+#TechStack h3 {
+  color: #232946;
+}
+
+#Certification {
+  background-color: #232946;
+}
+#Certification h1 {
+  color: #fffffe;
+}
+#Certification h2,
+#Certification h3,
+#Certification h4,
+#Certification a {
+  color: #232946;
+}
+#Certification .Cert-Container-Width {
+  background-color: #fffffe;
+}
+#Certification button {
+  background-color: #232946;
+  color: #b8c1ec;
+  text-shadow: 0 0 1px white;
+}
+
+#ContactForm {
+  background-color: #d4d8f0;
+}
+#ContactForm h1 {
+  color: #232946;
+}
+#ContactForm #form_container {
+  background-color: #fffffe;
+}
+#ContactForm label,
+#ContactForm input,
+#ContactForm select,
+#ContactForm address,
+#ContactForm textarea {
+  color: #121629;
+}
+#ContactForm .form-example input,
+#ContactForm .form-example textarea {
+  border: 2.5px solid #232946;
+  background-color: #d4d8f0;
+}
+#ContactForm .form-example input:focus,
+#ContactForm .form-example textarea:focus {
+  border: 2.5px solid #121629;
+  background-color: #fffffe;
+  border-radius: 5px;
+  outline: 1px solid #232946;
+}
+#ContactForm #sendButton {
+  background-color: #eebbc3;
+  border: solid 2.5px #121629;
+}
+#ContactForm #sendButton:hover {
+  border: solid 2.5px white;
+  background-color: #232946;
+  color: #fffffe;
+}
+#ContactForm .fab {
+  color: #232946;
+  text-shadow: 0px 0px 2px #121629;
 }
 
 .fade-in-fwdA {
@@ -94,10 +221,13 @@ p {
 #About,
 #CardContainer,
 #ContactForm,
-#ProjectSection,
 #SocialContainer,
 #TechStack {
-  scroll-margin-top: 10vh;
+  scroll-margin-top: 7vh;
+}
+
+#ProjectSection {
+  scroll-margin-top: 17vh;
 }
 
 html {
@@ -105,7 +235,6 @@ html {
 }
 
 a:any-link {
-  color: black;
   text-decoration: none;
 }
 
@@ -126,12 +255,13 @@ html ::-moz-scrollbar-track {
 html ::-webkit-scrollbar {
   height: 12px;
   width: 12px;
-  background: #000;
+  background: #181818;
+  background: black;
 }
 html ::-webkit-scrollbar-thumb {
-  background: #393812;
+  background: #d4d8f0;
+  border: solid black 0.5px;
   -webkit-border-radius: 1ex;
-  -webkit-box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.75);
 }
 html ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 1px rgba(255, 0, 0, 0.3);
@@ -139,6 +269,10 @@ html ::-webkit-scrollbar-track {
 }
 html ::-webkit-scrollbar-corner {
   background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: aliceblue;
 }
 
 * {
@@ -156,6 +290,90 @@ Button {
   cursor: pointer;
 }
 
+.scrolldown {
+  color: #eebbc3;
+  position: relative;
+  bottom: 0px;
+  width: 30px;
+  height: 50px;
+  margin-left: 6px;
+  border: 3px solid #eebbc3;
+  border-radius: 50px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1px black;
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #eebbc3;
+  border-radius: 100%;
+  animation: scrolldown-anim 2s infinite;
+  box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px #ffffff66;
+}
+
+@keyframes scrolldown-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
+  }
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+  80% {
+    transform: translate(0, 25px);
+    height: 10px;
+    opacity: 0;
+  }
+  100% {
+    height: 50px;
+    opacity: 0;
+  }
+}
+.chevrons {
+  padding: 6px 0 0 0;
+  margin-left: -3px;
+  margin-top: 48px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chevrondown {
+  margin-top: -6px;
+  position: relative;
+  border: solid #eebbc3;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+}
+
+.chevrondown:nth-child(odd) {
+  animation: pulse 500ms ease infinite alternate;
+}
+
+.chevrondown:nth-child(even) {
+  animation: pulse 500ms ease infinite alternate 250ms;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
 #Social_Container {
   display: flex;
   justify-content: space-evenly;
@@ -212,17 +430,10 @@ Button {
   margin-right: 25px;
 }
 #NavBar-Horizontal-Flex #nav-contact-btn {
-  background-color: white;
-  color: #2e2d2d;
-  padding: 0.45em 1.5em;
-  border: 2px solid #000;
+  padding: 0.4em 1.25em;
+  border: 1.5px solid #000;
+  border-radius: 5px;
   text-decoration: none;
-}
-
-.NavBar-Colors {
-  color: black;
-  background-color: white;
-  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
 }
 
 #Hamburger-block {
@@ -253,7 +464,7 @@ Button {
 
   #NavBar-Horizontal-Flex .flex-end {
     display: block;
-    margin-left: 24px;
+    margin-left: 15px;
   }
 }
 .fas,
@@ -261,6 +472,10 @@ Button {
   font-size: 50px;
 }
 
+#Certification .Cert-Container {
+  max-width: fit-content;
+  margin: 0px auto 0px auto;
+}
 #Certification h1 {
   text-align: center;
 }
@@ -299,37 +514,41 @@ Button {
   align-items: center;
 }
 
-.Cert-Btm-Margin {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 50px;
-  margin-top: 25px;
-}
-
 .Cert-Container-Width {
   width: 100%;
-  max-width: 606px;
+  padding: 2em;
+  border-radius: 20px;
+  margin-bottom: 3em;
 }
 
 #ProjectContainer .Project-Title {
   text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #ProjectSection {
   display: flex;
   justify-content: center;
+  padding-bottom: 3.5em;
 }
 #ProjectSection .Project-Section-Inner {
   display: flex;
-  width: 1500px;
   justify-content: space-evenly;
   align-items: center;
+  gap: 2.5em;
+  padding: 2em;
+  border-radius: 15px;
 }
 #ProjectSection .Project-Section-Inner .Project-AreaA-Section {
   max-height: 500px;
 }
 #ProjectSection .Project-Section-Inner .Project-AreaB-Section {
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 .Btn-Container-Horizontal-Flex {
@@ -341,43 +560,41 @@ Button {
   width: 100%;
   height: auto;
   display: block;
+  border: solid black 1px;
 }
 
-.Project-Title {
-  background-color: aqua;
-  background-color: white;
-}
-
-.Project-Color #ProjectSection {
-  background-color: white;
-}
-.Project-Color #ProjectSection .Project-Section-Inner {
-  background-color: aquamarine;
-  background-color: white;
+.TechStack-Title {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #TechStack h1,
 #TechStack h2 {
   text-align: center;
 }
+#TechStack h2 {
+  padding-bottom: 0.5em;
+}
 #TechStack .Skills-Card-Flex {
   display: flex;
   justify-content: center;
+  margin: 0px auto 0 auto;
+  padding-bottom: 50px;
 }
 #TechStack .Skills-ContainerA {
   display: flex;
   max-width: 1600px;
   justify-content: space-between;
-  margin: auto;
 }
 #TechStack .Skills-ContainerB {
   display: flex;
-  max-width: 1255px;
+  max-width: 1248px;
   justify-content: space-between;
-  margin: auto;
 }
+
 #Skill-Container {
-  max-width: max-content;
+  border-radius: 15px;
+  padding: 1.5em;
 }
 #Skill-Container .wrapper {
   display: flex;
@@ -390,77 +607,59 @@ Button {
   flex-wrap: wrap;
   max-width: max-content;
   margin: 0px auto;
-  padding: 20px 10px 3px 20px;
   box-sizing: content-box;
 }
 #Skill-Container .card_container_Outer_A .cards_container_Inner_B {
-  flex: 1 0 100px;
+  flex: 1 0 110px;
   text-align: center;
-  padding: 0px 8px;
+  margin: 0px 7px;
 }
 #Skill-Container .card_container_Outer_A .img_logos {
   width: 110px;
   height: 110px;
+  display: block;
+  margin: 0 auto;
+}
+#Skill-Container .cards_container_Inner_B:first-of-type {
+  margin-left: 0px;
+}
+#Skill-Container .cards_container_Inner_B:last-of-type {
+  margin-right: 0px;
 }
 
-#LanguagesTwo {
-  border: black 5px solid;
-  max-width: max-content;
+#address-block {
+  margin: auto auto;
+  width: fit-content;
 }
-#LanguagesTwo .Flex-Card-Container {
-  display: flex;
-  flex-flow: wrap;
-  flex-wrap: wrap;
-}
-#LanguagesTwo .Flex-Card-Container .Flex-Card-Items {
-  margin: 0px 25px;
-}
-#LanguagesTwo .Flex-Card-Container .Flex-Card-Items img {
-  width: 110px;
-  height: 110px;
-}
-#LanguagesTwo .Flex-Card-Container .Flex-Card-Items h3 {
-  text-align: center;
+#address-block address {
+  display: inline-block;
 }
 
-#TechStack {
-  background-color: aqua;
-  background-color: white;
+#ContactForm {
+  height: 92vh;
 }
-#TechStack .card_container_Outer_A {
-  background-color: aquamarine;
-  background-color: white;
+#ContactForm #FormContainer {
+  width: fit-content;
+  margin: 0px auto 0px auto;
 }
-#TechStack #LanguagesTwo {
-  background-color: red;
-  background-color: white;
-}
-#TechStack #Skill-Container {
-  background-color: red;
-  background-color: white;
-}
-
 #ContactForm h1 {
   text-align: center;
 }
 #ContactForm .Social_Container_Contact {
-  max-width: 600px;
-  margin: 0 auto;
+  margin-bottom: 2em;
 }
 #ContactForm #form_container {
-  max-width: 800px;
-  margin: 2rem auto;
-  border: 2px solid black;
-  padding: 2rem;
+  padding: 25px;
+  border-radius: 20px;
 }
 #ContactForm #form_container #button {
   display: flex;
   justify-content: center;
-  max-width: 300px;
+  width: 250px;
 }
 #ContactForm label {
   display: block;
-  padding: 1rem 0 0.25rem;
+  padding: 1rem 0 0.5rem 0em;
 }
 #ContactForm .form-example {
   display: flex;
@@ -469,40 +668,33 @@ Button {
   flex-direction: column;
 }
 #ContactForm .form-example label,
-#ContactForm .form-example input {
+#ContactForm .form-example input,
+#ContactForm .form-example textarea {
   width: 500px;
 }
 #ContactForm .form-example textarea {
-  width: 500px;
-  height: 200px;
+  height: 250px;
+  vertical-align: top;
 }
 #ContactForm .form-example input,
 #ContactForm .form-example textarea {
-  padding: 0.25rem;
-  font-size: 18px;
+  padding: 0.4em;
+  font-size: 19px;
 }
 #ContactForm .form-example textarea {
   font-family: inherit;
+  resize: none;
 }
 #ContactForm .form-example #sendButton {
   box-sizing: content-box;
-  margin: 1rem 0;
-  text-transform: uppercase;
+  margin-top: 30px;
   cursor: pointer;
-  border-radius: 100rem;
+  border-radius: 20px;
   font-size: 30px;
 }
-
-#ContactForm form {
-  background-color: white;
-}
-#ContactForm #button {
-  background-color: blue;
-  background-color: white;
-}
-#ContactForm #sendButton {
-  background-color: white;
-  border: solid 1px black;
+#ContactForm address {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 #CardContainer h1 {
@@ -585,13 +777,8 @@ Button {
   padding: 0px 18px;
 }
 
-.card_container_Outer_A {
-  border: black solid 1px;
-}
-
 #About {
-  height: 100vw;
-  max-height: 1000px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -616,6 +803,7 @@ Button {
   max-width: 500px;
   text-align: center;
   margin: auto;
+  text-shadow: 0 0 0.1px white;
 }
 #About button {
   text-align: center;
@@ -629,9 +817,10 @@ Button {
   margin-top: 25px;
 }
 
-.About-Color .About-Container {
-  color: #fffeff;
-  color: black;
+.ScrollDown-Centering {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

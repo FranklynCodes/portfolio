@@ -1,8 +1,10 @@
-@use "./Color/ColorComponents.scss";
 @use "./Font/Typography.scss";
+@use "./color.scss";
 @use "./animation.scss";
-@use "./ScrollingLinks.scss";
+@use "./ScrollingBar-Anchors.scss";
 @use "./Global.scss";
+
+@use "./Components/util/ScrollDownButton.scss";
 
 @use "./Components/SocialContainer.scss";
 @use "./Components/NavBar.scss";

@@ -3,6 +3,8 @@ import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+import ScrollDownButton from "./util/ScrollDownButton.js";
+
 export default function About() {
 	Aos.init({ duration: 1000 });
 	return (
@@ -33,7 +35,7 @@ export default function About() {
 							<i class="far fab fa-envelope"></i>
 						</a>
 					</div>
-					<div data-aos="fade-up" data-aos-delay="1250">
+					<div data-aos="fade-up" data-aos-delay="1300">
 						<a href="https://github.com/franklyncodes" target="_blank" rel="noreferrer">
 							<i className="fab fa-github"></i>
 						</a>
@@ -43,7 +45,7 @@ export default function About() {
 							<i className="fab fa-instagram"></i>
 						</a>
 					</div> */}
-					<div data-aos="fade-up" data-aos-delay="1300">
+					<div data-aos="fade-up" data-aos-delay="1350">
 						<a
 							href="https://twitter.com/FranklynCodes"
 							target="_blank"
@@ -72,6 +74,9 @@ export default function About() {
 							<i className="fab fa-facebook-square"></i>
 						</a>
 					</div> */}
+				</div>
+				<div className="ScrollDown-Centering">
+					<ScrollDownButton  />
 				</div>
 			</div>
 		</div>

@@ -180,8 +180,8 @@ export default function Certification() {
 	}
 	return (
 		<div id="Certification">
-			<h1>Certifications</h1>
-			<div className="Cert-Container-">
+			<h1 className="TechStack-Title">Certifications</h1>
+			<div className="Cert-Container">
 				<AwsCloudPract />
 				<JPMorganChaseCo />
 				<GoldmanSach />

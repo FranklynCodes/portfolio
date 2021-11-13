@@ -18,8 +18,8 @@ $PurpleBackground-About: radial-gradient(
 $PurpleBackgroundAboutDetails: linear-gradient(175deg, #9621ff, #461989);
 
 #About {
-	height: 100vw;
-	max-height: 1000px;
+	height: 100vh;
+	// max-height: 1000px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -44,6 +44,8 @@ $PurpleBackgroundAboutDetails: linear-gradient(175deg, #9621ff, #461989);
 		max-width: 500px;
 		text-align: center;
 		margin: auto;
+		text-shadow: 0 0 0.1px white;
+// 		text-shadow: 0 0 1px white;
 	}
 	button {
 		text-align: center;
@@ -58,11 +60,25 @@ $PurpleBackgroundAboutDetails: linear-gradient(175deg, #9621ff, #461989);
 	}
 }
 
+.ScrollDown-Centering {
+	display: flex;
+	justify-content: center;
+	margin: 50px 0px;
+	// padding-bottom: 200px;
+	// position: relative;
+	// top: 50px;
+	// min-height: 500px;
+}
+
+@media screen and (max-width: 900px) {
+	#About {
+		// height: fit-content;
+	}
+}
+
 .About-Color {
 	// background: $PurpleBackground-About;
 	.About-Container {
 		// background: $PurpleBackgroundAboutDetails;
-		color: #fffeff;
-		color: black;
 	}
 }

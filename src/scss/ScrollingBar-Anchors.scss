@@ -4,21 +4,20 @@
 #About,
 #CardContainer,
 #ContactForm,
-#ProjectSection,
 #SocialContainer,
 #TechStack {
-	scroll-margin-top: 10vh;
+	scroll-margin-top: 7vh;
 }
+#ProjectSection {
+	scroll-margin-top: 17vh;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 // Anchor/Links
 a:any-link {
-	// border: 1px solid blue;
-	// color: white;
-	// color: orange;
-	color: black;
 	text-decoration: none;
 }
 
@@ -43,13 +42,15 @@ a:-webkit-any-link {
 	::-webkit-scrollbar {
 		height: 12px;
 		width: 12px;
-		background: #000;
+		background: rgb(24, 24, 24);
+		background: black;
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: #393812;
+		background: #d4d8f0;
+		border: solid black 0.5px;
 		-webkit-border-radius: 1ex;
-		-webkit-box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.75);
+		// 		-webkit-box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.75);
 	}
 	::-webkit-scrollbar-track {
 		-webkit-box-shadow: inset 0 0 1px rgb(255, 0, 0, 0.3);
@@ -64,6 +65,10 @@ a:-webkit-any-link {
 html {
 	@include FireFoxScrollBarCSS();
 	@include GoogleChromeScrollBar();
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: aliceblue;
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior

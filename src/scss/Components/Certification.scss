@@ -3,6 +3,10 @@ $B-Certifcation-Margin: 10px;
 $C-Certifcation-Margin: 20px;
 
 #Certification {
+	.Cert-Container {
+		max-width: fit-content;
+		margin: 0px auto 0px auto;
+	}
 	h1 {
 		text-align: center;
 	}
@@ -47,15 +51,15 @@ $C-Certifcation-Margin: 20px;
 $Cert-Margin-Sides: 40px;
 
 .Cert-Btm-Margin {
-	margin-left: $Cert-Margin-Sides;
-	margin-right: $Cert-Margin-Sides;
-	margin-bottom: 50px;
-	margin-top: 25px;
+	// margin-left: $Cert-Margin-Sides;
+	// margin-right: $Cert-Margin-Sides;
+	// margin-bottom: 50px;
+	// margin-top: 25px;
 }
 
-$Cert-Container-Width: 606px;
 .Cert-Container-Width {
-	// min-width: max-content;
 	width: 100%;
-	max-width: $Cert-Container-Width;
+	padding: 2em;
+	border-radius: 20px;
+	margin-bottom: 3em;
 }

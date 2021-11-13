@@ -15,7 +15,15 @@
 		display: flex;
 		justify-content: center;
 		margin: 0px auto 0 auto;
-		padding-bottom: 50px;
+		padding-bottom: 3.2em;
+		padding-left: 20px;
+		padding-right: 20px;
+		.Center-Card-Padding {
+			margin: 0px 8px;
+		}
+		.Card-Padding-B {
+			margin-right: 8px;
+		}
 	}
 	.Skills-ContainerA {
 		display: flex;
@@ -44,7 +52,8 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		max-width: max-content;
+		max-width: max-content; // TODO: UPDATE
+
 		// width: fit-content;
 		margin: 0px auto;
 		// padding: 20px 10px 3px 20px;
@@ -54,8 +63,6 @@
 			flex: 1 0 110px;
 			text-align: center;
 			// TODO: Update this padding to be removed on smaller screens
-			// TODO: Take approach of updating each speciifc card item to give margin too leave first and last element with no margin, other items will do the work. Will save 4px in the long run s
-
 			// padding: 0px 2px;
 			margin: 0px 7px;
 			// margin:
@@ -73,5 +80,28 @@
 	}
 	.cards_container_Inner_B:last-of-type {
 		margin-right: 0px;
+	}
+}
+
+$Techstack-Bp-A: 741px;
+$Techstack-Bp-A: 742px;
+
+// Media Query
+
+@media screen and (max-width: $Techstack-Bp-A) {
+	.Skills-Card-Flex {
+		flex-direction: column;
+	}
+
+	#TechStack {
+		.Skills-Card-Flex {
+			.Center-Card-Padding {
+				margin: 20px 0px;
+			}
+			.Card-Padding-B {
+				margin-right: 0px;
+				margin-bottom: 20px;
+			}
+		}
 	}
 }

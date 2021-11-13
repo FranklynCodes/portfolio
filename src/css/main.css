@@ -475,6 +475,8 @@ Button {
 #Certification .Cert-Container {
   max-width: fit-content;
   margin: 0px auto 0px auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #Certification h1 {
   text-align: center;
@@ -531,6 +533,8 @@ Button {
   display: flex;
   justify-content: center;
   padding-bottom: 3.5em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #ProjectSection .Project-Section-Inner {
   display: flex;
@@ -579,7 +583,15 @@ Button {
   display: flex;
   justify-content: center;
   margin: 0px auto 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 3.2em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#TechStack .Skills-Card-Flex .Center-Card-Padding {
+  margin: 0px 8px;
+}
+#TechStack .Skills-Card-Flex .Card-Padding-B {
+  margin-right: 8px;
 }
 #TechStack .Skills-ContainerA {
   display: flex;
@@ -627,6 +639,19 @@ Button {
   margin-right: 0px;
 }
 
+@media screen and (max-width: 742px) {
+  .Skills-Card-Flex {
+    flex-direction: column;
+  }
+
+  #TechStack .Skills-Card-Flex .Center-Card-Padding {
+    margin: 20px 0px;
+  }
+  #TechStack .Skills-Card-Flex .Card-Padding-B {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
 address {
   display: flex;
   justify-content: center;

@@ -217,7 +217,7 @@ export default function TechStack() {
 	}
 	function QueryTech() {
 		return (
-			<div id="Skill-Container">
+			<div id="Skill-Container" className="Center-Card-Padding">
 				<h2>Query Tech</h2>
 				<div className="card_container_Outer_A">
 					<div className="cards_container_Inner_B">
@@ -238,7 +238,7 @@ export default function TechStack() {
 	}
 	function Hosting() {
 		return (
-			<div id="Skill-Container">
+			<div id="Skill-Container" className="Card-Padding-B">
 				<h2>Hosting</h2>
 				<div className="card_container_Outer_A">
 					<div className="cards_container_Inner_B">

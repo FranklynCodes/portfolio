@@ -1,16 +1,17 @@
 #address-block {
-	margin: auto auto;
-	width: fit-content;
-	address {
-		display: inline-block;
-	}
+	// margin: 0 auto;
+	// width: fit-content;
+}
+address {
+	display: flex;
+	justify-content: center;
 }
 
 #ContactForm {
 	height: 92vh;
 	#FormContainer {
-		width: fit-content;
-		margin: 0px auto 0px auto;
+		max-width: 600px;
+		margin: 0 auto;
 	}
 
 	h1 {
@@ -23,6 +24,8 @@
 	#form_container {
 		padding: 25px;
 		border-radius: 20px;
+		margin: 0px 20px;
+		// width: 500px;
 
 		#button {
 			display: flex;
@@ -39,20 +42,20 @@
 
 	.form-example {
 		display: flex;
-		justify-content: flex-start;
+		// justify-content: flex-start;
 		align-items: center;
 		flex-direction: column;
 
-		label,
 		input,
 		textarea {
-			width: 500px;
+			width: 100%;
 		}
 
 		textarea {
 			height: 250px;
 			vertical-align: top;
 		}
+
 		input,
 		textarea {
 			padding: 0.4em;
@@ -81,4 +84,8 @@
 		text-decoration: underline;
 		font-weight: bold;
 	}
+}
+
+.Form-Input-Container {
+	min-width: 100%;
 }

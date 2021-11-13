@@ -627,20 +627,17 @@ Button {
   margin-right: 0px;
 }
 
-#address-block {
-  margin: auto auto;
-  width: fit-content;
-}
-#address-block address {
-  display: inline-block;
+address {
+  display: flex;
+  justify-content: center;
 }
 
 #ContactForm {
   height: 92vh;
 }
 #ContactForm #FormContainer {
-  width: fit-content;
-  margin: 0px auto 0px auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 #ContactForm h1 {
   text-align: center;
@@ -651,6 +648,7 @@ Button {
 #ContactForm #form_container {
   padding: 25px;
   border-radius: 20px;
+  margin: 0px 20px;
 }
 #ContactForm #form_container #button {
   display: flex;
@@ -663,14 +661,12 @@ Button {
 }
 #ContactForm .form-example {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
-#ContactForm .form-example label,
 #ContactForm .form-example input,
 #ContactForm .form-example textarea {
-  width: 500px;
+  width: 100%;
 }
 #ContactForm .form-example textarea {
   height: 250px;
@@ -695,6 +691,10 @@ Button {
 #ContactForm address {
   text-decoration: underline;
   font-weight: bold;
+}
+
+.Form-Input-Container {
+  min-width: 100%;
 }
 
 #CardContainer h1 {

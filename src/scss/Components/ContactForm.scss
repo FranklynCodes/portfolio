@@ -7,8 +7,15 @@ address {
 	justify-content: center;
 }
 
+@mixin TweekLater {
+	// min-height: 100vh;
+	// height: 92vh;
+	// min-height: 1000px;
+	// padding-bottom: 30vh;
+}
 #ContactForm {
-	height: 92vh;
+	padding-bottom: 20px;
+
 	#FormContainer {
 		max-width: 600px;
 		margin: 0 auto;
@@ -69,8 +76,7 @@ address {
 
 		#sendButton {
 			box-sizing: content-box;
-			// margin-top: 25px;
-			margin-top: 30px;
+			margin-top: 0.75em;
 
 			// padding: 0.25rem;
 			// padding: 0.5rem;
@@ -89,3 +95,25 @@ address {
 .Form-Input-Container {
 	min-width: 100%;
 }
+
+$Mobile-HeightSwap: 750px;
+$Mobile-WidthHeightSwap: 450px;
+// TODO: Refactor
+@media screen and (max-height: $Mobile-HeightSwap) and(max-width:$Mobile-WidthHeightSwap) {
+	#ContactForm {
+		height: 100%;
+		scroll-margin-top: 7vh;
+		.Social_Container_Contact {
+			margin-bottom: 1em;
+		}
+		.form-example {
+			textarea {
+				height: 175px;
+			}
+		}
+	}
+	.TechStack-Title {
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+} ;

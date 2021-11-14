@@ -27,7 +27,7 @@ export default function WebsiteContainer() {
 			<Certifications></Certifications>
 			<ContactForm />
 			{/* <ContactFormNetlify /> */}
-			<ParticlesBackground></ParticlesBackground>
+			{/* <ParticlesBackground></ParticlesBackground> */}
 		</div>
 	);
 }

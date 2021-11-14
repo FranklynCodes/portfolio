@@ -1,4 +1,4 @@
-// ! Refactor About variables to be more percises 
+// ! Refactor About variables to be more percises
 // Elements Primary
 $Background-1-OffPurple: #232946;
 $Header-1-A--OffWhite: #fffffe;
@@ -127,6 +127,7 @@ $TechStack-SubHeader-Color: #d4939d; // ! ADD
 	background-color: $TechStack-BG-Color;
 	#Skill-Container {
 		background-color: $TechStack-Card-BG-Color;
+		border: 1px solid $TechStack-Header-Color;
 	}
 	h1,
 	h2,
@@ -187,6 +188,7 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 
 	#form_container {
 		background-color: $Contact-Card-Bg-Color;
+		box-shadow: 0px 0px 3px $Contact-Input-Text-Color;
 	}
 
 	label,

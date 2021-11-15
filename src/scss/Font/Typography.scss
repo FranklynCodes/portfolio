@@ -1,6 +1,6 @@
 $h1_font_size: 2.5em;
 $h2_font_size: 2em;
-$h3_font_size: 1.5em;
+$h3_font_size: 1.55em;
 $Primary_button_font_size: 2.5em;
 $Seconday_Button_font_size: 1.7em;
 $Parapgrah_font_size: 1.4em;
@@ -97,5 +97,32 @@ $Navigation-Horizontal-Font-Size: 26px;
 	#nav-contact-btn {
 		font-family: $PrimaryFont;
 		font-size: $Navigation-Horizontal-Font-Size;
+	}
+}
+
+// #ProjectContainer
+
+$Desktop-Half-1080p: 958px;
+$Desktop-Half-1080p: 975px;
+
+$h1-Subtraction: 0.5em;
+$h2-Subtraction: 0.25em;
+$h3-Subtraction: 0em;
+$p-Subtraction: 0.05em;
+
+@media screen and (max-width: $Desktop-Half-1080p) {
+	#ProjectSection {
+		h1 {
+			font-size: $h1_font_size - $h1-Subtraction;
+		}
+		h2 {
+			font-size: $h2_font_size - $h2-Subtraction;
+		}
+		h3 {
+			font-size: $h3_font_size - $h3-Subtraction;
+		}
+		p {
+			// font-size: $h3_font_size - $p-Subtraction;
+		}
 	}
 }

@@ -1,3 +1,10 @@
+@use "../Font/Typography.scss" as Typography-Var;
+@use "./NavBar.scss" as NavBar-Var;
+
+$Item-A-Margin-Btm: 6px; // H1,H2
+$Item-B-Margin-Btm: 3px; // H3
+$Item-C-Margin-Btm: 20px; // P
+
 #ProjectContainer {
 	.Project-Title {
 		text-align: center;
@@ -18,7 +25,7 @@
 		// 		width: 1500px;
 		justify-content: space-evenly;
 		align-items: center;
-		gap: 2.5em;
+		gap: 1.85em;
 		// margin: 0px 15px;
 		// margin-bottom: 35px;
 		// margin-top: 25px;
@@ -35,6 +42,18 @@
 			flex-direction: column;
 			justify-content: space-evenly;
 			height: 100%;
+			h1 {
+			}
+
+			h2 {
+				margin-bottom: $Item-A-Margin-Btm;
+			}
+			h3 {
+				margin-bottom: $Item-B-Margin-Btm;
+			}
+			p {
+				margin-bottom: $Item-C-Margin-Btm;
+			}
 		}
 	}
 }
@@ -50,4 +69,28 @@
 	height: auto;
 	display: block;
 	border: solid black 1px;
+}
+
+// Media Query
+
+@media screen and (max-width: Typography-Var.$Desktop-Half-1080p) {
+	#ProjectSection {
+		.Project-Section-Inner {
+			// padding: 1.0em;
+			// gap: 2.5em;
+			gap: 1.25em;
+			padding: 1.2em;
+		}
+	}
+}
+
+$Mobile-Image: 375px;
+// nav-mobile-width = 875px 
+@media screen and (max-width: NavBar-Var.$Nav-Mobile-Width) {
+	#ProjectSection {
+		.Project-Image {
+			max-height: $Mobile-Image;
+		}
+	}
+	// TODO: USE JS TO SWITCH IMAGE POISTION WHEN YOU HIT MOBILE VIEW 
 }

@@ -5,50 +5,7 @@ import GreenHills from "../../image/702-500x500.jpg";
 export default function ProjectSectionA() {
 	const MobileBreakPointWidthSize = 850;
 
-	// var ProjectCardContainer = document.querySelector(".Project-Section-Inner").clientWidth;
-	// console.log("ProjectCardContainer:", ProjectCardContainer);
-
-	// var totalViewWidth = document.documentElement.offsetWidth;
-	var totalViewWidth = document.documentElement.offsetWidth;
-	// var MobileWidth = console.log("totalViewWidth:", totalViewWidth);
-	// console.log("totalViewWidth :", totalViewWidth);
-
-	function checkCurrentWindowSize() {
-		totalViewWidth = document.documentElement.offsetWidth;
-		console.log("totalViewWidth:", totalViewWidth);
-	}
-
-	// window.onresize = checkCurrentWindowSize;
-	// console.log("window.onresize:", window.onresize);
-	// console.log("checkCurrentWindowSize;:", checkCurrentWindowSize);
-
-	window.addEventListener("DOMContentLoaded", (event) => {
-		// DestkopTitle.appendChild(MobileTarget);
-		console.log("MobileTitle:", MobileTitle);
-
-		// while (window.onresize) {
-		// 	console.log("window.onresize:", window.onresize);
-		// 	if (window.onresize > 856) {
-		// 		// MobileTitle.after(MobileTarget);
-		// 	} else {
-		// 		DestkopTitle.after(MobileTarget);
-		// 	}
-		// }
-	});
-
-	function WindowResize(MobileBreakPointWidthSize, MobileTitle, MobileTarget, DestkopTitle) {
-		if (window.outerWidth >= MobileBreakPointWidthSize) {
-			// console.log("Shift Images");
-		} else {
-		}
-	}
-
-	// window.onresize = WindowResize(MobileBreakPointWidthSize, MobileTitle, MobileTarget);
-	// WindowResize(MobileBreakPointWidthSize, MobileTitle, MobileTarget);
-
-	var MobileTitle = document.getElementById("Mobile-Image-Mobile");
-	var DestkopTitle = document.getElementById("Mobile-Image-Desktop");
-	var MobileTarget = document.getElementById("Mobile-Image-Target");
+	window.addEventListener("DOMContentLoaded", (event) => {});
 
 	function debounce(fn, ms) {
 		let timer;
@@ -66,41 +23,32 @@ export default function ProjectSectionA() {
 			height: window.innerHeight,
 			width: window.innerWidth,
 		});
-		function DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget) {
-			DestkopTitle.style.display = "none";
-			MobileTitle.after(MobileTarget);
-		}
-
-		function MobileToDesktop(DestkopTitle, MobileTarget) {
-			DestkopTitle.style.display = "block";
-			DestkopTitle.appendChild(MobileTarget);
-		}
-
-		MobileToDesktop(DestkopTitle, MobileTarget);
+		var MobileTitle = document.getElementById("Mobile-Image-Mobile");
+		console.log("MobileTitle:", MobileTitle);
+		var DestkopTitle = document.getElementById("Mobile-Image-Desktop");
+		console.log("DestkopTitle:", DestkopTitle);
+		var MobileTarget = document.getElementById("Mobile-Image-Target");
+		console.log("MobileTarget:", MobileTarget);
 
 		useEffect(() => {
+			console.log("Use-Effect-MobileTarget:", MobileTarget);
 			const debouncedHandleResize = debounce(function handleResize() {
 				setDimensions({
 					height: window.innerHeight,
 					width: window.innerWidth,
 				});
-
-				console.log("setDimensions:", setDimensions);
-			}, 200);
+			}, 250);
 
 			window.addEventListener("resize", debouncedHandleResize);
-
-			// dimensions.width
 			console.log("dimensions.width:", dimensions.width);
-			if (dimensions.width <= MobileBreakPointWidthSize) {
-				DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget);
-			}
+
+			MobileTarget = document.getElementById("Mobile-Image-Target");
+			console.log("MobileTarget:", MobileTarget);
 
 			return (_) => {
 				window.removeEventListener("resize", debouncedHandleResize);
 			};
 		});
-
 		return (
 			<div>
 				Rendered at {dimensions.width} x {dimensions.height}

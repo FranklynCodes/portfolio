@@ -32,7 +32,7 @@ export default function About() {
 				<div id="Social_Container" className="About_Social">
 					<div data-aos="fade-up" data-aos-delay="1250">
 						<a href="mailto:franklynhire@gmail.com" target={"_blank"} rel="noreferrer">
-							<i class="far fab fa-envelope"></i>
+							<i className="far fab fa-envelope"></i>
 						</a>
 					</div>
 					<div data-aos="fade-up" data-aos-delay="1300">

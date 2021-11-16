@@ -50,7 +50,7 @@ export default function ContactForm() {
 						<input type="email" name="email" id="email" required />
 					</div>
 
-					<div class="Form-Input-Container">
+					<div className="Form-Input-Container">
 						<label htmlFor="message">Message:</label>
 						<textarea type="text" id="message" name="message" required></textarea>
 					</div>

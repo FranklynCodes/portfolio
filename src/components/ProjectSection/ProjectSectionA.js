@@ -23,14 +23,15 @@ export default function ProjectSectionA() {
 			height: window.innerHeight,
 			width: window.innerWidth,
 		});
-		var MobileTitle = document.getElementById("Mobile-Image-Mobile");
-		console.log("MobileTitle:", MobileTitle);
-		var DestkopTitle = document.getElementById("Mobile-Image-Desktop");
-		console.log("DestkopTitle:", DestkopTitle);
-		var MobileTarget = document.getElementById("Mobile-Image-Target");
-		console.log("MobileTarget:", MobileTarget);
 
 		useEffect(() => {
+			var MobileTitle = document.getElementById("Mobile-Image-Mobile");
+			console.log("MobileTitle:", MobileTitle);
+			var DestkopTitle = document.getElementById("Mobile-Image-Desktop");
+			console.log("DestkopTitle:", DestkopTitle);
+			var MobileTarget = document.getElementById("Mobile-Image-Target");
+			console.log("MobileTarget:", MobileTarget);
+
 			console.log("Use-Effect-MobileTarget:", MobileTarget);
 			const debouncedHandleResize = debounce(function handleResize() {
 				setDimensions({
@@ -44,6 +45,21 @@ export default function ProjectSectionA() {
 
 			MobileTarget = document.getElementById("Mobile-Image-Target");
 			console.log("MobileTarget:", MobileTarget);
+
+			function DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget) {
+				DestkopTitle.style.display = "none";
+				MobileTitle.after(MobileTarget);
+			}
+			function MobileToDesktop(DestkopTitle, MobileTarget) {
+				DestkopTitle.style.display = "block";
+				DestkopTitle.appendChild(MobileTarget);
+			}
+
+			if (dimensions.width <= MobileBreakPointWidthSize) {
+				DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget);
+			} else {
+				MobileToDesktop(DestkopTitle, MobileTarget);
+			}
 
 			return (_) => {
 				window.removeEventListener("resize", debouncedHandleResize);

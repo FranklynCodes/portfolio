@@ -13,6 +13,26 @@ export default function ProjectContainer() {
 		display: "block",
 	};
 
+	var AllMobileTitleElements, AllDesktopTitleElements, AllMobileTargetElements;
+
+	window.addEventListener("DOMContentLoaded", (event) => {
+		console.log("DOM fully loaded and parsed");
+		AllMobileTitleElements = document.querySelectorAll("#Mobile-Image-Mobile");
+		AllDesktopTitleElements = document.querySelectorAll("#Mobile-Image-Desktop");
+		AllMobileTargetElements = document.querySelectorAll("#Mobile-Image-Target");
+
+		
+		for (let index = 0; index < AllMobileTargetElements.length; index++) {
+			console.log("PRE-UPDATED");
+			AllMobileTargetElements[index].style.display = "none";
+			console.log("AllMobileTargetElements:", [index], AllMobileTargetElements[index]);
+		}
+
+		console.log("AllMobileTargetElements:", AllMobileTargetElements);
+		console.log("AllMobileTitleElements:", AllMobileTitleElements);
+		console.log("AllDesktopTitleElements:", AllDesktopTitleElements);
+	});
+
 	const MobileBreakPointWidthSize = 850;
 
 	function debounce(fn, ms) {
@@ -78,30 +98,61 @@ export default function ProjectContainer() {
 
 	function ProjectSectionA() {
 		return (
-			<div id="ProjectSection" className="Project-Section-A">
-				<div className="Project-Section-Inner">
-					<div id="Mobile-Image-Desktop" className="Project-AreaA-Section">
-						<img
-							id="Mobile-Image-Target"
-							className="Project-Image"
-							src={"https://picsum.photos/600/400"}
-							alt="Green Hills https://picsum.photos/500/500"
-						/>
+			<div>
+				<div id="ProjectSection" className="Project-Section-A">
+					<div className="Project-Section-Inner">
+						<div id="Mobile-Image-Desktop" className="Project-AreaA-Section">
+							<img
+								id="Mobile-Image-Target"
+								className="Project-Image"
+								src={"https://picsum.photos/600/400"}
+								alt="Green Hills https://picsum.photos/500/500"
+							/>
+						</div>
+						<div className="Project-AreaB-Section">
+							<MyComponent></MyComponent>
+							<h1>Ecommerece2 Folder</h1>
+							<h2>Full Stack Ecommerece Website</h2>
+							<h3 id="Mobile-Image-Mobile"> React, Redux, Node, Express, MongoDB</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non
+								unde, velit officiis consectetur numquam quos libero dolorum neque
+								nemo culpa ad alias amet, ipsam veniam cupiditate inventore
+								doloremque consequuntur?
+							</p>
+							<div className="Btn-Container-Horizontal-Flex">
+								<button>Live Demo</button>
+								<button>Source Code</button>
+							</div>
+						</div>
 					</div>
-					<div className="Project-AreaB-Section">
-						<MyComponent></MyComponent>
-						<h1>Ecommerece2 Folder</h1>
-						<h2>Full Stack Ecommerece Website</h2>
-						<h3 id="Mobile-Image-Mobile"> React, Redux, Node, Express, MongoDB</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non unde,
-							velit officiis consectetur numquam quos libero dolorum neque nemo culpa
-							ad alias amet, ipsam veniam cupiditate inventore doloremque
-							consequuntur?
-						</p>
-						<div className="Btn-Container-Horizontal-Flex">
-							<button>Live Demo</button>
-							<button>Source Code</button>
+				</div>
+				<div id="ProjectSection">
+					<div className="Project-Section-Inner">
+						<div id="Mobile-Image-Desktop" className="Project-AreaA-Section">
+							<img
+								id="Mobile-Image-Target"
+								className="Project-Image"
+								src={"https://picsum.photos/600/400"}
+								alt="Green Hills https://picsum.photos/500/500"
+							/>
+						</div>
+						<div className="Project-AreaB-Section">
+							<MyComponent></MyComponent>
+							<h1>Ecommerce1 Folder </h1>
+							<h1>Full Stack E-Commerece Using Commerce.js API </h1>
+							<h2 id="Mobile-Image-Mobile">React, Commerce.js</h2>
+
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non
+								unde, velit officiis consectetur numquam quos libero dolorum neque
+								nemo culpa ad alias amet, ipsam veniam cupiditate inventore
+								doloremque consequuntur?
+							</p>
+							<div className="Btn-Container-Horizontal-Flex">
+								<button>Live Demo</button>
+								<button>Source Code</button>
+							</div>
 						</div>
 					</div>
 				</div>

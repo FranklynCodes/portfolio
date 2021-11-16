@@ -23,25 +23,8 @@ export default function ProjectSectionA() {
 	// console.log("checkCurrentWindowSize;:", checkCurrentWindowSize);
 
 	window.addEventListener("DOMContentLoaded", (event) => {
-		var MobileTitle = document.getElementById("Mobile-Image-Mobile");
-		var DestkopTitle = document.getElementById("Mobile-Image-Desktop");
-		var MobileTarget = document.getElementById("Mobile-Image-Target");
-
 		// DestkopTitle.appendChild(MobileTarget);
 		console.log("MobileTitle:", MobileTitle);
-
-		function DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget) {
-			DestkopTitle.style.display = "none";
-			MobileTitle.after(MobileTarget);
-		}
-
-		function MobileToDesktop(DestkopTitle, MobileTarget) {
-			DestkopTitle.style.display = "block";
-			DestkopTitle.appendChild(MobileTarget);
-		}
-
-		DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget);
-		MobileToDesktop(DestkopTitle, MobileTarget);
 
 		// while (window.onresize) {
 		// 	console.log("window.onresize:", window.onresize);
@@ -63,6 +46,10 @@ export default function ProjectSectionA() {
 	// window.onresize = WindowResize(MobileBreakPointWidthSize, MobileTitle, MobileTarget);
 	// WindowResize(MobileBreakPointWidthSize, MobileTitle, MobileTarget);
 
+	var MobileTitle = document.getElementById("Mobile-Image-Mobile");
+	var DestkopTitle = document.getElementById("Mobile-Image-Desktop");
+	var MobileTarget = document.getElementById("Mobile-Image-Target");
+
 	function debounce(fn, ms) {
 		let timer;
 		return (_) => {
@@ -79,20 +66,41 @@ export default function ProjectSectionA() {
 			height: window.innerHeight,
 			width: window.innerWidth,
 		});
+		function DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget) {
+			DestkopTitle.style.display = "none";
+			MobileTitle.after(MobileTarget);
+		}
+
+		function MobileToDesktop(DestkopTitle, MobileTarget) {
+			DestkopTitle.style.display = "block";
+			DestkopTitle.appendChild(MobileTarget);
+		}
+
+		MobileToDesktop(DestkopTitle, MobileTarget);
+
 		useEffect(() => {
 			const debouncedHandleResize = debounce(function handleResize() {
 				setDimensions({
 					height: window.innerHeight,
 					width: window.innerWidth,
 				});
+
 				console.log("setDimensions:", setDimensions);
-			}, 100);
+			}, 200);
 
 			window.addEventListener("resize", debouncedHandleResize);
+
+			// dimensions.width
+			console.log("dimensions.width:", dimensions.width);
+			if (dimensions.width <= MobileBreakPointWidthSize) {
+				DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget);
+			}
+
 			return (_) => {
 				window.removeEventListener("resize", debouncedHandleResize);
 			};
 		});
+
 		return (
 			<div>
 				Rendered at {dimensions.width} x {dimensions.height}

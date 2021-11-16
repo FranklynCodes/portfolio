@@ -11,7 +11,7 @@ import ParticlesBackground from "../components/Particles/ParticlesBackground.jsx
 import About from "../components/About";
 
 import { tsParticles } from "tsparticles";
-import ProjectContainer from "../components/ProjectSection/ProjectContainer";
+import ProjectContainer from "../components/ProjectSection";
 import ContactFormNetlify from "../components/ContactFormNetlify";
 
 // Certifications

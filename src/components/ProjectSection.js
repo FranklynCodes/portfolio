@@ -26,6 +26,14 @@ export default function ProjectContainer() {
 							<h1>Ecommerece2 Folder</h1>
 							<h2>Full Stack Ecommerece Website</h2>
 							<h3 id="SubTitle"> React, Redux, Node, Express, MongoDB</h3>
+							<div id="ImageContainerB" className="Project-AreaA-Section">
+								<img
+									id="Project-Image"
+									className="Project-Image"
+									src={"https://picsum.photos/600/400"}
+									alt="Green Hills https://picsum.photos/500/500"
+								/>
+							</div>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non
 								unde, velit officiis consectetur numquam quos libero dolorum neque
@@ -52,6 +60,14 @@ export default function ProjectContainer() {
 							<h1>Ecommerce1 Folder </h1>
 							<h1>Full Stack E-Commerece Using Commerce.js API </h1>
 							<h2 id="SubTitle">React, Commerce.js</h2>
+							<div id="ImageContainerB" className="Project-AreaA-Section">
+								<img
+									id="Project-Image"
+									className="Project-Image"
+									src={"https://picsum.photos/600/400"}
+									alt="Green Hills https://picsum.photos/500/500"
+								/>
+							</div>
 
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non
@@ -85,6 +101,14 @@ export default function ProjectContainer() {
 						<h1>Ecommerce1 Folder </h1>
 						<h1>Full Stack E-Commerece Using Commerce.js API </h1>
 						<h2 id="SubTitle">React, Commerce.js</h2>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								id="Project-Image"
+								className="Project-Image"
+								src={"https://picsum.photos/600/400"}
+								alt="Green Hills https://picsum.photos/500/500"
+							/>
+						</div>
 
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non unde,
@@ -117,6 +141,14 @@ export default function ProjectContainer() {
 						<h1>004_markdown_blog Folder</h1>
 						<h1>MERN - MarkDown Blog </h1>
 						<h2 id="SubTitle">React, Node.js, Express.js, MongoDB</h2>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								id="Project-Image"
+								className="Project-Image"
+								src={"https://picsum.photos/600/400"}
+								alt="Green Hills https://picsum.photos/500/500"
+							/>
+						</div>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non unde,
 							velit officiis consectetur numquam quos libero dolorum neque nemo culpa
@@ -148,6 +180,14 @@ export default function ProjectContainer() {
 						<h1>maps1 Folder</h1>
 						<h1>Vacation Tour Application</h1>
 						<h2 id="SubTitle">Google Maps Api, GooglePlaces Api, React, GPS</h2>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								id="Project-Image"
+								className="Project-Image"
+								src={"https://picsum.photos/600/400"}
+								alt="Green Hills https://picsum.photos/500/500"
+							/>
+						</div>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non unde,
 							velit officiis consectetur numquam quos libero dolorum neque nemo culpa
@@ -177,6 +217,14 @@ export default function ProjectContainer() {
 					<div className="Project-AreaB-Section">
 						<h1>React Authentication Application - Firebase</h1>
 						<h2 id="SubTitle">Firebase</h2>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								id="Project-Image"
+								className="Project-Image"
+								src={"https://picsum.photos/600/400"}
+								alt="Green Hills https://picsum.photos/500/500"
+							/>
+						</div>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non unde,
 							velit officiis consectetur numquam quos libero dolorum neque nemo culpa
@@ -207,6 +255,14 @@ export default function ProjectContainer() {
 					<div className="Project-AreaB-Section">
 						<h1>Trello - Javascript 03 Folder</h1>
 						<h2>React, React id="SubTitle"-Dropable</h2>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								id="Project-Image"
+								className="Project-Image"
+								src={"https://picsum.photos/600/400"}
+								alt="Green Hills https://picsum.photos/500/500"
+							/>
+						</div>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non unde,
 							velit officiis consectetur numquam quos libero dolorum neque nemo culpa
@@ -237,6 +293,14 @@ export default function ProjectContainer() {
 					<div className="Project-AreaB-Section">
 						<h1>Currency Convertor</h1>
 						<h2>API Calls To Fetch id="SubTitle" Currency</h2>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								id="Project-Image"
+								className="Project-Image"
+								src={"https://picsum.photos/600/400"}
+								alt="Green Hills https://picsum.photos/500/500"
+							/>
+						</div>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non unde,
 							velit officiis consectetur numquam quos libero dolorum neque nemo culpa
@@ -267,7 +331,15 @@ export default function ProjectContainer() {
 					<div className="Project-AreaB-Section">
 						<h1>Search for folder</h1>
 						<h1>Javascript Clock</h1>
-						id="SubTitle"<h2>Vanilia Javascript</h2>
+						<h2>Vanilia Javascript</h2>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								id="Project-Image"
+								className="Project-Image"
+								src={"https://picsum.photos/600/400"}
+								alt="Green Hills https://picsum.photos/500/500"
+							/>
+						</div>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non unde,
 							velit officiis consectetur numquam quos libero dolorum neque nemo culpa

@@ -85,12 +85,15 @@ $Item-C-Margin-Btm: 20px; // P
 }
 
 $Mobile-Image: 375px;
-// nav-mobile-width = 875px 
-@media screen and (max-width: NavBar-Var.$Nav-Mobile-Width) {
+// nav-mobile-width = 875px
+@media screen and (max-width: NavBar-Var.$Nav-Mobile-Width ) {
 	#ProjectSection {
 		.Project-Image {
 			max-height: $Mobile-Image;
 		}
+		// #Mobile-Image-Desktop {
+		// 	display: none;
+		// }
 	}
-	// TODO: USE JS TO SWITCH IMAGE POISTION WHEN YOU HIT MOBILE VIEW 
+	// TODO: USE JS TO SWITCH IMAGE POISTION WHEN YOU HIT MOBILE VIEW
 }

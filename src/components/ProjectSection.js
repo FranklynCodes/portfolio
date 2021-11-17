@@ -13,26 +13,6 @@ export default function ProjectContainer() {
 		display: "block",
 	};
 
-	var AllMobileTitleElements, AllDesktopTitleElements, AllMobileTargetElements;
-
-	window.addEventListener("DOMContentLoaded", (event) => {
-		console.log("DOM fully loaded and parsed");
-		AllMobileTitleElements = document.querySelectorAll("#Mobile-Image-Mobile");
-		AllDesktopTitleElements = document.querySelectorAll("#Mobile-Image-Desktop");
-		AllMobileTargetElements = document.querySelectorAll("#Mobile-Image-Target");
-
-		
-		for (let index = 0; index < AllMobileTargetElements.length; index++) {
-			console.log("PRE-UPDATED");
-			AllMobileTargetElements[index].style.display = "none";
-			console.log("AllMobileTargetElements:", [index], AllMobileTargetElements[index]);
-		}
-
-		console.log("AllMobileTargetElements:", AllMobileTargetElements);
-		console.log("AllMobileTitleElements:", AllMobileTitleElements);
-		console.log("AllDesktopTitleElements:", AllDesktopTitleElements);
-	});
-
 	const MobileBreakPointWidthSize = 850;
 
 	function debounce(fn, ms) {
@@ -52,20 +32,33 @@ export default function ProjectContainer() {
 		});
 
 		useEffect(() => {
+			var AllMobileTitleElements, AllDesktopTitleElements, AllImageElements;
+
+			AllMobileTitleElements = document.querySelectorAll("#Mobile-Image-Mobile");
+
+			AllDesktopTitleElements = document.querySelectorAll("#Mobile-Image-Desktop"); // This under top All AllDesktopTitleElements[index].after(AllImageElements[index])
+
+			AllImageElements = document.querySelectorAll("#Mobile-Image-Target");
+
+			// AllImageElements[0].after(AllMobileTitleElements[0]);
+			// AllDesktopTitleElements[0].after(AllImageElements[0]);
+			// AllImageElements[0].after(AllMobileTitleElements[0]);
+			// AllMobileTitleElements[0].after(AllImageElements[0]);
+
 			// TODO: Refactor this to usecomponents, MUST get var elements before dom load
 			var MobileTitle = document.getElementById("Mobile-Image-Mobile");
-			console.log("MobileTitle:", MobileTitle);
 			var DestkopTitle = document.getElementById("Mobile-Image-Desktop");
-			console.log("DestkopTitle:", DestkopTitle);
 			var MobileTarget = document.getElementById("Mobile-Image-Target");
-			console.log("MobileTarget:", MobileTarget);
+			// console.log("MobileTitle:", MobileTitle);
+			// console.log("DestkopTitle:", DestkopTitle);
+			// console.log("MobileTarget:", MobileTarget);
 
-			console.log("Use-Effect-MobileTarget:", MobileTarget);
+			// console.log("Use-Effect-MobileTarget:", MobileTarget);
 			const debouncedHandleResize = debounce(function handleResize() {
 				setDimensions({
 					width: window.innerWidth,
 				});
-			}, 250);
+			}, 200);
 
 			window.addEventListener("resize", debouncedHandleResize);
 			console.log("dimensions.width:", dimensions.width);
@@ -73,19 +66,30 @@ export default function ProjectContainer() {
 			MobileTarget = document.getElementById("Mobile-Image-Target");
 			console.log("MobileTarget:", MobileTarget);
 
-			function DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget) {
-				DestkopTitle.style.display = "none";
-				MobileTitle.after(MobileTarget);
+			function DesktopToMobile(AllMobileTitleElements, AllDesktopTitleElements) {
+				console.log("DesktopToMobile Fired");
+				for (let index = 0; index < AllMobileTitleElements.length; index++) {
+					// AllDesktopTitleElements[index].style.display = "block";
+					// AllMobileTitleElements[index].after(AllImageElements[index]);
+					// AllDesktopTitleElements[index].after(AllImageElements[index]);
+					// AllDesktopTitleElements[index].appendChild(AllImageElements[index])
+					// AllDesktopTitleElements[index].style.display = "none"
+					AllMobileTitleElements[index].after(AllImageElements[index]);
+				}
 			}
-			function MobileToDesktop(DestkopTitle, MobileTarget) {
-				DestkopTitle.style.display = "block";
-				DestkopTitle.appendChild(MobileTarget);
+
+			function MobileToDesktop(AllDesktopTitleElements, AllImageElements) {
+				console.log("MobileToDesktop Fired");
+				for (let index = 0; index < AllMobileTitleElements.length; index++) {
+					// AllDesktopTitleElements[index].style.display = "block";
+					// AllDesktopTitleElements[index].appendChild(AllImageElements[index]);
+				}
 			}
 
 			if (dimensions.width <= MobileBreakPointWidthSize) {
-				DesktopToMobile(DestkopTitle, MobileTitle, MobileTarget);
+				DesktopToMobile(AllMobileTitleElements, AllDesktopTitleElements);
 			} else {
-				MobileToDesktop(DestkopTitle, MobileTarget);
+				MobileToDesktop(AllDesktopTitleElements, AllImageElements);
 			}
 
 			return (_) => {

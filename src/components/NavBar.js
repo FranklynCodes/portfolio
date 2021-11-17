@@ -1,6 +1,4 @@
-// NavBarHorinzontalReact renamed to NavBar
-
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -52,20 +50,11 @@ const NavHover = styled.span`
 	}
 `;
 
-function faBarsClick() {
-	var x = document.getElementById("myTopnav");
-
-	console.log(x);
-	if (x.className === "topnav") {
-		x.className += " responsive";
-		console.log(x);
-	} else {
-		x.className = "topnav";
-		console.log(x);
-	}
-}
-
 export default function NavBarHorizontalReact() {
+	const [click, setClick] = useState(false);
+	const handleClick = () => setClick(!click);
+	const closeMobileMenu = () => setClick(false);
+
 	Aos.init({ duration: 1000 });
 	return (
 		<div id="NavBarHorizontal" className="NavBar-Colors">
@@ -79,6 +68,7 @@ export default function NavBarHorizontalReact() {
 				<div id="logo-nav" className="flex-start">
 					Franklyn
 				</div>
+
 				<nav id="nav-links" className="flex-center">
 					<div className="align-padding">
 						<a href="#About">
@@ -106,6 +96,7 @@ export default function NavBarHorizontalReact() {
 						</a>
 					</div>
 				</nav>
+
 				<div className="flex-end">
 					<div id="nav-icon-box">
 						{/* <a href="/#" target="">
@@ -126,10 +117,16 @@ export default function NavBarHorizontalReact() {
 					<i className="fab fa-linkedin"></i>
 				</a>
 
-				<div id="Hamburger-block">
-					<a href="#/" className="icon" onClick={faBarsClick}>
-						<i className="fas fa-bars"></i>
-					</a>
+				<div id="Hamburger-block" className="mobile-menu">
+					{click ? (
+						<a href="#/" className="icon">
+							<i className="fas fa-bars"></i>
+						</a>
+					) : (
+						<a href="#/" className="icon">
+							<i class="fas fa-times"></i>
+						</a>
+					)}
 				</div>
 			</div>
 		</div>

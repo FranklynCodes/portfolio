@@ -59,7 +59,7 @@ export default function Certification() {
 					</a>
 
 					<div className="Btn-Container-Horizontal-Flex">
-						<a href={"/#/"} target="_blank">
+						<a href={"/#/"} target="_blank" rel="noreferrer">
 							<button>See Credential</button>
 						</a>
 					</div>
@@ -174,9 +174,6 @@ export default function Certification() {
 				</div>
 			</div>
 		);
-	}
-	function Test() {
-		return <div></div>;
 	}
 	return (
 		<div id="Certification">

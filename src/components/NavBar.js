@@ -110,7 +110,12 @@ export default function NavBarHorizontalReact() {
 
 					<div>{/* <a id = "nav_btn--anchor" href="/#" target="">Resume</a> */}</div>
 				</div>
-				<a id="Center-Logo" href="https://www.linkedin.com/in/franklyncodes/" target="">
+				<a
+					id="Center-Logo"
+					href="https://www.linkedin.com/in/franklyncodes/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<i className="fab fa-linkedin"></i>
 				</a>
 

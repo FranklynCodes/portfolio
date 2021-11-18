@@ -34,7 +34,7 @@ export default function ContactForm() {
 				</div>
 
 				<form action="" method="get" id="form_container" className="form-example">
-					<div id="address-block" className="Form-Input-Container">
+					<div id="address-block">
 						<a href="mailto:franklynhire@gmail.com" target={"_blank"} rel="noreferrer">
 							<address>franklynhire@gmail.com</address>
 						</a>

@@ -69,28 +69,28 @@ export default function NavBarHorizontalReact() {
 					Franklyn
 				</div>
 
-				<nav id="nav-links" className="flex-center">
-					<div className="align-padding">
+				<nav id="nav-links" className={click ? "flex-center active" : "flex-center"}>
+					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="#About">
 							<NavHover>About</NavHover>
 						</a>
 					</div>
-					<div className="align-padding">
+					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="https://github.com/franklyncodes" target="_blank" rel="noreferrer">
 							<NavHover>GitHub</NavHover>
 						</a>
 					</div>
-					<div className="align-padding">
+					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="#ProjectSection">
 							<NavHover>Projects</NavHover>
 						</a>
 					</div>
-					<div className="align-padding">
+					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="https://www.google.com/drive/" target="_blank" rel="noreferrer">
 							<NavHover>Resume</NavHover>
 						</a>
 					</div>
-					<div className="align-padding">
+					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="#TechStack">
 							<NavHover>TechStack</NavHover>
 						</a>
@@ -99,9 +99,6 @@ export default function NavBarHorizontalReact() {
 
 				<div className="flex-end">
 					<div id="nav-icon-box">
-						{/* <a href="/#" target="">
-							<i className="fab fa-twitter-square"></i>
-						</a> */}
 						<a href="https://www.linkedin.com/in/franklyncodes/" target="">
 							<i className="fab fa-linkedin"></i>
 						</a>
@@ -117,14 +114,14 @@ export default function NavBarHorizontalReact() {
 					<i className="fab fa-linkedin"></i>
 				</a>
 
-				<div id="Hamburger-block" className="mobile-menu">
+				<div id="Hamburger-block" className="mobile-menu" onClick={handleClick}>
 					{click ? (
 						<a href="#/" className="icon">
-							<i className="fas fa-bars"></i>
+							<i class="fas fa-times"></i>
 						</a>
 					) : (
 						<a href="#/" className="icon">
-							<i class="fas fa-times"></i>
+							<i className="fas fa-bars"></i>
 						</a>
 					)}
 				</div>

@@ -9,7 +9,7 @@ export default function ContactForm() {
 					<div id="Social_Container">
 						<div>
 							<a href="/#/" target="">
-								<i className="fab fa-linkedin"></i>
+								<i className="fab fa-linkedin Hover-fab-Type-B"></i>
 							</a>
 						</div>
 						<div>
@@ -18,7 +18,7 @@ export default function ContactForm() {
 								target="_blank"
 								rel="noreferrer"
 							>
-								<i className="fab fa-github"></i>
+								<i className="fab fa-github Hover-fab-Type-B"></i>
 							</a>
 						</div>
 						<div>
@@ -27,7 +27,7 @@ export default function ContactForm() {
 								target="_blank"
 								rel="noreferrer"
 							>
-								<i className="fab fa-twitter-square"></i>
+								<i className="fab fa-twitter-square Hover-fab-Type-B"></i>
 							</a>
 						</div>
 					</div>

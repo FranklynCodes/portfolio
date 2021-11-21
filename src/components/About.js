@@ -32,17 +32,17 @@ export default function About() {
 				<div id="Social_Container" className="About_Social">
 					<div data-aos="fade-up" data-aos-delay="1250">
 						<a href="mailto:franklynhire@gmail.com" target={"_blank"} rel="noreferrer">
-							<i className="far fab fa-envelope"></i>
+							<i className="far Hover-fab-Type-B fab fa-envelope"></i>
 						</a>
 					</div>
 					<div data-aos="fade-up" data-aos-delay="1300">
 						<a href="https://github.com/franklyncodes" target="_blank" rel="noreferrer">
-							<i className="fab fa-github"></i>
+							<i className="Hover-fab-Type-B fab fa-github"></i>
 						</a>
 					</div>
 					{/* <div data-aos="fade-up" data-aos-delay="1250">
 						<a href="/#/" target="">
-							<i className="fab fa-instagram"></i>
+							<i className="Hover-fab-Type-B fab fa-instagram"></i>
 						</a>
 					</div> */}
 					<div data-aos="fade-up" data-aos-delay="1350">
@@ -51,32 +51,32 @@ export default function About() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<i className="fab fa-twitter-square"></i>
+							<i className="Hover-fab-Type-B fab fa-twitter-square"></i>
 						</a>
 					</div>
 					{/* <div data-aos="fade-up" data-aos-delay="1350">
 						<a href="/#/" target="">
-							<i className="fab fa-linkedin"></i>
+							<i className="Hover-fab-Type-B fab fa-linkedin"></i>
 						</a>
 					</div> */}
 					{/* <div data-aos="fade-up" data-aos-delay="1400">
 						<a href="/#/" target="">
-							<i className="fab fa-youtube"></i>
+							<i className="Hover-fab-Type-B fab fa-youtube"></i>
 						</a>
 					</div> */}
 					{/* <div>
 						<a href="/#/" target="">
-							<i className="fab fa-twitch"></i>
+							<i className="Hover-fab-Type-B fab fa-twitch"></i>
 						</a>
 					</div> */}
 					{/* <div>
 						<a href="/#/" target="">
-							<i className="fab fa-facebook-square"></i>
+							<i className="Hover-fab-Type-B fab fa-facebook-square"></i>
 						</a>
 					</div> */}
 				</div>
 				<div className="ScrollDown-Centering">
-					<ScrollDownButton  />
+					<ScrollDownButton />
 				</div>
 			</div>
 		</div>

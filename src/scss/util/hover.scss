@@ -1,0 +1,124 @@
+@use "../color.scss" as color;
+
+.NavHover {
+	&:hover:after {
+		width: 100%;
+		left: calc(50% - 40%);
+	}
+	&:after {
+		background: none repeat scroll 0 0 transparent;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 3px;
+		left: 50%;
+		// position: absolute;
+		// background: ${(props) => (props.light ? "black" : "white")};
+		background: #eebbc3;
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+		width: 0;
+	}
+}
+// TODO was old stylecomponent
+.NavLink {
+	position: relative;
+	font-weight: 500;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 10px 6px;
+
+	&:hover:after {
+		width: 80%;
+		left: calc(50% - 40%);
+	}
+	&:after {
+		background: none repeat scroll 0 0 transparent;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 3px;
+		left: 50%;
+		position: absolute;
+		// background: ${(props) => (props.light ? "black" : "white")};
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+		width: 0;
+	}
+}
+
+#nav-contact-btn {
+	&:hover {
+		border: solid 2.5px white;
+		background-color: color.$Background-2-OffPurple;
+		color: color.$Background-1-OffPurple;
+		box-shadow: 0px 0px 1px white;
+	}
+}
+.Hover-Btn-Type-A {
+	border: solid 2.5px color.$Contact-Input-Text-Color;
+	&:hover {
+		// border: solid 2.5px white;
+		background-color: color.$Background-2-OffPurple;
+		color: color.$Background-1-OffPurple;
+		box-shadow: 0px 0px 1px white;
+	}
+	&:focus {
+		outline: 1px solid color.$Contact-Input-Border-Color;
+	}
+}
+.Hover-fab-Type-B {
+	&:hover {
+		text-shadow: 0px 0px 1.5px color.$Header-1-A--OffWhite;
+		color: color.$Background-2-OffPurple;
+	}
+}
+.Hover-fab-Type-A {
+	&:hover {
+		// color: color.$Background-2-OffPurple;
+		text-shadow: 0px 0px 3px color.$Header-1-A--OffWhite;
+	}
+}
+
+#ContactForm {
+	.Hover-fab-Type-B {
+		&:hover {
+			// text-shadow: 0px 0px 1.5px color.$Header-1-A--OffWhite;
+			text-shadow: 0px 0px 3px rgb(49, 49, 49);
+			text-shadow: 0px 0px 3px rgb(14, 14, 14);
+			text-shadow: 0px 0px 3px black;
+			color: color.$Button-1;
+		}
+	}
+}
+
+.Project-Btn-Hover {
+	background-color: color.$Contact-Btn-Bg-Color;
+	border: solid 2.5px color.$Contact-Icon-Color;
+	border: solid 2.5px color.$Contact-Input-Text-Color;
+	&:hover {
+		box-sizing: content-box;
+
+		background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
+		color: color.$Contact-Send-Btn-Color-Hover;
+	}
+	&:focus {
+		outline: 1px solid color.$Contact-Input-Border-Color;
+	}
+}
+
+.Cert-Btn {
+	background-color: color.$Cert-Button-Bg-Color;
+	color: color.$Cert-Button-Text-Color;
+	border: solid 2.5px color.$Contact-Input-Text-Color;
+	text-shadow: 0 0 0.1px color.$Header-1-A--OffWhite;
+	&:hover {
+		background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
+		color: color.$Contact-Send-Btn-Color-Hover;
+		background-color: color.$Background-2-OffPurple;
+		// background-color: color.$TechStack-BG-Color;
+		color: color.$Background-1-OffPurple;
+		// border: 5px white;
+	}
+	&:focus {
+		outline: 0.5px solid color.$Contact-Input-Border-Color;
+	}
+}

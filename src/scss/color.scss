@@ -45,11 +45,16 @@ $NavBar-Text: aliceblue;
 	background-color: $NavBar-BackGround-Color;
 	color: aliceblue;
 
-	text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
+	// TODO: text-shadow?
+	// text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
+	text-shadow: 0px 0px 1px white;
 
 	#nav-contact-btn {
 		background-color: $NavBar-BackGround-Btn-Color;
 		color: $NavBar-Btn-Color-Text;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
 
@@ -158,11 +163,6 @@ $Cert-Button-Text-Color: #b8c1ec;
 	.Cert-Container-Width {
 		background-color: $Cert-Card-Bg-Color;
 	}
-	button {
-		background-color: $Cert-Button-Bg-Color;
-		color: $Cert-Button-Text-Color;
-		text-shadow: 0 0 1px white;
-	}
 }
 
 // # ContactForm Color
@@ -188,14 +188,19 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 
 	#form_container {
 		background-color: $Contact-Card-Bg-Color;
+
+		font-weight: bold;
 		box-shadow: 0px 0px 3px $Contact-Input-Text-Color;
 	}
 
 	label,
-	input,
 	select,
 	address,
 	textarea {
+		color: $Contact-Input-Text-Color;
+		color: $TechStack-Header-Color;
+	}
+	input {
 		color: $Contact-Input-Text-Color;
 	}
 
@@ -226,5 +231,13 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 	.fab {
 		color: $Contact-Icon-Color;
 		text-shadow: 0px 0px 2px $Contact-Btn-Color;
+	}
+}
+
+.ContactBtnHover {
+	&:hover {
+		border: solid 2.5 px white;
+		background-color: #232946;
+		color: #fffffe;
 	}
 }

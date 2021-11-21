@@ -85,11 +85,14 @@ p {
 .NavBar-Colors {
   background-color: #232946;
   color: aliceblue;
-  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
+  text-shadow: 0px 0px 1px white;
 }
 .NavBar-Colors #nav-contact-btn {
   background-color: #eebbc3;
   color: #232946;
+}
+.NavBar-Colors #nav-contact-btn:hover {
+  cursor: pointer;
 }
 
 .fab {
@@ -168,11 +171,6 @@ a:-webkit-any-link {
 #Certification .Cert-Container-Width {
   background-color: #fffffe;
 }
-#Certification button {
-  background-color: #232946;
-  color: #b8c1ec;
-  text-shadow: 0 0 1px white;
-}
 
 #ContactForm {
   background-color: #d4d8f0;
@@ -182,13 +180,17 @@ a:-webkit-any-link {
 }
 #ContactForm #form_container {
   background-color: #fffffe;
+  font-weight: bold;
   box-shadow: 0px 0px 3px #121629;
 }
 #ContactForm label,
-#ContactForm input,
 #ContactForm select,
 #ContactForm address,
 #ContactForm textarea {
+  color: #121629;
+  color: #232946;
+}
+#ContactForm input {
   color: #121629;
 }
 #ContactForm .form-example input,
@@ -215,6 +217,12 @@ a:-webkit-any-link {
 #ContactForm .fab {
   color: #232946;
   text-shadow: 0px 0px 2px #121629;
+}
+
+.ContactBtnHover:hover {
+  border: solid 2.5 px white;
+  background-color: #232946;
+  color: #fffffe;
 }
 
 .fade-in-fwdA {
@@ -305,6 +313,110 @@ Button {
 
 html {
   background-color: red;
+}
+
+.NavHover:hover:after {
+  width: 100%;
+  left: calc(50% - 40%);
+}
+.NavHover:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  background: #eebbc3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.NavLink {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 6px;
+}
+.NavLink:hover:after {
+  width: 80%;
+  left: calc(50% - 40%);
+}
+.NavLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#nav-contact-btn:hover {
+  border: solid 2.5px white;
+  background-color: #d4d8f0;
+  color: #232946;
+  box-shadow: 0px 0px 1px white;
+}
+
+.Hover-Btn-Type-A {
+  border: solid 2.5px #121629;
+}
+.Hover-Btn-Type-A:hover {
+  background-color: #d4d8f0;
+  color: #232946;
+  box-shadow: 0px 0px 1px white;
+}
+.Hover-Btn-Type-A:focus {
+  outline: 1px solid #232946;
+}
+
+.Hover-fab-Type-B:hover {
+  text-shadow: 0px 0px 1.5px #fffffe;
+  color: #d4d8f0;
+}
+
+.Hover-fab-Type-A:hover {
+  text-shadow: 0px 0px 3px #fffffe;
+}
+
+#ContactForm .Hover-fab-Type-B:hover {
+  text-shadow: 0px 0px 3px #313131;
+  text-shadow: 0px 0px 3px #0e0e0e;
+  text-shadow: 0px 0px 3px black;
+  color: #eebbc3;
+}
+
+.Project-Btn-Hover {
+  background-color: #eebbc3;
+  border: solid 2.5px #232946;
+  border: solid 2.5px #121629;
+}
+.Project-Btn-Hover:hover {
+  box-sizing: content-box;
+  background-color: #232946;
+  color: #fffffe;
+}
+.Project-Btn-Hover:focus {
+  outline: 1px solid #232946;
+}
+
+.Cert-Btn {
+  background-color: #232946;
+  color: #b8c1ec;
+  border: solid 2.5px #121629;
+  text-shadow: 0 0 0.1px #fffffe;
+}
+.Cert-Btn:hover {
+  background-color: #232946;
+  color: #fffffe;
+  background-color: #d4d8f0;
+  color: #232946;
+}
+.Cert-Btn:focus {
+  outline: 0.5px solid #232946;
 }
 
 .scrolldown {
@@ -446,7 +558,6 @@ html {
   border-radius: 5px;
   text-decoration: none;
 }
-
 #Center-Logo {
   display: none;
 }

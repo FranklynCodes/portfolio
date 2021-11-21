@@ -2,53 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
 import { Link as Links } from "react-scroll";
 
-// ${md({ fontSize: "24px", padding: "10px 25px" })};
-const NavLink = styled(Links)`
-	position: relative;
-	font-weight: 500;
-	font-size: 16px;
-	cursor: pointer;
-	padding: 10px 6px;
-
-	&:hover:after {
-		width: 80%;
-		left: calc(50% - 40%);
-	}
-	&:after {
-		background: none repeat scroll 0 0 transparent;
-		bottom: 0;
-		content: "";
-		display: block;
-		height: 3px;
-		left: 50%;
-		position: absolute;
-		background: ${(props) => (props.light ? "black" : "white")};
-		transition: width 0.3s ease 0s, left 0.3s ease 0s;
-		width: 0;
-	}
-`;
-const NavHover = styled.span`
-	&:hover:after {
-		width: 100%;
-		left: calc(50% - 40%);
-	}
-	&:after {
-		background: none repeat scroll 0 0 transparent;
-		bottom: 0;
-		content: "";
-		display: block;
-		height: 3px;
-		left: 50%;
-		// position: absolute;
-		// background: ${(props) => (props.light ? "black" : "white")};
-		background: #eebbc3;
-		transition: width 0.3s ease 0s, left 0.3s ease 0s;
-		width: 0;
-	}
-`;
+// const NavLink = styled(Links)``;
 
 export default function NavBarHorizontalReact() {
 	const [click, setClick] = useState(false);
@@ -66,33 +22,33 @@ export default function NavBarHorizontalReact() {
 				// data-aos-anchor-placement="center-center"
 			>
 				<div id="logo-nav" className="flex-start">
-					Franklyn
+					<div>Franklyn</div>
 				</div>
 
 				<nav id="nav-links" className={click ? "flex-center active" : "flex-center"}>
 					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="#About">
-							<NavHover>About</NavHover>
+							<div className="NavHover">About</div>
 						</a>
 					</div>
 					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="https://github.com/franklyncodes" target="_blank" rel="noreferrer">
-							<NavHover>GitHub</NavHover>
+							<div className="NavHover">GitHub</div>
 						</a>
 					</div>
 					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="#ProjectSection">
-							<NavHover>Projects</NavHover>
+							<div className="NavHover">Projects</div>
 						</a>
 					</div>
 					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="https://www.google.com/drive/" target="_blank" rel="noreferrer">
-							<NavHover>Resume</NavHover>
+							<div className="NavHover">Resume</div>
 						</a>
 					</div>
 					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="#TechStack">
-							<NavHover>TechStack</NavHover>
+							<div className="NavHover">TechStack</div>
 						</a>
 					</div>
 				</nav>
@@ -100,11 +56,15 @@ export default function NavBarHorizontalReact() {
 				<div className="flex-end">
 					<div id="nav-icon-box">
 						<a href="https://www.linkedin.com/in/franklyncodes/" target="">
-							<i className="fab fa-linkedin"></i>
+							<i className="fab fa-linkedin Hover-fab-Type-B"></i>
 						</a>
 					</div>
 
-					<a id="nav-contact-btn" href="#ContactForm" target="">
+					<a
+						id="nav-contact-btn"						
+						href="#ContactForm" // | TODO: REFACTOR
+						target=""
+					>
 						Contact
 					</a>
 
@@ -116,18 +76,19 @@ export default function NavBarHorizontalReact() {
 					target="_blank"
 					rel="noreferrer"
 				>
-					<i className="fab fa-linkedin"></i>
+					<i className="fab fa-linkedin Hover-fab-Type-B"></i>
 				</a>
 
 				<div id="Hamburger-block" className="mobile-menu" onClick={handleClick}>
 					{click ? (
 						<a href="#/" className="icon">
-							<i class="fas fa-times"></i>
+							<i class="fas fa-times Hover-fab-Type-A"></i>
 						</a>
 					) : (
 						<a href="#/" className="icon">
-							<i className="fas fa-bars"></i>
+							<i className="fas fa-bars Hover-fab-Type-A"></i>
 						</a>
+						
 					)}
 				</div>
 			</div>

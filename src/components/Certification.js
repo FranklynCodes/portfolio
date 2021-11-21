@@ -60,7 +60,8 @@ export default function Certification() {
 
 					<div className="Btn-Container-Horizontal-Flex">
 						<a href={"/#/"} target="_blank" rel="noreferrer">
-							<button>See Credential</button>
+							{/* <button className="Cert-Btn" onClick={(e) => e.currentTarget.blur()}> */}
+							<button className="Cert-Btn">See Credential</button>
 						</a>
 					</div>
 				</div>
@@ -114,7 +115,8 @@ export default function Certification() {
 					<h4>Credentail ID: {ChaseCredentailId}</h4>
 					<div className="Btn-Container-Horizontal-Flex">
 						<a href={ChaseCredentailUrl} target="_blank" rel="noreferrer">
-							<button>See Credential</button>
+							{/* <button className="Cert-Btn" onClick={(e) => e.currentTarget.blur()}> */}
+							<button className="Cert-Btn">See Credential</button>
 						</a>
 					</div>
 				</div>
@@ -168,7 +170,9 @@ export default function Certification() {
 					<h4>Credentail ID: {GoldmanSachCredentailId}</h4>
 					<div className="Btn-Container-Horizontal-Flex">
 						<a href={GoldmanSachCredentailUrl} target="_blank" rel="noreferrer">
-							<button>See Credential</button>
+							{/* //TODO: REMOVE ONCLICK MOST LIKELY BAD ACCESSIBILTY PRATICE */}
+							{/* <button className="Cert-Btn" onClick={(e) => e.currentTarget.blur()}> */}
+							<button className="Cert-Btn">See Credential</button>
 						</a>
 					</div>
 				</div>

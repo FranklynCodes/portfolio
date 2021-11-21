@@ -68,9 +68,6 @@ import Certifications from "./Certification";
  * | Commented out DotNet
  * | Commented out Docker ?
  *
- *
- *
- *
  */
 
 export default function TechStack() {

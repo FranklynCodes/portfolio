@@ -41,8 +41,8 @@ export default function ProjectContainer() {
 								doloremque consequuntur?
 							</p>
 							<div className="Btn-Container-Horizontal-Flex">
-								<button>Live Demo</button>
-								<button>Source Code</button>
+								<button className="Project-Btn-Hover">Live Demo</button>
+								<button className="Hover-Btn-Type-A">Source Code</button>
 							</div>
 						</div>
 					</div>
@@ -76,8 +76,8 @@ export default function ProjectContainer() {
 								doloremque consequuntur?
 							</p>
 							<div className="Btn-Container-Horizontal-Flex">
-								<button>Live Demo</button>
-								<button>Source Code</button>
+								<button className="Project-Btn-Hover">Live Demo</button>
+								<button className="Hover-Btn-Type-A">Source Code</button>
 							</div>
 						</div>
 					</div>
@@ -117,8 +117,8 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<button>Live Demo</button>
-							<button>Source Code</button>
+							<button className="Project-Btn-Hover">Live Demo</button>
+							<button className="Hover-Btn-Type-A">Source Code</button>
 						</div>
 					</div>
 				</div>
@@ -156,8 +156,8 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<button>Live Demo</button>
-							<button>Source Code</button>
+							<button className="Project-Btn-Hover">Live Demo</button>
+							<button className="Hover-Btn-Type-A">Source Code</button>
 						</div>
 					</div>
 				</div>
@@ -195,8 +195,8 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<button>Live Demo</button>
-							<button>Source Code</button>
+							<button className="Project-Btn-Hover">Live Demo</button>
+							<button className="Hover-Btn-Type-A">Source Code</button>
 						</div>
 					</div>
 				</div>
@@ -232,8 +232,8 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<button>Live Demo</button>
-							<button>Source Code</button>
+							<button className="Project-Btn-Hover">Live Demo</button>
+							<button className="Hover-Btn-Type-A">Source Code</button>
 						</div>
 					</div>
 				</div>
@@ -270,8 +270,8 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<button>Live Demo</button>
-							<button>Source Code</button>
+							<button className="Project-Btn-Hover">Live Demo</button>
+							<button className="Hover-Btn-Type-A">Source Code</button>
 						</div>
 					</div>
 				</div>
@@ -308,8 +308,8 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<button>Live Demo</button>
-							<button>Source Code</button>
+							<button className="Project-Btn-Hover">Live Demo</button>
+							<button className="Hover-Btn-Type-A">Source Code</button>
 						</div>
 					</div>
 				</div>
@@ -347,8 +347,8 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<button>Live Demo</button>
-							<button>Source Code</button>
+							<button className="Project-Btn-Hover">Live Demo</button>
+							<button className="Hover-Btn-Type-A">Source Code</button>
 						</div>
 					</div>
 				</div>

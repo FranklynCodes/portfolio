@@ -11,7 +11,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Lato", sans-serif;
 }
 
@@ -48,6 +49,10 @@ h2 {
 
 h3 {
   font-size: 1.55em;
+}
+
+h4 {
+  font-size: 1.25em;
 }
 
 p {
@@ -253,15 +258,6 @@ a:-webkit-any-link {
 
 html {
   scroll-behavior: smooth;
-}
-
-a:any-link {
-  text-decoration: none;
-}
-
-/* WebKit browsers */
-a:-webkit-any-link {
-  text-decoration: none;
 }
 
 html {
@@ -568,6 +564,10 @@ html {
   font-size: 54.8px;
 }
 
+#nav-links a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1068px) {
   #NavBarHorizontal #logo-nav,
 #NavBarHorizontal #nav-links,
@@ -694,12 +694,57 @@ html {
 #Certification .Certification-Padding-C {
   margin-bottom: 20px;
 }
-#Certification a {
-  width: 100%;
-  max-width: 425px;
+#Certification .Anchor-Certification-Btn {
+  text-decoration: none;
 }
-#Certification a button {
-  width: 100%;
+#Certification .Btn-Container-Horizontal-Flex {
+  margin-top: 10px;
+}
+#Certification .AnchorLinks-Container-Flex {
+  padding-bottom: 10px;
+}
+#Certification .Cert-Style-Anchor {
+  padding-bottom: 10px;
+}
+
+#Certification .Anchor-Certification-Btn {
+  font-size: 1.5em;
+  background-color: #232946;
+  color: #b8c1ec;
+  border: solid 2.5px #121629;
+  text-shadow: 0 0 0.1px #fffffe;
+  padding: 0px 20px;
+  font-family: "Merriweather", serif;
+}
+#Certification .Anchor-Certification-Btn:hover {
+  background-color: #d4d8f0;
+  color: #232946;
+}
+#Certification .Anchor-Certification-Btn:focus {
+  outline: 0.5px solid #232946;
+}
+
+.Cert-Container-Width:-webkit-any-link,
+.Cert-Container-Width:any-link {
+  text-decoration: underline;
+}
+.Cert-Container-Width:-webkit-any-link .Cert-Anchor-Style:-webkit-any-link,
+.Cert-Container-Width:any-link .Cert-Anchor-Style:-webkit-any-link {
+  text-decoration: underline;
+}
+.Cert-Container-Width:-webkit-any-link .Cert-Anchor-Style:any-link,
+.Cert-Container-Width:any-link .Cert-Anchor-Style:any-link {
+  text-decoration: underline;
+}
+
+.AnchorLinks-Container-Flex {
+  display: flex;
+  justify-content: space-between;
+}
+.AnchorLinks-Container-Flex a {
+  text-decoration: underline;
+  font-size: 1em;
+  font-family: "Merriweather", serif;
 }
 
 .Certification-Container-flex {

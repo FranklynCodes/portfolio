@@ -25,14 +25,13 @@ export default function Certification() {
 						<h4>In-Progress</h4>
 						<div className="Certification-Padding-B">
 							<h3 className="underline">
-								Issued by{" "}
 								<a
 									// href="https://aws.amazon.com/certification/certified-cloud-practitioner/"
 									href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"
 									target="_blank"
 									rel="noreferrer"
 								>
-									Amazon Web Services Training and Certification
+									Issued by Amazon Web Services Training and Certification
 								</a>
 							</h3>
 						</div>
@@ -44,24 +43,27 @@ export default function Certification() {
 								projects.
 							</p> */}
 					</div>
+					<div className="AnchorLinks-Container-Flex">
+						<a href={AwsCertifcationInfromation} target={"_blank"} rel="noreferrer">
+							Certification Overview
+						</a>
+						<a href={AwsExamGuide} target={"_blank"} rel="noreferrer">
+							Certification Details
+						</a>
+						<a href={AwsRampUpGuide} target={"_blank"} rel="noreferrer">
+							AWS Ramp-Up Guide
+						</a>
+					</div>
 					<h4>Credentail ID: ...</h4>
 
-					<a href={AwsCertifcationInfromation} target={"_blank"} rel="noreferrer">
-						Certification Overview
-					</a>
-					<br />
-					<a href={AwsExamGuide} target={"_blank"} rel="noreferrer">
-						Certification Details
-					</a>
-					<br />
-					<a href={AwsRampUpGuide} target={"_blank"} rel="noreferrer">
-						AWS Ramp-Up Guide
-					</a>
-
 					<div className="Btn-Container-Horizontal-Flex">
-						<a href={"/#/"} target="_blank" rel="noreferrer">
-							{/* <button className="Cert-Btn" onClick={(e) => e.currentTarget.blur()}> */}
-							<button className="Cert-Btn">See Credential</button>
+						<a
+							className="Anchor-Certification-Btn"
+							href={"/#/"}
+							target="_blank"
+							rel="noreferrer"
+						>
+							See Credentail
 						</a>
 					</div>
 				</div>
@@ -78,9 +80,6 @@ export default function Certification() {
 
 		return (
 			<div className="Certification-Container-flex Cert-Btm-Margin">
-				{/* <div>
-					<img src={AwsCloudPractitioner} alt="AWS Cloud Practitioner Certification" />
-				</div> */}
 				<div className="Cert-Container-Width">
 					<h2 className="align-L Certification-Padding-A">JPMorgan Chase & Co.</h2>
 					<h2 className="align-L Certification-Padding-A">
@@ -101,22 +100,21 @@ export default function Certification() {
 								</a> */}
 							</h3>
 						</div>
-						{/* <p className="Certification-Padding-C">
-							Earners of this certification have a fundamental understanding of IT
-							services and their uses in the AWS Cloud. They demonstrated cloud
-							fluency and foundational AWS knowledge. Badge owners are able to
-							identify essential AWS services necessary to set up AWS-focused
-							projects.
-						</p> */}
 					</div>
-					<a href={ChaseCertifcationInformation} target="_blank" rel="noreferrer">
-						Certifcation Overview
-					</a>
+					<div className="AnchorLinks-Container-Flex">
+						<a href={ChaseCertifcationInformation} target={"_blank"} rel="noreferrer">
+							Certification Overview
+						</a>
+					</div>
 					<h4>Credentail ID: {ChaseCredentailId}</h4>
 					<div className="Btn-Container-Horizontal-Flex">
-						<a href={ChaseCredentailUrl} target="_blank" rel="noreferrer">
-							{/* <button className="Cert-Btn" onClick={(e) => e.currentTarget.blur()}> */}
-							<button className="Cert-Btn">See Credential</button>
+						<a
+							href={ChaseCredentailUrl}
+							className="Anchor-Certification-Btn"
+							target="_blank"
+							rel="noreferrer"
+						>
+							See Credential
 						</a>
 					</div>
 				</div>
@@ -164,15 +162,22 @@ export default function Certification() {
 							sed. Nunc vitae mauris vulputate, sollicitudin turpis quis, dictum
 						</p> */}
 					</div>
-					<a href={GoldmanSachInformation} target="_blank" rel="noreferrer">
-						Certifcation Overview
-					</a>
+					<div className="AnchorLinks-Container-Flex">
+						<a href={GoldmanSachInformation} target={"_blank"} rel="noreferrer">
+							Certification Overview
+						</a>
+					</div>
 					<h4>Credentail ID: {GoldmanSachCredentailId}</h4>
+
 					<div className="Btn-Container-Horizontal-Flex">
-						<a href={GoldmanSachCredentailUrl} target="_blank" rel="noreferrer">
-							{/* //TODO: REMOVE ONCLICK MOST LIKELY BAD ACCESSIBILTY PRATICE */}
+						<a
+							href={GoldmanSachCredentailUrl}
+							className="Anchor-Certification-Btn"
+							target="_blank"
+							rel="noreferrer"
+						>
+							See Credential
 							{/* <button className="Cert-Btn" onClick={(e) => e.currentTarget.blur()}> */}
-							<button className="Cert-Btn">See Credential</button>
 						</a>
 					</div>
 				</div>
@@ -190,3 +195,5 @@ export default function Certification() {
 		</div>
 	);
 }
+
+// | {/* <button className="Cert-Btn" onClick={(e) => e.currentTarget.blur()}> */}

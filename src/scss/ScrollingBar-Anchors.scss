@@ -17,14 +17,14 @@ html {
 }
 
 // Anchor/Links
-a:any-link {
-	text-decoration: none;
-}
+// a:any-link {
+// 	text-decoration: none;
+// }
 
-/* WebKit browsers */
-a:-webkit-any-link {
-	text-decoration: none;
-}
+// /* WebKit browsers */
+// a:-webkit-any-link {
+// 	text-decoration: none;
+// }
 
 // ScrollBar
 @mixin FireFoxScrollBarCSS {

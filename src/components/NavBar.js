@@ -55,7 +55,7 @@ export default function NavBarHorizontalReact() {
 
 				<div className="flex-end">
 					<div id="nav-icon-box">
-						<a href="https://www.linkedin.com/in/franklyncodes/" target="">
+						<a href="https://www.linkedin.com/in/franklyncodes/" target="_blank" rel="noreferrer">
 							<i className="fab fa-linkedin Hover-fab-Type-B"></i>
 						</a>
 					</div>

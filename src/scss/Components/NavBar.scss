@@ -84,6 +84,11 @@ $BreakPoint-NavBar-B: 907px;
 $Shrink-Nav-Text: 23px;
 $Shink-Nav-Padding: 0.75em;
 
+#nav-links {
+	a {
+		text-decoration: none;
+	}
+}
 @media screen and (max-width: $BreakPoint-NavBar-A) {
 	#NavBarHorizontal #logo-nav,
 	#NavBarHorizontal #nav-links,

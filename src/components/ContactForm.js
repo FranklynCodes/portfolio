@@ -8,7 +8,11 @@ export default function ContactForm() {
 				<div className="Social_Container_Contact">
 					<div id="Social_Container">
 						<div>
-							<a href="https://www.linkedin.com/in/franklyncodes/" target="_blank" rel="noreferrer">
+							<a
+								href="https://www.linkedin.com/in/franklyncodes/"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<i className="fab fa-linkedin Hover-fab-Type-B"></i>
 							</a>
 						</div>

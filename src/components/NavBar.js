@@ -55,20 +55,18 @@ export default function NavBarHorizontalReact() {
 
 				<div className="flex-end">
 					<div id="nav-icon-box">
-						<a href="https://www.linkedin.com/in/franklyncodes/" target="_blank" rel="noreferrer">
+						<a
+							href="https://www.linkedin.com/in/franklyncodes/"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<i className="fab fa-linkedin Hover-fab-Type-B"></i>
 						</a>
 					</div>
 
-					<a
-						id="nav-contact-btn"						
-						href="#ContactForm" // | TODO: REFACTOR
-						target=""
-					>
+					<a id="nav-contact-btn" href="#ContactForm" target="">
 						Contact
 					</a>
-
-					<div>{/* <a id = "nav_btn--anchor" href="/#" target="">Resume</a> */}</div>
 				</div>
 				<a
 					id="Center-Logo"
@@ -88,7 +86,6 @@ export default function NavBarHorizontalReact() {
 						<a href="#/" className="icon">
 							<i className="fas fa-bars Hover-fab-Type-A"></i>
 						</a>
-						
 					)}
 				</div>
 			</div>

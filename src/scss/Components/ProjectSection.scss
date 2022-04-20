@@ -5,6 +5,8 @@ $Item-A-Margin-Btm: 6px; // H1,H2
 $Item-B-Margin-Btm: 3px; // H3
 $Item-C-Margin-Btm: 20px; // P
 
+$ProjS-Btn-Size: 5px;
+
 #ProjectContainer {
 	.Project-Title {
 		text-align: center;
@@ -19,6 +21,10 @@ $Item-C-Margin-Btm: 20px; // P
 	padding-bottom: 3.5em;
 	padding-left: 20px;
 	padding-right: 20px;
+	a {
+		padding: 0px 20px;
+		border-radius: $ProjS-Btn-Size;
+	}
 
 	.Project-Section-Inner {
 		display: flex;

@@ -1,4 +1,6 @@
 // ! Refactor About variables to be more percises
+// ! Only font and background colors in color.scss
+
 // Elements Primary
 $Background-1-OffPurple: #232946;
 $Header-1-A--OffWhite: #fffffe;
@@ -56,6 +58,14 @@ $NavBar-Text: aliceblue;
 			cursor: pointer;
 		}
 	}
+	a:any-link {
+		color: $NavBar-Text;
+	}
+
+	/* WebKit browsers */
+	a:-webkit-any-link {
+		color: $NavBar-Text;
+	}
 }
 
 // # Font Awesome
@@ -90,6 +100,10 @@ $NavBar-Text: aliceblue;
 	#ProjectSection {
 		background-color: $Background-2-OffPurple;
 	}
+	a {
+		background-color: $Button-2;
+		color: $Button-2-Text;
+	}
 	.Project-Section-Inner {
 		background-color: $Background-2-OffWhite;
 	}
@@ -113,14 +127,14 @@ $NavBar-Text: aliceblue;
 
 // Anchor/Links
 // TODO: Refactor or remove a:any-link colors
-a:any-link {
-	color: $NavBar-Text;
-}
+// a:any-link {
+// 	color: $NavBar-Text;
+// }
 
-/* WebKit browsers */
-a:-webkit-any-link {
-	color: $NavBar-Text;
-}
+// /* WebKit browsers */
+// a:-webkit-any-link {
+// 	color: $NavBar-Text;
+// }
 
 // #TechStack - Colors
 
@@ -142,29 +156,19 @@ $TechStack-SubHeader-Color: #d4939d; // ! ADD
 	}
 }
 
+// # Certification Colors
+
 $Cert-Bg-Color: #232946;
 $Cert-Top-Header: #fffffe;
 $Cert-Card-Bg-Color: #fffffe;
 $Cert-Header-Color: #232946; // ! ADD
 $Cert-SubHeader-Color: #232946;
-$Cert-Button-Bg-Color: #232946;
-$Cert-Button-Text-Color: #b8c1ec;
+$Cert-Button-Bg-Color: #232946; // !
+$Cert-Button-Text-Color: #b8c1ec; // Not enough contrast
+$Cert-Button-Text-Color-A: #d8ddf9; // !
 
-#Certification {
-	background-color: $Cert-Bg-Color;
-	h1 {
-		color: $Cert-Top-Header;
-	}
-	h2,
-	h3,
-	h4,
-	a {
-		color: $Cert-Header-Color;
-	}
-	.Cert-Container-Width {
-		background-color: $Cert-Card-Bg-Color;
-	}
-}
+$Cert-Button-Focus-Bg-Color: $Background-1-OffPurple;
+$Cert-Button-Focus-Text-Color: $Background-2-OffPurple;
 
 // # ContactForm Color
 $ContactForm-Bg-Color: #d4d8f0;
@@ -180,6 +184,40 @@ $Contact-Btn-Bg-Color: #b8c1ec;
 $Contact-Btn-Bg-Color: #eebbc3;
 $Contact-Send-Btn-Bg-Color-Hover: #232946;
 $Contact-Send-Btn-Color-Hover: #fffffe;
+
+#Certification {
+	background-color: $Cert-Bg-Color;
+	h1 {
+		color: $Cert-Top-Header;
+	}
+	h2,
+	h3,
+	h4,
+	a {
+		color: $Cert-Header-Color;
+	}
+	.Cert-Container-Width {
+		background-color: $Cert-Card-Bg-Color;
+	}
+	.Certification-Anchor-Btn {
+		color: $Cert-Button-Text-Color-A;
+		background-color: $Cert-Button-Bg-Color;
+		text-shadow: 0 0 0.1px $Header-1-A--OffWhite;
+		border: solid 2.5px $Contact-Input-Text-Color;
+		&:hover {
+			color: $Background-1-OffPurple;
+			background-color: $Background-2-OffPurple;
+		}
+
+		&:focus {
+			outline: 0.5px solid $Contact-Input-Border-Color;
+		}
+		&:focus-visible {
+			color: $Cert-Button-Focus-Bg-Color;
+			background-color: $Cert-Button-Focus-Text-Color;
+		}
+	}
+}
 
 #ContactForm {
 	h1 {
@@ -224,8 +262,8 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 		border: solid 2.5px $Contact-Input-Text-Color;
 		&:hover {
 			border: solid 2.5px white;
-			background-color: $Contact-Send-Btn-Bg-Color-Hover;
 			color: $Contact-Send-Btn-Color-Hover;
+			background-color: $Contact-Send-Btn-Bg-Color-Hover;
 		}
 	}
 
@@ -237,8 +275,8 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 
 .ContactBtnHover {
 	&:hover {
-		border: solid 2.5 px white;
-		background-color: #232946;
 		color: #fffffe;
+		background-color: #232946;
+		border: solid 2.5 px white;
 	}
 }

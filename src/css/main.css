@@ -1,96 +1,8 @@
-#About Button {
-  font-size: 2.5em;
-}
-
-#ProjectSection Button,
-#CardContainer Button,
-#Certification Button {
-  font-size: 1.7em;
-  padding: 0px 20px;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Lato", sans-serif;
-}
-
-h1 {
-  font-weight: 700;
-}
-
-h2,
-h3 {
-  font-weight: 600;
-}
-
-button,
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: "Merriweather", serif;
-}
-
-button {
-  font-weight: 500;
-}
-
-#About h1 {
-  font-size: 3.5em;
-}
-
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.55em;
-}
-
-h4 {
-  font-size: 1.25em;
-}
-
-p {
-  font-size: 1.4em;
-}
-
-.fab,
-.fas {
-  font-size: 2.5em;
-  vertical-align: middle;
-}
-
-.fa-bars {
-  font-size: 1.75em;
-}
-
-#NavBarHorizontal #logo-nav,
-#NavBarHorizontal #nav-links,
-#NavBarHorizontal #nav-contact-btn {
-  font-family: "Lato", sans-serif;
-  font-size: 26px;
-}
-
-@media screen and (max-width: 975px) {
-  #ProjectSection h1 {
-    font-size: 2em;
-  }
-  #ProjectSection h2 {
-    font-size: 1.75em;
-  }
-  #ProjectSection h3 {
-    font-size: 1.55em;
-  }
-}
 .NavBar-Colors {
   background-color: #232946;
   color: aliceblue;
   text-shadow: 0px 0px 1px white;
+  /* WebKit browsers */
 }
 .NavBar-Colors #nav-contact-btn {
   background-color: #eebbc3;
@@ -98,6 +10,12 @@ p {
 }
 .NavBar-Colors #nav-contact-btn:hover {
   cursor: pointer;
+}
+.NavBar-Colors a:any-link {
+  color: aliceblue;
+}
+.NavBar-Colors a:-webkit-any-link {
+  color: aliceblue;
 }
 
 .fab {
@@ -122,6 +40,10 @@ p {
 .Project-Color #ProjectSection {
   background-color: #d4d8f0;
 }
+.Project-Color a {
+  background-color: #eebbc3;
+  color: #232946;
+}
 .Project-Color .Project-Section-Inner {
   background-color: #fffffe;
 }
@@ -137,15 +59,6 @@ p {
 .Project-Color button {
   background-color: #eebbc3;
   color: #232946;
-}
-
-a:any-link {
-  color: aliceblue;
-}
-
-/* WebKit browsers */
-a:-webkit-any-link {
-  color: aliceblue;
 }
 
 #TechStack {
@@ -175,6 +88,23 @@ a:-webkit-any-link {
 }
 #Certification .Cert-Container-Width {
   background-color: #fffffe;
+}
+#Certification .Certification-Anchor-Btn {
+  color: #d8ddf9;
+  background-color: #232946;
+  text-shadow: 0 0 0.1px #fffffe;
+  border: solid 2.5px #121629;
+}
+#Certification .Certification-Anchor-Btn:hover {
+  color: #232946;
+  background-color: #d4d8f0;
+}
+#Certification .Certification-Anchor-Btn:focus {
+  outline: 0.5px solid #232946;
+}
+#Certification .Certification-Anchor-Btn:focus-visible {
+  color: #232946;
+  background-color: #d4d8f0;
 }
 
 #ContactForm {
@@ -216,8 +146,8 @@ a:-webkit-any-link {
 }
 #ContactForm #sendButton:hover {
   border: solid 2.5px white;
-  background-color: #232946;
   color: #fffffe;
+  background-color: #232946;
 }
 #ContactForm .fab {
   color: #232946;
@@ -225,9 +155,121 @@ a:-webkit-any-link {
 }
 
 .ContactBtnHover:hover {
-  border: solid 2.5 px white;
-  background-color: #232946;
   color: #fffffe;
+  background-color: #232946;
+  border: solid 2.5 px white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+}
+
+button,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+}
+
+button {
+  font-weight: 500;
+}
+
+#About h1 {
+  font-size: 3.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+#NavBarHorizontal #logo-nav,
+#NavBarHorizontal #nav-links,
+#NavBarHorizontal #nav-contact-btn {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 975px) {
+  #ProjectSection h1 {
+    font-size: 2em;
+  }
+  #ProjectSection h2 {
+    font-size: 1.75em;
+  }
+  #ProjectSection h3 {
+    font-size: 1.5em;
+  }
+}
+#About Button {
+  font-size: 2.5em;
+}
+
+#ProjectSection a {
+  font-size: 1.7em;
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+}
+
+#Certification .Cert-Compnay-Title {
+  font-size: 2.3em;
+}
+#Certification h2 {
+  font-size: 2em;
+}
+#Certification h3 {
+  font-size: 1.5em;
+}
+#Certification h3 a {
+  text-decoration: none;
+}
+#Certification .Certification-Anchor-Btn {
+  font-size: 1.7em;
+  font-family: "Merriweather", serif;
+}
+#Certification .AnchorLinks-Container-Flex {
+  font-size: 1em;
+  font-family: "Merriweather", serif;
+}
+#Certification .AnchorLinks-Container-Flex a {
+  text-decoration: underline;
+}
+
+.fab,
+.fas {
+  font-size: 2.5em;
+  vertical-align: middle;
+}
+
+.fa-bars {
+  font-size: 1.75em;
 }
 
 .fade-in-fwdA {
@@ -361,21 +403,18 @@ html {
   border: solid 2.5px #121629;
 }
 .Hover-Btn-Type-A:hover {
-  background-color: #d4d8f0;
   color: #232946;
+  background-color: #d4d8f0;
   box-shadow: 0px 0px 1px white;
 }
 .Hover-Btn-Type-A:focus {
   outline: 1px solid #232946;
 }
-
-.Hover-fab-Type-B:hover {
-  text-shadow: 0px 0px 1.5px #fffffe;
-  color: #d4d8f0;
-}
-
-.Hover-fab-Type-A:hover {
-  text-shadow: 0px 0px 3px #fffffe;
+.Hover-Btn-Type-A:focus-visible {
+  outline-offset: 0px;
+  color: #232946;
+  background-color: #d4d8f0;
+  box-shadow: 0px 0px 3px black;
 }
 
 #ContactForm .Hover-fab-Type-B:hover {
@@ -398,6 +437,12 @@ html {
 .Project-Btn-Hover:focus {
   outline: 1px solid #232946;
 }
+.Project-Btn-Hover:focus-visible {
+  outline-offset: 0px;
+  background-color: #232946;
+  color: #fffffe;
+  box-shadow: 0px 0px 3px black;
+}
 
 .Cert-Btn {
   background-color: #232946;
@@ -413,6 +458,15 @@ html {
 }
 .Cert-Btn:focus {
   outline: 0.5px solid #232946;
+}
+
+.Hover-fab-Type-B:hover {
+  text-shadow: 0px 0px 1.5px #fffffe;
+  color: #d4d8f0;
+}
+
+.Hover-fab-Type-A:hover {
+  text-shadow: 0px 0px 3px #fffffe;
 }
 
 .scrolldown {
@@ -598,7 +652,7 @@ html {
     display: none;
   }
   #NavBarHorizontal .icon {
-    display: block;
+    /* display: block; */
   }
 
   #nav-icon-box {
@@ -670,6 +724,17 @@ html {
   padding-left: 20px;
   padding-right: 20px;
 }
+#Certification .Certification-Container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Certification .Cert-Container-Width {
+  width: 100%;
+  padding: 2em;
+  border-radius: 20px;
+  margin-bottom: 3em;
+}
 #Certification h1 {
   text-align: center;
 }
@@ -694,70 +759,30 @@ html {
 #Certification .Certification-Padding-C {
   margin-bottom: 20px;
 }
-#Certification .Anchor-Certification-Btn {
+#Certification .Certification-Anchor-Btn {
   text-decoration: none;
 }
 #Certification .Btn-Container-Horizontal-Flex {
   margin-top: 10px;
 }
 #Certification .AnchorLinks-Container-Flex {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 10px;
+}
+#Certification .AnchorLinks-Container-Flex a {
+  transition: all 0.1s linear;
+}
+#Certification .AnchorLinks-Container-Flex a:focus {
+  padding: 0px 0.5px;
+  transition-timing-function: linear;
 }
 #Certification .Cert-Style-Anchor {
   padding-bottom: 10px;
 }
-
-#Certification .Anchor-Certification-Btn {
-  font-size: 1.5em;
-  background-color: #232946;
-  color: #b8c1ec;
-  border: solid 2.5px #121629;
-  text-shadow: 0 0 0.1px #fffffe;
+#Certification .Certification-Anchor-Btn {
   padding: 0px 20px;
-  font-family: "Merriweather", serif;
-}
-#Certification .Anchor-Certification-Btn:hover {
-  background-color: #d4d8f0;
-  color: #232946;
-}
-#Certification .Anchor-Certification-Btn:focus {
-  outline: 0.5px solid #232946;
-}
-
-.Cert-Container-Width:-webkit-any-link,
-.Cert-Container-Width:any-link {
-  text-decoration: underline;
-}
-.Cert-Container-Width:-webkit-any-link .Cert-Anchor-Style:-webkit-any-link,
-.Cert-Container-Width:any-link .Cert-Anchor-Style:-webkit-any-link {
-  text-decoration: underline;
-}
-.Cert-Container-Width:-webkit-any-link .Cert-Anchor-Style:any-link,
-.Cert-Container-Width:any-link .Cert-Anchor-Style:any-link {
-  text-decoration: underline;
-}
-
-.AnchorLinks-Container-Flex {
-  display: flex;
-  justify-content: space-between;
-}
-.AnchorLinks-Container-Flex a {
-  text-decoration: underline;
-  font-size: 1em;
-  font-family: "Merriweather", serif;
-}
-
-.Certification-Container-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Cert-Container-Width {
-  width: 100%;
-  padding: 2em;
-  border-radius: 20px;
-  margin-bottom: 3em;
+  border-radius: 5px;
 }
 
 #ProjectContainer .Project-Title {
@@ -772,6 +797,10 @@ html {
   padding-bottom: 3.5em;
   padding-left: 20px;
   padding-right: 20px;
+}
+#ProjectSection a {
+  padding: 0px 20px;
+  border-radius: 5px;
 }
 #ProjectSection .Project-Section-Inner {
   display: flex;

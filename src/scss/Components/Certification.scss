@@ -1,9 +1,8 @@
-@use "../Font/Typography.scss" as Fonts;
-@use "../color.scss" as color;
-
 $A-Certifcation-Margin: 12px;
 $B-Certifcation-Margin: 10px;
 $C-Certifcation-Margin: 20px;
+
+$Certification-Btn-BorderRadius: 5px;
 
 #Certification {
 	.Cert-Container {
@@ -12,6 +11,20 @@ $C-Certifcation-Margin: 20px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.Certification-Container-flex {
+		// TODO: FSC
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.Cert-Container-Width {
+		width: 100%;
+		padding: 2em;
+		border-radius: 20px;
+		margin-bottom: 3em;
+	}
+
 	h1 {
 		text-align: center;
 	}
@@ -19,6 +32,7 @@ $C-Certifcation-Margin: 20px;
 	img {
 		max-height: 150px;
 	}
+
 	p {
 		max-width: 650px;
 	}
@@ -26,100 +40,52 @@ $C-Certifcation-Margin: 20px;
 	.align-L {
 		text-align: left;
 	}
+
 	.underline {
 		text-decoration: underline;
 	}
+
 	.Certification-Padding-A {
 		margin-bottom: $A-Certifcation-Margin;
 	}
+
 	.Certification-Padding-B {
 		margin-bottom: $B-Certifcation-Margin;
 	}
+
 	.Certification-Padding-C {
 		margin-bottom: $C-Certifcation-Margin;
 	}
-	.Anchor-Certification-Btn {
+
+	.Certification-Anchor-Btn {
 		text-decoration: none;
 	}
+
 	.Btn-Container-Horizontal-Flex {
 		// margin-top: $A-Certifcation-Margin;
 		margin-top: $B-Certifcation-Margin;
 	}
 
 	.AnchorLinks-Container-Flex {
-		// padding-top: $B-Certifcation-Margin;
+		display: flex;
+		justify-content: space-between;
 		padding-bottom: $B-Certifcation-Margin;
+
+		// TODO: Transfer over to hover.css maybe
+		a {
+			transition: all 0.1s linear;
+			&:focus {
+				padding: 0px 0.5px;
+				transition-timing-function: linear;
+			}
+		}
 	}
+
 	.Cert-Style-Anchor {
 		padding-bottom: $B-Certifcation-Margin;
 	}
-}
-
-@mixin AnchorBtnNormal {
-	background-color: color.$Cert-Button-Bg-Color;
-	color: color.$Cert-Button-Text-Color;
-	border: solid 2.5px color.$Contact-Input-Text-Color;
-	text-shadow: 0 0 0.1px color.$Header-1-A--OffWhite;
-	padding: 0px 20px;
-	// font-family: Arial, Helvetica, sans-serif;
-	font-family: Fonts.$SecondaryFont;
-
-	&:hover {
-		background-color: color.$Background-2-OffPurple;
-		color: color.$Background-1-OffPurple;
+	.Certification-Anchor-Btn {
+		padding: 0px 20px;
+		border-radius: $Certification-Btn-BorderRadius;
 	}
-	&:focus {
-		outline: 0.5px solid color.$Contact-Input-Border-Color;
-	}
-}
-
-#Certification .Anchor-Certification-Btn {
-	font-size: Fonts.$a_font-btn-size;
-	@include AnchorBtnNormal();
-}
-@mixin CertStyleAnchor {
-	a {
-		text-decoration: underline;
-		font-size: Fonts.$a_font_size;
-		font-family: Fonts.$SecondaryFont;
-	}
-}
-
-.Cert-Container-Width:-webkit-any-link,
-.Cert-Container-Width:any-link {
-	text-decoration: underline;
-	.Cert-Anchor-Style:-webkit-any-link {
-		text-decoration: underline;
-	}
-	.Cert-Anchor-Style:any-link {
-		text-decoration: underline;
-	}
-}
-
-.AnchorLinks-Container-Flex {
-	display: flex;
-	justify-content: space-between;
-	@include CertStyleAnchor();
-}
-
-.Certification-Container-flex {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-$Cert-Margin-Sides: 40px;
-
-.Cert-Btm-Margin {
-	// margin-left: $Cert-Margin-Sides;
-	// margin-right: $Cert-Margin-Sides;
-	// margin-bottom: 50px;
-	// margin-top: 25px;
-}
-
-.Cert-Container-Width {
-	width: 100%;
-	padding: 2em;
-	border-radius: 20px;
-	margin-bottom: 3em;
 }

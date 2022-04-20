@@ -53,28 +53,27 @@
 		box-shadow: 0px 0px 1px white;
 	}
 }
+
+@mixin Hover-Btn-Type-A-FocusFunction {
+	color: color.$Background-1-OffPurple;
+	background-color: color.$Background-2-OffPurple;
+	box-shadow: 0px 0px 3px black;
+}
+
 .Hover-Btn-Type-A {
 	border: solid 2.5px color.$Contact-Input-Text-Color;
 	&:hover {
 		// border: solid 2.5px white;
-		background-color: color.$Background-2-OffPurple;
 		color: color.$Background-1-OffPurple;
+		background-color: color.$Background-2-OffPurple;
 		box-shadow: 0px 0px 1px white;
 	}
 	&:focus {
 		outline: 1px solid color.$Contact-Input-Border-Color;
 	}
-}
-.Hover-fab-Type-B {
-	&:hover {
-		text-shadow: 0px 0px 1.5px color.$Header-1-A--OffWhite;
-		color: color.$Background-2-OffPurple;
-	}
-}
-.Hover-fab-Type-A {
-	&:hover {
-		// color: color.$Background-2-OffPurple;
-		text-shadow: 0px 0px 3px color.$Header-1-A--OffWhite;
+	&:focus-visible {
+		outline-offset: 0px;
+		@include Hover-Btn-Type-A-FocusFunction();
 	}
 }
 
@@ -90,6 +89,15 @@
 	}
 }
 
+@mixin Project-Btn-Hover-FocusFunction {
+	// box-sizing: content-box;
+
+	background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
+	color: color.$Contact-Send-Btn-Color-Hover;
+	box-shadow: 0px 0px 3px black;
+	// outline: 1px solid color.$Contact-Input-Border-Color;
+}
+
 .Project-Btn-Hover {
 	background-color: color.$Contact-Btn-Bg-Color;
 	border: solid 2.5px color.$Contact-Icon-Color;
@@ -103,7 +111,13 @@
 	&:focus {
 		outline: 1px solid color.$Contact-Input-Border-Color;
 	}
+	&:focus-visible {
+		outline-offset: 0px;
+		@include Project-Btn-Hover-FocusFunction();
+	}
 }
+
+// ~ Certification 
 
 .Cert-Btn {
 	background-color: color.$Cert-Button-Bg-Color;
@@ -120,5 +134,25 @@
 	}
 	&:focus {
 		outline: 0.5px solid color.$Contact-Input-Border-Color;
+	}
+}
+
+.Certification-Anchor-Btn{
+	
+
+}
+
+
+
+.Hover-fab-Type-B {
+	&:hover {
+		text-shadow: 0px 0px 1.5px color.$Header-1-A--OffWhite;
+		color: color.$Background-2-OffPurple;
+	}
+}
+.Hover-fab-Type-A {
+	&:hover {
+		// color: color.$Background-2-OffPurple;
+		text-shadow: 0px 0px 3px color.$Header-1-A--OffWhite;
 	}
 }

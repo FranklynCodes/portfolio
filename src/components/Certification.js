@@ -14,19 +14,18 @@ export default function Certification() {
 
 	function AwsCloudPract() {
 		return (
-			<div className="Certification-Container-flex Cert-Btm-Margin">
+			<div className="Certification-Container-flex">
 				<div className="Cert-Container-Width">
-					<h2 className="align-L Certification-Padding-A">Amazon</h2>
+					<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">Amazon</h2>
 					<h2 className="align-L Certification-Padding-A">
 						Certified Cloud Practitioner
 					</h2>
 					<div>
 						{/* <img src={AwsCloudPractitioner} alt="AWS Cloud Practitioner Certification" /> */}
-						<h4>In-Progress</h4>
+						<h3 className="Certification-Padding-B">In-Progress</h3>
 						<div className="Certification-Padding-B">
-							<h3 className="underline">
+							<h3>
 								<a
-									// href="https://aws.amazon.com/certification/certified-cloud-practitioner/"
 									href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"
 									target="_blank"
 									rel="noreferrer"
@@ -58,7 +57,7 @@ export default function Certification() {
 
 					<div className="Btn-Container-Horizontal-Flex">
 						<a
-							className="Anchor-Certification-Btn"
+							className="Certification-Anchor-Btn"
 							href={"/#/"}
 							target="_blank"
 							rel="noreferrer"
@@ -79,9 +78,11 @@ export default function Certification() {
 			"https://www.theforage.com/virtual-internships/prototype/R5iK7HMxJGBgaSbvk/JP-Morgan-Banking-Technology-Virtual-Program";
 
 		return (
-			<div className="Certification-Container-flex Cert-Btm-Margin">
+			<div className="Certification-Container-flex">
 				<div className="Cert-Container-Width">
-					<h2 className="align-L Certification-Padding-A">JPMorgan Chase & Co.</h2>
+					<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">
+						JPMorgan Chase & Co.
+					</h2>
 					<h2 className="align-L Certification-Padding-A">
 						Software Engineering Virtual Experience
 					</h2>
@@ -89,16 +90,7 @@ export default function Certification() {
 					<div>
 						<h4>Completed October 2021</h4>
 						<div className="Certification-Padding-B">
-							<h3 className="underline">
-								Issued by Forage
-								{/* <a
-									href="https://aws.amazon.com/certification/certified-cloud-practitioner/"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Amazon Web Services Training and Certification
-								</a> */}
-							</h3>
+							<h3>Issued by Forage</h3>
 						</div>
 					</div>
 					<div className="AnchorLinks-Container-Flex">
@@ -110,7 +102,7 @@ export default function Certification() {
 					<div className="Btn-Container-Horizontal-Flex">
 						<a
 							href={ChaseCredentailUrl}
-							className="Anchor-Certification-Btn"
+							className="Certification-Anchor-Btn"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -131,12 +123,14 @@ export default function Certification() {
 			"https://www.theforage.com/virtual-internships/prototype/NPdeQ43o8P9HJmJzg/Goldman-Sachs-Virtual-Experience-Program";
 
 		return (
-			<div className="Certification-Container-flex Cert-Btm-Margin">
+			<div className="Certification-Container-flex">
 				{/* <div>
 					<img src={AwsCloudPractitioner} alt="AWS Cloud Practitioner Certification" />
 				</div> */}
 				<div className="Cert-Container-Width">
-					<h2 className="align-L Certification-Padding-A">Goldman Sach</h2>
+					<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">
+						Goldman Sach
+					</h2>
 					<h2 className="align-L Certification-Padding-A">
 						Software Engineering Virtual Experience
 					</h2>
@@ -144,16 +138,7 @@ export default function Certification() {
 					<div>
 						<h4>Completed October 2021</h4>
 						<div className="Certification-Padding-B">
-							<h3 className="underline">
-								Issued by Forage
-								{/* <a
-									href="https://aws.amazon.com/certification/certified-cloud-practitioner/"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Amazon Web Services Training and Certification
-								</a> */}
-							</h3>
+							<h3>Issued by Forage</h3>
 						</div>
 						{/* <p className="Certification-Padding-C">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -172,7 +157,7 @@ export default function Certification() {
 					<div className="Btn-Container-Horizontal-Flex">
 						<a
 							href={GoldmanSachCredentailUrl}
-							className="Anchor-Certification-Btn"
+							className="Certification-Anchor-Btn"
 							target="_blank"
 							rel="noreferrer"
 						>

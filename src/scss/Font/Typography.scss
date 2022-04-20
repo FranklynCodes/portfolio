@@ -1,7 +1,13 @@
+// ! Exclusive page for font size, font family and text decoration
+@use "../color.scss" as color;
 $h1_font_size: 2.5em;
 $h2_font_size: 2em;
-$h3_font_size: 1.55em;
+$h3_font_size: 1.5em;
 $h4_font_size: 1.25em;
+$h5_font_size: 1.2em;
+$h6_font_size: 1.15em;
+
+$Cert-Compnay-Title_font_addition: 0.25em;
 
 $Primary_button_font_size: 2.5em;
 $Seconday_Button_font_size: 1.7em;
@@ -11,38 +17,11 @@ $a_font-btn-size: 1.5em;
 $PrimaryFont: "Lato", sans-serif;
 $SecondaryFont: "Merriweather", serif;
 
-// !Buttons Section Start
-
-#About {
-	Button {
-		font-size: $Primary_button_font_size;
-	}
-}
-#ProjectSection,
-#CardContainer,
-#Certification {
-	Button {
-		font-size: $Seconday_Button_font_size;
-		padding: 0px 20px;
-	}
-}
-
-// ! ButtonSection End
-// font-family: 'Lato', sans-serif;
-
-// font-family: 'Merriweather', serif;
 h1,
 h2,
 h3,
 h4 {
 	font-family: $PrimaryFont;
-}
-h1 {
-	font-weight: 700;
-}
-h2,
-h3 {
-	font-weight: 600;
 }
 
 button,
@@ -51,9 +30,19 @@ p {
 	font-family: $SecondaryFont;
 }
 
+h1 {
+	font-weight: 700;
+}
+
+h2,
+h3 {
+	font-weight: 600;
+}
+
 button {
 	font-weight: 500;
 }
+
 #About {
 	h1 {
 		font-size: $h1_font_size + 1em;
@@ -67,36 +56,21 @@ h1 {
 h2 {
 	font-size: $h2_font_size;
 }
+
 h3 {
 	font-size: $h3_font_size;
 }
+
 h4 {
 	font-size: $h4_font_size;
 }
+
 p {
 	font-size: $Parapgrah_font_size;
 }
 
-// ! Font Awesome / Icons - Start
-
-$font_awesome-Color: white;
-$font_awesome-Size: 2.5em;
-
-@mixin Font-Awseome-Size-Color {
-	font-size: $font_awesome-Size;
-	vertical-align: middle;
-}
-
-.fab,
-.fas {
-	@include Font-Awseome-Size-Color;
-}
-.fa-bars {
-	font-size: 1.75em;
-}
-// ! Font Awesome / Icons - End
-
 $Navigation-Horizontal-Font-Size: 26px;
+
 // ! Navigation
 #NavBarHorizontal {
 	#logo-nav,
@@ -122,14 +96,84 @@ $p-Subtraction: 0.05em;
 		h1 {
 			font-size: $h1_font_size - $h1-Subtraction;
 		}
+
 		h2 {
 			font-size: $h2_font_size - $h2-Subtraction;
 		}
+
 		h3 {
 			font-size: $h3_font_size - $h3-Subtraction;
 		}
+
 		p {
 			// font-size: $h3_font_size - $p-Subtraction;
 		}
 	}
+}
+
+// !Buttons Section Start
+
+#About {
+	Button {
+		font-size: $Primary_button_font_size;
+	}
+}
+
+#ProjectSection {
+	a {
+		font-size: $Seconday_Button_font_size;
+		font-family: $SecondaryFont;
+		text-decoration: none;
+	}
+}
+
+#Certification {
+	.Cert-Compnay-Title {
+		font-size: $h1_font_size - 0.2em;
+	}
+
+	h2 {
+		font-size: $h2_font_size;
+	}
+
+	h3 {
+		font-size: $h3_font_size;
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.Certification-Anchor-Btn {
+		font-size: $Seconday_Button_font_size;
+		font-family: $SecondaryFont;
+	}
+
+	.AnchorLinks-Container-Flex {
+		font-size: $a_font_size;
+		font-family: $SecondaryFont;
+
+		a {
+			text-decoration: underline;
+		}
+	}
+}
+
+// ! Font Awesome / Icons - Start
+
+$font_awesome-Color: white;
+$font_awesome-Size: 2.5em;
+
+// ! Font Awesome / Icons - End
+@mixin Font-Awseome-Size-Color {
+	font-size: $font_awesome-Size;
+	vertical-align: middle;
+}
+
+.fab,
+.fas {
+	@include Font-Awseome-Size-Color;
+}
+
+.fa-bars {
+	font-size: 1.75em;
 }

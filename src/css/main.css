@@ -95,17 +95,6 @@
   text-shadow: 0 0 0.1px #fffffe;
   border: solid 2.5px #121629;
 }
-#Certification .Certification-Anchor-Btn:hover {
-  color: #232946;
-  background-color: #d4d8f0;
-}
-#Certification .Certification-Anchor-Btn:focus {
-  outline: 0.5px solid #232946;
-}
-#Certification .Certification-Anchor-Btn:focus-visible {
-  color: #232946;
-  background-color: #d4d8f0;
-}
 
 #ContactForm {
   background-color: #d4d8f0;
@@ -131,23 +120,10 @@
 #ContactForm .form-example input,
 #ContactForm .form-example textarea {
   border: 2.5px solid #232946;
-  background-color: #d4d8f0;
-}
-#ContactForm .form-example input:focus,
-#ContactForm .form-example textarea:focus {
-  border: 2.5px solid #121629;
-  background-color: #fffffe;
-  border-radius: 5px;
-  outline: 1px solid #232946;
 }
 #ContactForm #sendButton {
   background-color: #eebbc3;
   border: solid 2.5px #121629;
-}
-#ContactForm #sendButton:hover {
-  border: solid 2.5px white;
-  color: #fffffe;
-  background-color: #232946;
 }
 #ContactForm .fab {
   color: #232946;
@@ -396,43 +372,59 @@ html {
   border: solid 2.5px white;
   background-color: #d4d8f0;
   color: #232946;
-  box-shadow: 0px 0px 1px white;
+  box-shadow: 0px 0px 1px #d4d8f0;
 }
 
 .Hover-Btn-Type-A {
   border: solid 2.5px #121629;
+  transition: all 0.2s linear;
 }
 .Hover-Btn-Type-A:hover {
   color: #232946;
   background-color: #d4d8f0;
-  box-shadow: 0px 0px 1px white;
+  box-shadow: 0px 0px 7px #d4d8f0;
 }
 .Hover-Btn-Type-A:focus {
   outline: 1px solid #232946;
 }
 .Hover-Btn-Type-A:focus-visible {
-  outline-offset: 0px;
   color: #232946;
   background-color: #d4d8f0;
   box-shadow: 0px 0px 3px black;
+  outline-offset: 0px;
 }
 
-#ContactForm .Hover-fab-Type-B:hover {
+#ContactForm .Contact-Icons-Fab:hover {
   text-shadow: 0px 0px 3px #313131;
   text-shadow: 0px 0px 3px #0e0e0e;
   text-shadow: 0px 0px 3px black;
   color: #eebbc3;
 }
+#ContactForm .form-example input:focus,
+#ContactForm .form-example textarea:focus {
+  background-color: #fffffe;
+  outline: 1px solid #232946;
+  border-radius: 5px;
+}
+#ContactForm #sendButton:hover {
+  color: #fffffe;
+  background-color: #232946;
+  border: solid 2.5px white;
+}
+#ContactForm #sendButton:focus-visible {
+  color: #fffffe;
+  background-color: #232946;
+}
 
 .Project-Btn-Hover {
   background-color: #eebbc3;
-  border: solid 2.5px #232946;
   border: solid 2.5px #121629;
+  transition: all 0.2s linear;
 }
 .Project-Btn-Hover:hover {
-  box-sizing: content-box;
   background-color: #232946;
   color: #fffffe;
+  box-shadow: 0px 0px 7px #d4d8f0;
 }
 .Project-Btn-Hover:focus {
   outline: 1px solid #232946;
@@ -441,7 +433,7 @@ html {
   outline-offset: 0px;
   background-color: #232946;
   color: #fffffe;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 1px black;
 }
 
 .Cert-Btn {
@@ -460,13 +452,42 @@ html {
   outline: 0.5px solid #232946;
 }
 
-.Hover-fab-Type-B:hover {
-  text-shadow: 0px 0px 1.5px #fffffe;
-  color: #d4d8f0;
+#Certification #CertAnchorText {
+  transition: all 0.2s linear;
+}
+#Certification #CertAnchorText:focus {
+  outline-offset: 4px;
+  transition-timing-function: linear;
+}
+#Certification .AnchorLinks-Container-Flex a {
+  transition: all 0.2s linear;
+}
+#Certification .AnchorLinks-Container-Flex a:focus {
+  outline-offset: 4px;
+  transition-timing-function: linear;
+}
+#Certification .Certification-Anchor-Btn {
+  transition: color 0.1s, background-color 0.2s linear;
+}
+#Certification .Certification-Anchor-Btn:hover {
+  background-color: #d4d8f0;
+  color: #232946;
+}
+#Certification .Certification-Anchor-Btn:focus {
+  outline: 2px solid #232946;
+  outline-offset: 1.5px;
+}
+#Certification .Certification-Anchor-Btn:focus-visible {
+  color: #232946;
+  background-color: #d4d8f0;
 }
 
-.Hover-fab-Type-A:hover {
-  text-shadow: 0px 0px 3px #fffffe;
+.Contact-Icons-Fab {
+  transition: all 0.5s ease-out;
+}
+.Contact-Icons-Fab:hover {
+  text-shadow: 0px 0px 1.5px #fffffe;
+  color: #d4d8f0;
 }
 
 .scrolldown {
@@ -769,13 +790,6 @@ html {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
-}
-#Certification .AnchorLinks-Container-Flex a {
-  transition: all 0.1s linear;
-}
-#Certification .AnchorLinks-Container-Flex a:focus {
-  padding: 0px 0.5px;
-  transition-timing-function: linear;
 }
 #Certification .Cert-Style-Anchor {
   padding-bottom: 10px;

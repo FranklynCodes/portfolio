@@ -60,7 +60,7 @@ export default function NavBarHorizontalReact() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<i className="fab fa-linkedin Hover-fab-Type-B"></i>
+							<i className="fab fa-linkedin Contact-Icons-Fab"></i>
 						</a>
 					</div>
 
@@ -74,7 +74,7 @@ export default function NavBarHorizontalReact() {
 					target="_blank"
 					rel="noreferrer"
 				>
-					<i className="fab fa-linkedin Hover-fab-Type-B"></i>
+					<i className="fab fa-linkedin Contact-Icons-Fab"></i>
 				</a>
 
 				<div id="Hamburger-block" className="mobile-menu" onClick={handleClick}>

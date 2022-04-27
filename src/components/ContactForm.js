@@ -7,33 +7,25 @@ export default function ContactForm() {
 			<div id="FormContainer">
 				<div className="Social_Container_Contact">
 					<div id="Social_Container">
-						<div>
-							<a
-								href="https://www.linkedin.com/in/franklyncodes/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<i className="fab fa-linkedin Hover-fab-Type-B"></i>
-							</a>
-						</div>
-						<div>
-							<a
-								href="https://github.com/franklyncodes"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<i className="fab fa-github Hover-fab-Type-B"></i>
-							</a>
-						</div>
-						<div>
-							<a
-								href="https://twitter.com/FranklynCodes"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<i className="fab fa-twitter-square Hover-fab-Type-B"></i>
-							</a>
-						</div>
+						<a
+							href="https://www.linkedin.com/in/franklyncodes/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i className="fab fa-linkedin Contact-Icons-Fab"></i>
+						</a>
+
+						<a href="https://github.com/franklyncodes" target="_blank" rel="noreferrer">
+							<i className="fab fa-github Contact-Icons-Fab"></i>
+						</a>
+
+						<a
+							href="https://twitter.com/FranklynCodes"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i className="fab fa-twitter-square Contact-Icons-Fab"></i>
+						</a>
 					</div>
 				</div>
 

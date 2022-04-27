@@ -1,5 +1,7 @@
 @use "../color.scss" as color;
 
+$ButtonShadow: 0px 0px 1px black;
+
 .NavHover {
 	&:hover:after {
 		width: 100%;
@@ -50,35 +52,32 @@
 		border: solid 2.5px white;
 		background-color: color.$Background-2-OffPurple;
 		color: color.$Background-1-OffPurple;
-		box-shadow: 0px 0px 1px white;
+		box-shadow: 0px 0px 1px color.$Background-2-OffPurple;
 	}
-}
-
-@mixin Hover-Btn-Type-A-FocusFunction {
-	color: color.$Background-1-OffPurple;
-	background-color: color.$Background-2-OffPurple;
-	box-shadow: 0px 0px 3px black;
 }
 
 .Hover-Btn-Type-A {
 	border: solid 2.5px color.$Contact-Input-Text-Color;
+	transition: all 0.2s linear;
+
 	&:hover {
-		// border: solid 2.5px white;
 		color: color.$Background-1-OffPurple;
 		background-color: color.$Background-2-OffPurple;
-		box-shadow: 0px 0px 1px white;
+		box-shadow: 0px 0px 7px color.$Background-2-OffPurple;
 	}
 	&:focus {
 		outline: 1px solid color.$Contact-Input-Border-Color;
 	}
 	&:focus-visible {
+		color: color.$Background-1-OffPurple;
+		background-color: color.$Background-2-OffPurple;
+		box-shadow: 0px 0px 3px black;
 		outline-offset: 0px;
-		@include Hover-Btn-Type-A-FocusFunction();
 	}
 }
 
 #ContactForm {
-	.Hover-fab-Type-B {
+	.Contact-Icons-Fab {
 		&:hover {
 			// text-shadow: 0px 0px 1.5px color.$Header-1-A--OffWhite;
 			text-shadow: 0px 0px 3px rgb(49, 49, 49);
@@ -87,26 +86,49 @@
 			color: color.$Button-1;
 		}
 	}
+	.form-example {
+		input,
+		textarea {
+			&:focus {
+				background-color: color.$Contact-Card-Bg-Color;
+				outline: 1px solid color.$Contact-Input-Outline-Color;
+				border-radius: 5px;
+			}
+		}
+	}
+	#sendButton {
+		&:hover {
+			color: color.$Contact-Send-Btn-Color-Hover;
+			background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
+			border: solid 2.5px white;
+		}
+		&:focus {
+			// border: solid 50px orange;
+		}
+		&:focus-visible {
+			// TODO: CHANGE NAME
+			color: color.$Contact-Send-Btn-Color-Hover;
+			background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
+		}
+	}
 }
 
 @mixin Project-Btn-Hover-FocusFunction {
-	// box-sizing: content-box;
-
 	background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
 	color: color.$Contact-Send-Btn-Color-Hover;
-	box-shadow: 0px 0px 3px black;
+	box-shadow: 0px 0px 1px black;
 	// outline: 1px solid color.$Contact-Input-Border-Color;
 }
 
 .Project-Btn-Hover {
 	background-color: color.$Contact-Btn-Bg-Color;
-	border: solid 2.5px color.$Contact-Icon-Color;
 	border: solid 2.5px color.$Contact-Input-Text-Color;
-	&:hover {
-		box-sizing: content-box;
+	transition: all 0.2s linear;
 
+	&:hover {
 		background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
 		color: color.$Contact-Send-Btn-Color-Hover;
+		box-shadow: 0px 0px 7px color.$Background-2-OffPurple;
 	}
 	&:focus {
 		outline: 1px solid color.$Contact-Input-Border-Color;
@@ -117,7 +139,7 @@
 	}
 }
 
-// ~ Certification 
+// ~ Certification
 
 .Cert-Btn {
 	background-color: color.$Cert-Button-Bg-Color;
@@ -137,22 +159,50 @@
 	}
 }
 
-.Certification-Anchor-Btn{
-	
-
+@mixin Focus-Outline-Offset {
+	transition: all 0.2s linear;
+	&:focus {
+		outline-offset: 4px;
+		transition-timing-function: linear;
+	}
 }
 
+#Certification {
+	#CertAnchorText {
+		@include Focus-Outline-Offset();
+	}
+	.AnchorLinks-Container-Flex {
+		a {
+			@include Focus-Outline-Offset();
+		}
+	}
+	.Certification-Anchor-Btn {
+		// transition: background-color 1000ms linear;
+		transition: color 0.1s, background-color 0.2s linear;
 
+		&:hover {
+			background-color: color.$Background-2-OffPurple;
+			color: color.$Background-1-OffPurple;
+			// transition-timing-function: none;
+		}
 
-.Hover-fab-Type-B {
+		&:focus {
+			outline: 2px solid color.$Contact-Input-Border-Color;
+			outline-offset: 1.5px;
+			// transition-timing-function: linear;
+		}
+		&:focus-visible {
+			color: color.$Cert-Button-Focus-Bg-Color;
+			background-color: color.$Cert-Button-Focus-Text-Color;
+			// transition-timing-function: linear;
+		}
+	}
+}
+
+.Contact-Icons-Fab {
+	transition: all 0.5s ease-out;
 	&:hover {
 		text-shadow: 0px 0px 1.5px color.$Header-1-A--OffWhite;
 		color: color.$Background-2-OffPurple;
-	}
-}
-.Hover-fab-Type-A {
-	&:hover {
-		// color: color.$Background-2-OffPurple;
-		text-shadow: 0px 0px 3px color.$Header-1-A--OffWhite;
 	}
 }

@@ -26,6 +26,7 @@ export default function Certification() {
 						<div className="Certification-Padding-B">
 							<h3>
 								<a
+									id="CertAnchorText"
 									href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"
 									target="_blank"
 									rel="noreferrer"
@@ -94,7 +95,12 @@ export default function Certification() {
 						</div>
 					</div>
 					<div className="AnchorLinks-Container-Flex">
-						<a href={ChaseCertifcationInformation} target={"_blank"} rel="noreferrer">
+						<a
+							id="CertAnchorText"
+							href={ChaseCertifcationInformation}
+							target={"_blank"}
+							rel="noreferrer"
+						>
 							Certification Overview
 						</a>
 					</div>
@@ -148,7 +154,12 @@ export default function Certification() {
 						</p> */}
 					</div>
 					<div className="AnchorLinks-Container-Flex">
-						<a href={GoldmanSachInformation} target={"_blank"} rel="noreferrer">
+						<a
+							id="CertAnchorText"
+							href={GoldmanSachInformation}
+							target={"_blank"}
+							rel="noreferrer"
+						>
 							Certification Overview
 						</a>
 					</div>

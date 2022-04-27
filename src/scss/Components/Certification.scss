@@ -24,7 +24,6 @@ $Certification-Btn-BorderRadius: 5px;
 		border-radius: 20px;
 		margin-bottom: 3em;
 	}
-
 	h1 {
 		text-align: center;
 	}
@@ -62,7 +61,6 @@ $Certification-Btn-BorderRadius: 5px;
 	}
 
 	.Btn-Container-Horizontal-Flex {
-		// margin-top: $A-Certifcation-Margin;
 		margin-top: $B-Certifcation-Margin;
 	}
 
@@ -70,15 +68,6 @@ $Certification-Btn-BorderRadius: 5px;
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: $B-Certifcation-Margin;
-
-		// TODO: Transfer over to hover.css maybe
-		a {
-			transition: all 0.1s linear;
-			&:focus {
-				padding: 0px 0.5px;
-				transition-timing-function: linear;
-			}
-		}
 	}
 
 	.Cert-Style-Anchor {

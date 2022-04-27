@@ -204,18 +204,6 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 		background-color: $Cert-Button-Bg-Color;
 		text-shadow: 0 0 0.1px $Header-1-A--OffWhite;
 		border: solid 2.5px $Contact-Input-Text-Color;
-		&:hover {
-			color: $Background-1-OffPurple;
-			background-color: $Background-2-OffPurple;
-		}
-
-		&:focus {
-			outline: 0.5px solid $Contact-Input-Border-Color;
-		}
-		&:focus-visible {
-			color: $Cert-Button-Focus-Bg-Color;
-			background-color: $Cert-Button-Focus-Text-Color;
-		}
 	}
 }
 
@@ -247,24 +235,12 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 		input,
 		textarea {
 			border: 2.5px solid $Contact-Input-Border-Color;
-			background-color: $ContactForm-Bg-Color;
-
-			&:focus {
-				border: 2.5px solid $Contact-Input-Text-Color;
-				background-color: $Contact-Card-Bg-Color;
-				border-radius: 5px;
-				outline: 1px solid $Contact-Input-Outline-Color;
-			}
 		}
 	}
 	#sendButton {
 		background-color: $Contact-Btn-Bg-Color;
 		border: solid 2.5px $Contact-Input-Text-Color;
-		&:hover {
-			border: solid 2.5px white;
-			color: $Contact-Send-Btn-Color-Hover;
-			background-color: $Contact-Send-Btn-Bg-Color-Hover;
-		}
+
 	}
 
 	.fab {

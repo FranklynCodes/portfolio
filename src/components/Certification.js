@@ -173,7 +173,6 @@ export default function Certification() {
 							rel="noreferrer"
 						>
 							See Credential
-							{/* <button className="Cert-Btn" onClick={(e) => e.currentTarget.blur()}> */}
 						</a>
 					</div>
 				</div>

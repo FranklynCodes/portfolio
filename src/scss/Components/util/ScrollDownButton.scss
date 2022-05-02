@@ -1,3 +1,5 @@
+@use "../../color.scss" as color;
+
 $Background-1st-OffPurple: #232946;
 $Header-1st-A--OffWhite: #fffffe;
 $Header-1st-B--OffWhite: #fff4ff;
@@ -6,46 +8,52 @@ $Header-1st-C--OffWhite: #fffffe;
 $Paragraph-1st: #b8c1ec;
 $Button-1st: #eebbc3;
 $Button-Text: #232946;
-// ~
 
 $ScrollDownColor: $Button-1st;
 $ScrollDown-Size-X: 30px;
-$ScrollDown-Size-X-Div2: 15px;
 $ScrollDown-Size-X-Div10: 3px;
 $ScorllDown-Size-Y: 50px;
 
 .scrolldown {
-	color: $ScrollDownColor;
+	box-shadow: 0px 0px 1px $ScrollDownColor; // Scrolldown border color
+	border: $ScrollDown-Size-X-Div10 solid $ScrollDownColor;
 	position: relative;
 	bottom: 0px;
 	width: $ScrollDown-Size-X;
 	height: $ScorllDown-Size-Y;
-
 	margin-left: 6px;
-
-	border: $ScrollDown-Size-X-Div10 solid $ScrollDownColor;
 	border-radius: 50px;
 	box-sizing: border-box;
-	box-shadow: 0px 0px 1px black;
-	// margin-bottom: 16px;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0px 0px 1.5px color.$Header-1-A--OffWhite;
+		border-color: color.$Background-2-OffPurple;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 32px;
+		left: 50%;
+		width: 6px;
+		height: 6px;
+		margin-left: -3px;
+		background-color: $ScrollDownColor;
+		border-radius: 100%;
+		animation: scrolldown-animation 2s infinite;
+		box-sizing: border-box;
+		box-shadow: 0px -5px 3px 1px #ffffff66;
+	}
 }
 
-.scrolldown::before {
-	content: "";
-	position: absolute;
-	bottom: 32px;
-	left: 50%;
-	width: 6px;
-	height: 6px;
-	margin-left: -3px;
-	background-color: $ScrollDownColor;
-	border-radius: 100%;
-	animation: scrolldown-anim 2s infinite;
-	box-sizing: border-box;
-	box-shadow: 0px -5px 3px 1px #ffffff66;
+//  Small moving bubble
+.scrolldown:hover:before {
+	background-color: color.$Background-2-OffPurple;
+	box-shadow: 0px -5px 3px 1px #ffffff66; // TODO: Not lined up properly
 }
 
-@keyframes scrolldown-anim {
+@keyframes scrolldown-animation {
 	0% {
 		opacity: 0;
 		height: 6px;
@@ -79,21 +87,37 @@ $ScorllDown-Size-Y: 50px;
 	border: solid $ScrollDownColor;
 	border-width: 0 3px 3px 0;
 	display: inline-block;
-	width: 15px;
-	height: 15px;
+	width: 18px;
+	height: 18px;
 	transform: rotate(45deg);
+
+	&:nth-child(odd) {
+		animation: pulse 500ms ease infinite alternate;
+	}
+	&:nth-child(even) {
+		animation: pulse 500ms ease infinite alternate 250ms;
+	}
 }
-.chevrondown:nth-child(odd) {
-	animation: pulse 500ms ease infinite alternate;
-}
-.chevrondown:nth-child(even) {
-	animation: pulse 500ms ease infinite alternate 250ms;
-}
+
 @keyframes pulse {
 	from {
 		opacity: 0;
 	}
 	to {
 		opacity: 0.5;
+	}
+}
+
+// Muitlple Hover
+.scrolldown:hover > .chevrons > .chevrondown {
+	border-color: color.$Background-2-OffPurple;
+	box-shadow: 0px 0px 3px color.$Header-1-A--OffWhite;
+	-webkit-clip-path: inset(1px 0px 0px 1px);
+	clip-path: inset(1px -6px -22px 1px);
+}
+
+@-moz-document url-prefix() {
+	.scrolldown {
+		margin-left: 8px;
 	}
 }

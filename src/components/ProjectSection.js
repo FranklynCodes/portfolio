@@ -34,7 +34,12 @@ export default function ProjectContainer() {
 									alt="Green Hills https://picsum.photos/500/500"
 								/>
 							</div>
-							<p>Website surrounding Jewlery - High End Fashion</p>
+							<p>
+								Website surrounding Jewlery - High End Fashion Lorem ipsum dolor sit
+								amet consectetur, adipisicing elit. Doloribus, quis perferendis
+								autem quisquam debitis a aliquam ullam dolore. Labore tempora iure
+								animi nesciunt magni beatae maxime earum odio, officiis similique?
+							</p>
 
 							<div className="Btn-Container-Horizontal-Flex">
 								<a href={""} className="Project-Btn-Hover" target={"_blank"}>

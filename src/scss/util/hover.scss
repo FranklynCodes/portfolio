@@ -58,12 +58,16 @@ $ButtonShadow: 0px 0px 1px black;
 
 .Hover-Btn-Type-A {
 	border: solid 2.5px color.$Contact-Input-Text-Color;
+
 	transition: all 0.2s linear;
 
 	&:hover {
+		transition: all 0.2s linear;
 		color: color.$Background-1-OffPurple;
+		color: #101020;
 		background-color: color.$Background-2-OffPurple;
 		box-shadow: 0px 0px 7px color.$Background-2-OffPurple;
+		outline: 1px solid #232946;
 	}
 	&:focus {
 		outline: 1px solid color.$Contact-Input-Border-Color;
@@ -71,8 +75,8 @@ $ButtonShadow: 0px 0px 1px black;
 	&:focus-visible {
 		color: color.$Background-1-OffPurple;
 		background-color: color.$Background-2-OffPurple;
-		box-shadow: 0px 0px 3px black;
-		outline-offset: 0px;
+		box-shadow: 0px 0px 7px color.$Background-2-OffPurple;
+		outline-offset: 0px; //TODO: !Careful Shrinks outside
 	}
 }
 
@@ -82,7 +86,7 @@ $ButtonShadow: 0px 0px 1px black;
 			// text-shadow: 0px 0px 1.5px color.$Header-1-A--OffWhite;
 			text-shadow: 0px 0px 3px rgb(49, 49, 49);
 			text-shadow: 0px 0px 3px rgb(14, 14, 14);
-			text-shadow: 0px 0px 3px black;
+			text-shadow: 0px 0px 1.5px black;
 			color: color.$Button-1;
 		}
 	}
@@ -98,17 +102,16 @@ $ButtonShadow: 0px 0px 1px black;
 	}
 	#sendButton {
 		&:hover {
-			color: color.$Contact-Send-Btn-Color-Hover;
-			background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
-			border: solid 2.5px white;
+			background-color: color.$Background-2-OffPurple;
 		}
-		&:focus {
-			// border: solid 50px orange;
+		&:focus,
+		&:focus-visible {
+			background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
+			text-shadow: 0px 0px 1px color.$Header-1-A--OffWhite;
+			background-color: color.$Background-2-OffPurple;
 		}
 		&:focus-visible {
-			// TODO: CHANGE NAME
-			color: color.$Contact-Send-Btn-Color-Hover;
-			background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
+			outline-offset: 2px;
 		}
 	}
 }
@@ -116,8 +119,7 @@ $ButtonShadow: 0px 0px 1px black;
 @mixin Project-Btn-Hover-FocusFunction {
 	background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
 	color: color.$Contact-Send-Btn-Color-Hover;
-	box-shadow: 0px 0px 1px black;
-	// outline: 1px solid color.$Contact-Input-Border-Color;
+	// box-shadow: 0px 0px 3px black;
 }
 
 .Project-Btn-Hover {
@@ -128,36 +130,27 @@ $ButtonShadow: 0px 0px 1px black;
 	&:hover {
 		background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
 		color: color.$Contact-Send-Btn-Color-Hover;
+		color: color.$Cert-Button-Text-Color-A;
+		color: color.$ProjectBtn--font-color;
 		box-shadow: 0px 0px 7px color.$Background-2-OffPurple;
+		text-shadow: 0 0 1px color.$Header-1-A--OffWhite;
+		outline-offset: 0px;
+		outline: 1px solid color.$Contact-Input-Border-Color;
 	}
 	&:focus {
 		outline: 1px solid color.$Contact-Input-Border-Color;
+		outline-offset: 0px;
+		text-shadow: 0 0 1px color.$Header-1-A--OffWhite;
 	}
 	&:focus-visible {
+		outline: 1px solid color.$Contact-Input-Border-Color;
 		outline-offset: 0px;
+		text-shadow: 0 0 1px color.$Header-1-A--OffWhite;
 		@include Project-Btn-Hover-FocusFunction();
 	}
 }
 
 // ~ Certification
-
-.Cert-Btn {
-	background-color: color.$Cert-Button-Bg-Color;
-	color: color.$Cert-Button-Text-Color;
-	border: solid 2.5px color.$Contact-Input-Text-Color;
-	text-shadow: 0 0 0.1px color.$Header-1-A--OffWhite;
-	&:hover {
-		background-color: color.$Contact-Send-Btn-Bg-Color-Hover;
-		color: color.$Contact-Send-Btn-Color-Hover;
-		background-color: color.$Background-2-OffPurple;
-		// background-color: color.$TechStack-BG-Color;
-		color: color.$Background-1-OffPurple;
-		// border: 5px white;
-	}
-	&:focus {
-		outline: 0.5px solid color.$Contact-Input-Border-Color;
-	}
-}
 
 @mixin Focus-Outline-Offset {
 	transition: all 0.2s linear;
@@ -165,8 +158,12 @@ $ButtonShadow: 0px 0px 1px black;
 		outline-offset: 4px;
 		transition-timing-function: linear;
 	}
+	&:focus-visible {
+		outline-offset: 4px;
+		transition-timing-function: linear;
+	}
 }
-
+// TODO: Switch CertButton :focus outline-offset to a more natural version
 #Certification {
 	#CertAnchorText {
 		@include Focus-Outline-Offset();
@@ -188,7 +185,7 @@ $ButtonShadow: 0px 0px 1px black;
 
 		&:focus {
 			outline: 2px solid color.$Contact-Input-Border-Color;
-			outline-offset: 1.5px;
+			outline-offset: 1px;
 			// transition-timing-function: linear;
 		}
 		&:focus-visible {
@@ -201,8 +198,61 @@ $ButtonShadow: 0px 0px 1px black;
 
 .Contact-Icons-Fab {
 	transition: all 0.5s ease-out;
-	&:hover {
-		text-shadow: 0px 0px 1.5px color.$Header-1-A--OffWhite;
-		color: color.$Background-2-OffPurple;
+}
+
+#nav-icon-box > a:hover > i,
+#nav-icon-box > a:focus-visible > i {
+	text-shadow: 0px 0px 2px color.$Header-1-A--OffWhite;
+	color: color.$Background-2-OffPurple;
+}
+
+#Center-Logo:hover > i,
+#Center-Logo:focus-visible > i {
+	text-shadow: 0px 0px 2px color.$Header-1-A--OffWhite;
+	color: color.$Background-2-OffPurple;
+}
+#nav-contact-btn:hover,
+#nav-contact-btn:focus-visible {
+	text-shadow: 0px 0px 1px color.$Header-1-A--OffWhite;
+	background-color: color.$Background-2-OffPurple;
+}
+
+.About_Social div a:hover i,
+.About_Social div a:focus-visible i {
+	text-shadow: 0px 0px 2px color.$Header-1-A--OffWhite;
+	color: color.$Background-2-OffPurple;
+}
+
+.Social_Container_Contact > #Social_Container > a:hover > i,
+.Social_Container_Contact > #Social_Container > a:focus-visible > i {
+	text-shadow: 0px 0px 1.5px black;
+	color: color.$Button-1;
+}
+
+#address-block {
+	a,
+	a:hover,
+	a:focus,
+	a:active {
+		color: inherit;
 	}
+}
+
+#address-block > a:focus-visible > address {
+	@include Focus-Outline-Offset();
+
+	display: inline;
+}
+#address-block > a:focus-visible {
+	@include Focus-Outline-Offset();
+	display: inline;
+}
+
+input,
+textarea {
+	transition: all 0.3s ease-out;
+}
+
+#sendButton {
+	transition: none;
 }

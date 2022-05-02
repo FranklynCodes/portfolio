@@ -1,4 +1,7 @@
+$GoldenRatio: 1.61803398875;
+$Global-line-height: 1.45;
 $Global-line-height: 1.4;
+$Global-line-height: 1.4705882353;
 
 * {
 	line-height: $Global-line-height;
@@ -18,4 +21,10 @@ Button {
 
 html {
 	background-color: red;
+}
+
+h1,
+h2,
+h3 {
+	line-height: $GoldenRatio;
 }

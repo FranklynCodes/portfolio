@@ -1,13 +1,23 @@
+// Gray Tones
+$Gray-Default: rgb(128, 128, 128);
+$Gray-900: rgba(32, 40, 51, 255);
+$Gray-800: rgba(64, 75, 90, 255);
+$Gray-700: rgba(110, 122, 138, 255);
+$Gray-600: rgba(146, 159, 177, 255);
+$Gray-500: rgba(174, 190, 205, 255);
+$Gray-400: rgba(204, 212, 219, 255);
+$Gray-390: rgba(213, 221, 229, 255);
+$Gray-200: rgba(225, 231, 236, 255);
+$Gray-100: rgba(248, 249, 250, 255);
+
 // ! Refactor About variables to be more percises
 // ! Only font and background colors in color.scss
 
 // Elements Primary
 $Background-1-OffPurple: #232946;
 $Header-1-A--OffWhite: #fffffe;
-$Header-1-B--OffWhite: #fff4ff;
-$Header-1-C--OffWhite: #fffffe;
-// $Paragraph-1: #c2cbfa;
-$Paragraph-1: #b8c1ec;
+// color: rgb(224 229 249);
+
 $Button-1: #eebbc3;
 $Button-1-Text: #232946;
 
@@ -17,10 +27,7 @@ $Background-2-OffPurple: #d4d8f0;
 $Background-2-OffWhite: #fffffe;
 
 $Header-2-A--OffPurple: #232946;
-$Header-2-B--OffPurple: #232946;
-$Header-2-C--OffWhite: #fffffe;
 
-$CardHeading-2: #232946;
 $Paragraph-2: #232946;
 
 $Button-2: #eebbc3;
@@ -31,6 +38,9 @@ $Header-Sub-Title: #d4939d;
 
 // # .NavBar-Colors
 
+// | Research
+$ColorA: #232346; // Referense
+
 $NavBar-PurpleBackground: linear-gradient(90deg, #2c0b4c 12.5%, #500f83, #2c0b4c);
 $NavBar-BackGround-Color: #0f0e17; // ! Add This is darker
 $NavBar-BackGround-Color: #17171b;
@@ -40,14 +50,53 @@ $NavBar-BackGround-Color: #9b7ef3; // Shift
 $NavBar-BackGround-Color: $Background-1-OffPurple;
 $NavBar-BackGround-Btn-Color: #eebbc3;
 $NavBar-Btn-Color-Text: #232946;
-$NavBar-Text: aliceblue;
+$NavBar-Font-Color: $Background-2-OffWhite;
+$NavBar-Font-Color: $Gray-100;
+
+// ~ Organize
+$ProjectBtn--font-color: rgb(226 230 253);
+// ~
+
+// #TechStack - Colors
+
+$TechStack-BG-Color: #eebbc3;
+$TechStack-Card-BG-Color: #fffffe;
+$TechStack-Header-Color: #232946; // ! Add
+$TechStack-SubHeader-Color: #d4939d; // ! ADD
+// # Certification Colors
+
+$Cert-Bg-Color: #232946;
+$Cert-Top-Header: #fffffe;
+$Cert-Card-Bg-Color: #fffffe;
+$Cert-Header-Color: #232946; // ! ADD
+$Cert-SubHeader-Color: #232946;
+$Cert-Button-Bg-Color: #232946; // !
+$Cert-Button-Text-Color: #b8c1ec; // Not enough contrast
+$Cert-Button-Text-Color-A: #d8ddf9; // !
+
+$Cert-Button-Focus-Bg-Color: $Background-1-OffPurple;
+$Cert-Button-Focus-Text-Color: $Background-2-OffPurple;
+
+// # ContactForm Color
+$ContactForm-Bg-Color: #d4d8f0;
+$Contact-Heading-Color: #232946;
+$Contact-Card-Bg-Color: #fffffe;
+
+$Contact-Btn-Color: #121629;
+$Contact-Icon-Color: #232946;
+$Contact-Input-Text-Color: #121629;
+$Contact-Input-Border-Color: #232946;
+$Contact-Input-Outline-Color: #232946;
+$Contact-Btn-Bg-Color: #b8c1ec;
+$Contact-Btn-Bg-Color: #eebbc3;
+$Contact-Send-Btn-Bg-Color-Hover: #232946;
+$Contact-Send-Btn-Color-Hover: #fffffe;
 
 .NavBar-Colors {
 	// background: $NavBar-PurpleBackground-;
 	background-color: $NavBar-BackGround-Color;
-	color: aliceblue;
+	color: $NavBar-Font-Color;
 
-	// TODO: text-shadow?
 	// text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
 	text-shadow: 0px 0px 1px white;
 
@@ -59,12 +108,12 @@ $NavBar-Text: aliceblue;
 		}
 	}
 	a:any-link {
-		color: $NavBar-Text;
+		color: $NavBar-Font-Color;
 	}
 
 	/* WebKit browsers */
 	a:-webkit-any-link {
-		color: $NavBar-Text;
+		color: $NavBar-Font-Color;
 	}
 }
 
@@ -79,15 +128,12 @@ $NavBar-Text: aliceblue;
 // # .About-Color
 .About-Color {
 	background: $Background-1-OffPurple;
-
 	h1,
 	h2 {
-		color: $Header-1-A--OffWhite;
-		// color: $Header-1-B--OffWhite;
-		// color: $Header-1-C--OffWhite;
+		color: $Header-1-A--OffWhite; // HERE
 	}
 	p {
-		color: $Paragraph-1;
+		color: $Cert-Button-Text-Color-A;
 	}
 }
 
@@ -123,26 +169,6 @@ $NavBar-Text: aliceblue;
 	}
 }
 
-// # Anchors
-
-// Anchor/Links
-// TODO: Refactor or remove a:any-link colors
-// a:any-link {
-// 	color: $NavBar-Text;
-// }
-
-// /* WebKit browsers */
-// a:-webkit-any-link {
-// 	color: $NavBar-Text;
-// }
-
-// #TechStack - Colors
-
-$TechStack-BG-Color: #eebbc3;
-$TechStack-Card-BG-Color: #fffffe;
-$TechStack-Header-Color: #232946; // ! Add
-$TechStack-SubHeader-Color: #d4939d; // ! ADD
-
 #TechStack {
 	background-color: $TechStack-BG-Color;
 	#Skill-Container {
@@ -155,35 +181,6 @@ $TechStack-SubHeader-Color: #d4939d; // ! ADD
 		color: $TechStack-Header-Color;
 	}
 }
-
-// # Certification Colors
-
-$Cert-Bg-Color: #232946;
-$Cert-Top-Header: #fffffe;
-$Cert-Card-Bg-Color: #fffffe;
-$Cert-Header-Color: #232946; // ! ADD
-$Cert-SubHeader-Color: #232946;
-$Cert-Button-Bg-Color: #232946; // !
-$Cert-Button-Text-Color: #b8c1ec; // Not enough contrast
-$Cert-Button-Text-Color-A: #d8ddf9; // !
-
-$Cert-Button-Focus-Bg-Color: $Background-1-OffPurple;
-$Cert-Button-Focus-Text-Color: $Background-2-OffPurple;
-
-// # ContactForm Color
-$ContactForm-Bg-Color: #d4d8f0;
-$Contact-Heading-Color: #232946;
-$Contact-Card-Bg-Color: #fffffe;
-
-$Contact-Btn-Color: #121629;
-$Contact-Icon-Color: #232946;
-$Contact-Input-Text-Color: #121629;
-$Contact-Input-Border-Color: #232946;
-$Contact-Input-Outline-Color: #232946;
-$Contact-Btn-Bg-Color: #b8c1ec;
-$Contact-Btn-Bg-Color: #eebbc3;
-$Contact-Send-Btn-Bg-Color-Hover: #232946;
-$Contact-Send-Btn-Color-Hover: #fffffe;
 
 #Certification {
 	background-color: $Cert-Bg-Color;
@@ -238,9 +235,9 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 		}
 	}
 	#sendButton {
-		background-color: $Contact-Btn-Bg-Color;
+		color: $NavBar-Btn-Color-Text;
+		background-color: $NavBar-BackGround-Btn-Color;
 		border: solid 2.5px $Contact-Input-Text-Color;
-
 	}
 
 	.fab {

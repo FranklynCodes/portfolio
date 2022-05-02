@@ -1,6 +1,6 @@
 .NavBar-Colors {
   background-color: #232946;
-  color: aliceblue;
+  color: #f8f9fa;
   text-shadow: 0px 0px 1px white;
   /* WebKit browsers */
 }
@@ -12,10 +12,10 @@
   cursor: pointer;
 }
 .NavBar-Colors a:any-link {
-  color: aliceblue;
+  color: #f8f9fa;
 }
 .NavBar-Colors a:-webkit-any-link {
-  color: aliceblue;
+  color: #f8f9fa;
 }
 
 .fab {
@@ -31,7 +31,7 @@
   color: #fffffe;
 }
 .About-Color p {
-  color: #b8c1ec;
+  color: #d8ddf9;
 }
 
 .Project-Color .Project-Title {
@@ -122,6 +122,7 @@
   border: 2.5px solid #232946;
 }
 #ContactForm #sendButton {
+  color: #232946;
   background-color: #eebbc3;
   border: solid 2.5px #121629;
 }
@@ -311,7 +312,7 @@ html ::-webkit-scrollbar-corner {
 }
 
 * {
-  line-height: 1.4;
+  line-height: 1.4705882353;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -327,6 +328,12 @@ Button {
 
 html {
   background-color: red;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.6180339888;
 }
 
 .NavHover:hover:after {
@@ -380,9 +387,12 @@ html {
   transition: all 0.2s linear;
 }
 .Hover-Btn-Type-A:hover {
+  transition: all 0.2s linear;
   color: #232946;
+  color: #101020;
   background-color: #d4d8f0;
   box-shadow: 0px 0px 7px #d4d8f0;
+  outline: 1px solid #232946;
 }
 .Hover-Btn-Type-A:focus {
   outline: 1px solid #232946;
@@ -390,14 +400,14 @@ html {
 .Hover-Btn-Type-A:focus-visible {
   color: #232946;
   background-color: #d4d8f0;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 7px #d4d8f0;
   outline-offset: 0px;
 }
 
 #ContactForm .Contact-Icons-Fab:hover {
   text-shadow: 0px 0px 3px #313131;
   text-shadow: 0px 0px 3px #0e0e0e;
-  text-shadow: 0px 0px 3px black;
+  text-shadow: 0px 0px 1.5px black;
   color: #eebbc3;
 }
 #ContactForm .form-example input:focus,
@@ -407,13 +417,15 @@ html {
   border-radius: 5px;
 }
 #ContactForm #sendButton:hover {
-  color: #fffffe;
+  background-color: #d4d8f0;
+}
+#ContactForm #sendButton:focus, #ContactForm #sendButton:focus-visible {
   background-color: #232946;
-  border: solid 2.5px white;
+  text-shadow: 0px 0px 1px #fffffe;
+  background-color: #d4d8f0;
 }
 #ContactForm #sendButton:focus-visible {
-  color: #fffffe;
-  background-color: #232946;
+  outline-offset: 2px;
 }
 
 .Project-Btn-Hover {
@@ -424,32 +436,24 @@ html {
 .Project-Btn-Hover:hover {
   background-color: #232946;
   color: #fffffe;
+  color: #d8ddf9;
+  color: #e2e6fd;
   box-shadow: 0px 0px 7px #d4d8f0;
+  text-shadow: 0 0 1px #fffffe;
+  outline-offset: 0px;
+  outline: 1px solid #232946;
 }
 .Project-Btn-Hover:focus {
   outline: 1px solid #232946;
+  outline-offset: 0px;
+  text-shadow: 0 0 1px #fffffe;
 }
 .Project-Btn-Hover:focus-visible {
+  outline: 1px solid #232946;
   outline-offset: 0px;
+  text-shadow: 0 0 1px #fffffe;
   background-color: #232946;
   color: #fffffe;
-  box-shadow: 0px 0px 1px black;
-}
-
-.Cert-Btn {
-  background-color: #232946;
-  color: #b8c1ec;
-  border: solid 2.5px #121629;
-  text-shadow: 0 0 0.1px #fffffe;
-}
-.Cert-Btn:hover {
-  background-color: #232946;
-  color: #fffffe;
-  background-color: #d4d8f0;
-  color: #232946;
-}
-.Cert-Btn:focus {
-  outline: 0.5px solid #232946;
 }
 
 #Certification #CertAnchorText {
@@ -459,10 +463,18 @@ html {
   outline-offset: 4px;
   transition-timing-function: linear;
 }
+#Certification #CertAnchorText:focus-visible {
+  outline-offset: 4px;
+  transition-timing-function: linear;
+}
 #Certification .AnchorLinks-Container-Flex a {
   transition: all 0.2s linear;
 }
 #Certification .AnchorLinks-Container-Flex a:focus {
+  outline-offset: 4px;
+  transition-timing-function: linear;
+}
+#Certification .AnchorLinks-Container-Flex a:focus-visible {
   outline-offset: 4px;
   transition-timing-function: linear;
 }
@@ -475,7 +487,7 @@ html {
 }
 #Certification .Certification-Anchor-Btn:focus {
   outline: 2px solid #232946;
-  outline-offset: 1.5px;
+  outline-offset: 1px;
 }
 #Certification .Certification-Anchor-Btn:focus-visible {
   color: #232946;
@@ -485,24 +497,95 @@ html {
 .Contact-Icons-Fab {
   transition: all 0.5s ease-out;
 }
-.Contact-Icons-Fab:hover {
-  text-shadow: 0px 0px 1.5px #fffffe;
+
+#nav-icon-box > a:hover > i,
+#nav-icon-box > a:focus-visible > i {
+  text-shadow: 0px 0px 2px #fffffe;
   color: #d4d8f0;
 }
 
-.scrolldown {
+#Center-Logo:hover > i,
+#Center-Logo:focus-visible > i {
+  text-shadow: 0px 0px 2px #fffffe;
+  color: #d4d8f0;
+}
+
+#nav-contact-btn:hover,
+#nav-contact-btn:focus-visible {
+  text-shadow: 0px 0px 1px #fffffe;
+  background-color: #d4d8f0;
+}
+
+.About_Social div a:hover i,
+.About_Social div a:focus-visible i {
+  text-shadow: 0px 0px 2px #fffffe;
+  color: #d4d8f0;
+}
+
+.Social_Container_Contact > #Social_Container > a:hover > i,
+.Social_Container_Contact > #Social_Container > a:focus-visible > i {
+  text-shadow: 0px 0px 1.5px black;
   color: #eebbc3;
+}
+
+#address-block a,
+#address-block a:hover,
+#address-block a:focus,
+#address-block a:active {
+  color: inherit;
+}
+
+#address-block > a:focus-visible > address {
+  transition: all 0.2s linear;
+  display: inline;
+}
+#address-block > a:focus-visible > address:focus {
+  outline-offset: 4px;
+  transition-timing-function: linear;
+}
+#address-block > a:focus-visible > address:focus-visible {
+  outline-offset: 4px;
+  transition-timing-function: linear;
+}
+
+#address-block > a:focus-visible {
+  transition: all 0.2s linear;
+  display: inline;
+}
+#address-block > a:focus-visible:focus {
+  outline-offset: 4px;
+  transition-timing-function: linear;
+}
+#address-block > a:focus-visible:focus-visible {
+  outline-offset: 4px;
+  transition-timing-function: linear;
+}
+
+input,
+textarea {
+  transition: all 0.3s ease-out;
+}
+
+#sendButton {
+  transition: none;
+}
+
+.scrolldown {
+  box-shadow: 0px 0px 1px #eebbc3;
+  border: 3px solid #eebbc3;
   position: relative;
   bottom: 0px;
   width: 30px;
   height: 50px;
   margin-left: 6px;
-  border: 3px solid #eebbc3;
   border-radius: 50px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 1px black;
+  cursor: pointer;
 }
-
+.scrolldown:hover {
+  box-shadow: 0px 0px 1.5px #fffffe;
+  border-color: #d4d8f0;
+}
 .scrolldown::before {
   content: "";
   position: absolute;
@@ -513,12 +596,17 @@ html {
   margin-left: -3px;
   background-color: #eebbc3;
   border-radius: 100%;
-  animation: scrolldown-anim 2s infinite;
+  animation: scrolldown-animation 2s infinite;
   box-sizing: border-box;
   box-shadow: 0px -5px 3px 1px #ffffff66;
 }
 
-@keyframes scrolldown-anim {
+.scrolldown:hover:before {
+  background-color: #d4d8f0;
+  box-shadow: 0px -5px 3px 1px #ffffff66;
+}
+
+@keyframes scrolldown-animation {
   0% {
     opacity: 0;
     height: 6px;
@@ -553,15 +641,13 @@ html {
   border: solid #eebbc3;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   transform: rotate(45deg);
 }
-
 .chevrondown:nth-child(odd) {
   animation: pulse 500ms ease infinite alternate;
 }
-
 .chevrondown:nth-child(even) {
   animation: pulse 500ms ease infinite alternate 250ms;
 }
@@ -572,6 +658,18 @@ html {
   }
   to {
     opacity: 0.5;
+  }
+}
+.scrolldown:hover > .chevrons > .chevrondown {
+  border-color: #d4d8f0;
+  box-shadow: 0px 0px 3px #fffffe;
+  -webkit-clip-path: inset(1px 0px 0px 1px);
+  clip-path: inset(1px -6px -22px 1px);
+}
+
+@-moz-document url-prefix() {
+  .scrolldown {
+    margin-left: 8px;
   }
 }
 #Social_Container {
@@ -1147,13 +1245,9 @@ address {
 }
 #About h2 {
   padding: 0px 0px 20px 0px;
-  text-align: center;
 }
 #About p {
   padding: 0px 0px 18px 0px;
-  max-width: 500px;
-  text-align: center;
-  margin: auto;
   text-shadow: 0 0 0.1px white;
 }
 #About button {

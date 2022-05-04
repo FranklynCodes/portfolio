@@ -1,3 +1,5 @@
+@use "../mediaQuerry.scss" as mediaQuerry;
+
 #address-block {
 	// margin: 0 auto;
 	// width: fit-content;
@@ -97,10 +99,8 @@ address {
 	min-width: 100%;
 }
 
-$Mobile-HeightSwap: 750px;
-$Mobile-WidthHeightSwap: 450px;
 // TODO: Refactor
-@media screen and (max-height: $Mobile-HeightSwap) and(max-width:$Mobile-WidthHeightSwap) {
+@media screen and (max-height: mediaQuerry.$Mobile-BreakPoint-750) and(max-width:mediaQuerry.$Mobile-BreakPoint-350) {
 	#ContactForm {
 		height: 100%;
 		scroll-margin-top: 7vh;

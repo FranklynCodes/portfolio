@@ -194,17 +194,6 @@ p {
   font-size: 26px;
 }
 
-@media screen and (max-width: 975px) {
-  #ProjectSection h1 {
-    font-size: 2em;
-  }
-  #ProjectSection h2 {
-    font-size: 1.75em;
-  }
-  #ProjectSection h3 {
-    font-size: 1.5em;
-  }
-}
 #About Button {
   font-size: 2.5em;
 }
@@ -249,6 +238,45 @@ p {
   font-size: 1.75em;
 }
 
+@media screen and (max-width: 975px) {
+  #ProjectSection h1 {
+    font-size: 2em;
+  }
+  #ProjectSection h2 {
+    font-size: 1.75em;
+  }
+  #ProjectSection h3 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 430px) {
+  #ProjectSection h1 {
+    font-size: 2em;
+  }
+  #ProjectSection h2 {
+    font-size: 1.75em;
+  }
+  #ProjectSection h3 {
+    font-size: 1.5em;
+  }
+  #ProjectSection a {
+    font-size: 1.45em;
+  }
+}
+@media screen and (max-width: 430px) {
+  #ProjectSection h1 {
+    font-size: 2em;
+  }
+  #ProjectSection h2 {
+    font-size: 1.75em;
+  }
+  #ProjectSection h3 {
+    font-size: 1.5em;
+  }
+  #ProjectSection a {
+    font-size: 1.2em;
+  }
+}
 .fade-in-fwdA {
   animation: fade-in-fwdA 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 150ms both;
 }

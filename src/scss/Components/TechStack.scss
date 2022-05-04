@@ -1,4 +1,7 @@
 // Overview of TechStack
+
+@use "../mediaQuerry.scss" as mediaQuerry;
+
 .TechStack-Title {
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -83,12 +86,9 @@
 	}
 }
 
-$Techstack-Bp-A: 741px;
-$Techstack-Bp-A: 742px;
-
 // Media Query
 
-@media screen and (max-width: $Techstack-Bp-A) {
+@media screen and (max-width: mediaQuerry.$TechStack-BreakPoint-400) {
 	.Skills-Card-Flex {
 		flex-direction: column;
 	}

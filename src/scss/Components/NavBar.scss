@@ -1,4 +1,5 @@
 @use "../color.scss" as color;
+@use "../mediaQuerry.scss" as mediaQuerry;
 
 $Flex-Basis-Nav: 250px;
 $nav-icon-box-width: 100.6px;
@@ -79,8 +80,6 @@ $nav-icon-box-width: 100.6px;
 	font-size: 54.8px;
 }
 
-$BreakPoint-NavBar-A: 1068px;
-$BreakPoint-NavBar-B: 907px;
 $Shrink-Nav-Text: 23px;
 $Shink-Nav-Padding: 0.75em;
 
@@ -89,7 +88,7 @@ $Shink-Nav-Padding: 0.75em;
 		text-decoration: none;
 	}
 }
-@media screen and (max-width: $BreakPoint-NavBar-A) {
+@media screen and (max-width: mediaQuerry.$Nav-BreakPoint-500) {
 	#NavBarHorizontal #logo-nav,
 	#NavBarHorizontal #nav-links,
 	#NavBarHorizontal #nav-contact-btn {
@@ -100,7 +99,7 @@ $Shink-Nav-Padding: 0.75em;
 		padding: 0px $Shink-Nav-Padding;
 	}
 }
-@media screen and (max-width: $BreakPoint-NavBar-B) {
+@media screen and (max-width: mediaQuerry.$Nav-BreakPoint-400) {
 	// TODO: Check if you want to actually no longer display
 	#nav-icon-box {
 		display: none;
@@ -110,9 +109,9 @@ $Shink-Nav-Padding: 0.75em;
 #Hamburger-block {
 	display: none;
 }
-$Nav-Mobile-Width: 850px;
+
 $Corner-Nav-Flex-Basis: 158.45px;
-@media screen and (max-width: $Nav-Mobile-Width) {
+@media screen and (max-width: mediaQuerry.$Nav-BreakPoint-300) {
 	#NavBar-Horizontal-Flex .flex-center {
 		margin-top: 0px;
 		max-width: 100%;
@@ -191,9 +190,7 @@ $Corner-Nav-Flex-Basis: 158.45px;
 	}
 }
 
-$CellPhone-Min-Width: 454px;
-
-@media screen and (max-width: $CellPhone-Min-Width) {
+@media screen and (max-width: mediaQuerry.$Mobile-BreakPoint-375) {
 	#Hamburger-block {
 		flex-basis: auto;
 	}

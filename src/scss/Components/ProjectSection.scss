@@ -1,5 +1,6 @@
 @use "../Font/Typography.scss" as Typography-Var;
 @use "./NavBar.scss" as NavBar-Var;
+@use "../mediaQuerry.scss" as mediaQuerry;
 
 $Item-A-Margin-Btm: 6px; // H1,H2
 $Item-B-Margin-Btm: 3px; // H3
@@ -79,7 +80,7 @@ $ProjS-Btn-Size: 5px;
 
 // Media Query
 
-@media screen and (max-width: Typography-Var.$Desktop-Half-1080p) {
+@media screen and (max-width: mediaQuerry.$Desktop-Half-1080p) {
 	#ProjectSection {
 		.Project-Section-Inner {
 			// padding: 1.0em;
@@ -97,7 +98,7 @@ $Mobile-Image: 375px;
 	display: none;
 }
 
-@media screen and (max-width: NavBar-Var.$Nav-Mobile-Width) {
+@media screen and (max-width: mediaQuerry.$Nav-BreakPoint-300) {
 	#ProjectSection {
 		.Project-Image {
 			max-height: $Mobile-Image;

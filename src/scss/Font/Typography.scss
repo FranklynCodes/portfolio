@@ -1,5 +1,7 @@
 // ! Exclusive page for font size, font family and text decoration
 @use "../color.scss" as color;
+@use "../mediaQuerry.scss" as mediaQuerry;
+
 $h1_font_size: 2.5em;
 $h2_font_size: 2em;
 $h3_font_size: 1.5em;
@@ -83,33 +85,10 @@ $Navigation-Horizontal-Font-Size: 26px;
 
 // #ProjectContainer
 
-$Desktop-Half-1080p: 958px;
-$Desktop-Half-1080p: 975px;
-
 $h1-Subtraction: 0.5em;
 $h2-Subtraction: 0.25em;
 $h3-Subtraction: 0em;
 $p-Subtraction: 0.05em;
-
-@media screen and (max-width: $Desktop-Half-1080p) {
-	#ProjectSection {
-		h1 {
-			font-size: $h1_font_size - $h1-Subtraction;
-		}
-
-		h2 {
-			font-size: $h2_font_size - $h2-Subtraction;
-		}
-
-		h3 {
-			font-size: $h3_font_size - $h3-Subtraction;
-		}
-
-		p {
-			// font-size: $h3_font_size - $p-Subtraction;
-		}
-	}
-}
 
 // !Buttons Section Start
 
@@ -176,4 +155,65 @@ $font_awesome-Size: 2.5em;
 
 .fa-bars {
 	font-size: 1.75em;
+}
+
+@media screen and (max-width: mediaQuerry.$Desktop-Half-1080p) {
+	#ProjectSection {
+		h1 {
+			font-size: $h1_font_size - $h1-Subtraction;
+		}
+
+		h2 {
+			font-size: $h2_font_size - $h2-Subtraction;
+		}
+
+		h3 {
+			font-size: $h3_font_size - $h3-Subtraction;
+		}
+
+		p {
+			// font-size: $h3_font_size - $p-Subtraction;
+		}
+	}
+}
+@media screen and (max-width: mediaQuerry.$Mobile-BreakPoint-300) {
+	#ProjectSection {
+		h1 {
+			font-size: $h1_font_size - $h1-Subtraction;
+		}
+
+		h2 {
+			font-size: $h2_font_size - $h2-Subtraction;
+		}
+
+		h3 {
+			font-size: $h3_font_size - $h3-Subtraction;
+		}
+		a {
+			font-size: $Seconday_Button_font_size - $h2-Subtraction;
+		}
+
+		p {
+			// font-size: $h3_font_size - $p-Subtraction;
+		}
+	}
+}
+
+@media screen and (max-width: mediaQuerry.$Mobile-BreakPoint-300) {
+	#ProjectSection {
+		h1 {
+			font-size: $h1_font_size - $h1-Subtraction;
+		}
+
+		h2 {
+			font-size: $h2_font_size - $h2-Subtraction;
+		}
+
+		h3 {
+			font-size: $h3_font_size - $h3-Subtraction;
+		}
+		a {
+			font-size: $Seconday_Button_font_size - $h1-Subtraction;
+		}
+	}
 }

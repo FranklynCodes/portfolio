@@ -17,16 +17,18 @@ export default function Certification() {
 			<div className="Certification-Container-flex">
 				<div className="Cert-Container-Width">
 					<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">Amazon</h2>
-					<h2 className="align-L Certification-Padding-A">
+					<h2 className="align-L Certification-Padding-A Cert-Title-h2">
 						Certified Cloud Practitioner
 					</h2>
 					<div>
 						{/* <img src={AwsCloudPractitioner} alt="AWS Cloud Practitioner Certification" /> */}
-						<h3 className="Certification-Padding-B">In-Progress</h3>
+						<h3 className="Certification-Padding-B Cert-Completion-Status">
+							In-Progress
+						</h3>
 						<div className="Certification-Padding-B">
 							<h3>
 								<a
-									id="CertAnchorText"
+									id="Cert-Issuer-Text"
 									href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"
 									target="_blank"
 									rel="noreferrer"
@@ -84,19 +86,19 @@ export default function Certification() {
 					<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">
 						JPMorgan Chase & Co.
 					</h2>
-					<h2 className="align-L Certification-Padding-A">
+					<h2 className="align-L Certification-Padding-A Cert-Title-h2">
 						Software Engineering Virtual Experience
 					</h2>
 
 					<div>
-						<h4>Completed October 2021</h4>
+						<h3 className="Cert-Completion-Status">Completed October 2021</h3>
 						<div className="Certification-Padding-B">
 							<h3>Issued by Forage</h3>
 						</div>
 					</div>
 					<div className="AnchorLinks-Container-Flex">
 						<a
-							id="CertAnchorText"
+							id="Cert-Issuer-Text"
 							href={ChaseCertifcationInformation}
 							target={"_blank"}
 							rel="noreferrer"
@@ -137,12 +139,12 @@ export default function Certification() {
 					<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">
 						Goldman Sach
 					</h2>
-					<h2 className="align-L Certification-Padding-A">
+					<h2 className="align-L Certification-Padding-A Cert-Title-h2">
 						Software Engineering Virtual Experience
 					</h2>
 
 					<div>
-						<h4>Completed October 2021</h4>
+						<h3 className="Cert-Completion-Status">Completed October 2021</h3>
 						<div className="Certification-Padding-B">
 							<h3>Issued by Forage</h3>
 						</div>
@@ -155,7 +157,7 @@ export default function Certification() {
 					</div>
 					<div className="AnchorLinks-Container-Flex">
 						<a
-							id="CertAnchorText"
+							id="Cert-Issuer-Text"
 							href={GoldmanSachInformation}
 							target={"_blank"}
 							rel="noreferrer"

@@ -165,7 +165,7 @@ $ButtonShadow: 0px 0px 1px black;
 }
 // TODO: Switch CertButton :focus outline-offset to a more natural version
 #Certification {
-	#CertAnchorText {
+	#Cert-Issuer-Text {
 		@include Focus-Outline-Offset();
 	}
 	.AnchorLinks-Container-Flex {

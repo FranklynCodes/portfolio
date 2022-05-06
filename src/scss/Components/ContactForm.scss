@@ -1,5 +1,7 @@
 @use "../mediaQuerry.scss" as mediaQuerry;
 
+
+
 #address-block {
 	// margin: 0 auto;
 	// width: fit-content;
@@ -20,22 +22,26 @@ address {
 	// height: calc(100vh - 80px);
 
 	#FormContainer {
-		max-width: 600px;
+		max-width: 650px;
 		margin: 0 auto;
+		padding: 0px 20px;
 	}
 
 	h1 {
 		text-align: center;
 	}
 	.Social_Container_Contact {
-		margin-bottom: 2em;
+		// margin-bottom: 2em;
+		max-width: 575px;
+		margin: 0px auto 2em auto;
 	}
 
 	#form_container {
 		padding: 25px;
+		padding: 2em 1em 2em 2em;
 		border-radius: 20px;
-		margin: 0px 20px;
-		// width: 500px;
+		// margin: 0px 20px;
+		// width: 700px;
 
 		#button {
 			display: flex;

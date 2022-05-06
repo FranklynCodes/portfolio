@@ -58,7 +58,9 @@ $PurpleBackgroundAboutDetails: linear-gradient(175deg, #9621ff, #461989);
 		box-shadow: 0px 0px 25px 0px black;
 	}
 	.About_Social {
-		margin-top: 25px;
+		// margin-top: 25px;
+		max-width: 575px;
+		margin: 25px auto 25px auto;
 	}
 }
 

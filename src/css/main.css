@@ -151,7 +151,7 @@ p {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2,
@@ -161,10 +161,6 @@ h3 {
 
 button {
   font-weight: 500;
-}
-
-#About h1 {
-  font-size: 3.5em;
 }
 
 h1 {
@@ -180,11 +176,15 @@ h3 {
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 17.5px;
 }
 
 p {
   font-size: 1.4em;
+}
+
+#About h1 {
+  font-size: 3.5em;
 }
 
 #NavBarHorizontal #logo-nav,
@@ -205,23 +205,31 @@ p {
 }
 
 #Certification .Cert-Compnay-Title {
-  font-size: 2.3em;
+  font-size: 2.25em;
 }
-#Certification h2 {
-  font-size: 2em;
+#Certification .Cert-Title-h2 {
+  font-size: 1.8em;
+  text-decoration: underline;
 }
-#Certification h3 {
-  font-size: 1.5em;
+#Certification #Cert-Issuer-Text {
+  font-size: 0.95em;
+}
+#Certification .Cert-Completion-Status {
+  font-size: 1.525em;
+  font-style: italic;
 }
 #Certification h3 a {
   text-decoration: none;
+}
+#Certification h4 {
+  font-size: 17.5px;
 }
 #Certification .Certification-Anchor-Btn {
   font-size: 1.7em;
   font-family: "Merriweather", serif;
 }
 #Certification .AnchorLinks-Container-Flex {
-  font-size: 1em;
+  font-size: 18px;
   font-family: "Merriweather", serif;
 }
 #Certification .AnchorLinks-Container-Flex a {
@@ -246,7 +254,7 @@ p {
     font-size: 1.75em;
   }
   #ProjectSection h3 {
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
 }
 @media screen and (max-width: 430px) {
@@ -257,7 +265,7 @@ p {
     font-size: 1.75em;
   }
   #ProjectSection h3 {
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
   #ProjectSection a {
     font-size: 1.45em;
@@ -271,7 +279,7 @@ p {
     font-size: 1.75em;
   }
   #ProjectSection h3 {
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
   #ProjectSection a {
     font-size: 1.2em;
@@ -356,7 +364,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1.6180339888;
 }
 
@@ -480,14 +489,14 @@ h3 {
   color: #fffffe;
 }
 
-#Certification #CertAnchorText {
+#Certification #Cert-Issuer-Text {
   transition: all 0.2s linear;
 }
-#Certification #CertAnchorText:focus {
+#Certification #Cert-Issuer-Text:focus {
   outline-offset: 4px;
   transition-timing-function: linear;
 }
-#Certification #CertAnchorText:focus-visible {
+#Certification #Cert-Issuer-Text:focus-visible {
   outline-offset: 4px;
   transition-timing-function: linear;
 }
@@ -874,6 +883,7 @@ textarea {
 }
 #Certification .Cert-Container-Width {
   width: 100%;
+  width: 700px;
   padding: 2em;
   border-radius: 20px;
   margin-bottom: 3em;
@@ -894,10 +904,10 @@ textarea {
   text-decoration: underline;
 }
 #Certification .Certification-Padding-A {
-  margin-bottom: 12px;
+  margin-bottom: 0em;
 }
 #Certification .Certification-Padding-B {
-  margin-bottom: 10px;
+  margin-bottom: 0.1em;
 }
 #Certification .Certification-Padding-C {
   margin-bottom: 20px;
@@ -906,15 +916,15 @@ textarea {
   text-decoration: none;
 }
 #Certification .Btn-Container-Horizontal-Flex {
-  margin-top: 10px;
+  margin-top: 0.1em;
 }
 #Certification .AnchorLinks-Container-Flex {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-bottom: 0.1em;
 }
 #Certification .Cert-Style-Anchor {
-  padding-bottom: 10px;
+  padding-bottom: 0.1em;
 }
 #Certification .Certification-Anchor-Btn {
   padding: 0px 20px;
@@ -950,7 +960,7 @@ textarea {
   max-height: 500px;
 }
 #ProjectSection .Project-Section-Inner .Project-AreaB-Section {
-  max-width: 500px;
+  max-width: 680px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1092,19 +1102,21 @@ address {
   padding-bottom: 20px;
 }
 #ContactForm #FormContainer {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 #ContactForm h1 {
   text-align: center;
 }
 #ContactForm .Social_Container_Contact {
-  margin-bottom: 2em;
+  max-width: 575px;
+  margin: 0px auto 2em auto;
 }
 #ContactForm #form_container {
   padding: 25px;
+  padding: 2em 1em 2em 2em;
   border-radius: 20px;
-  margin: 0px 20px;
 }
 #ContactForm #form_container #button {
   display: flex;
@@ -1283,7 +1295,8 @@ address {
   box-shadow: 0px 0px 25px 0px black;
 }
 #About .About_Social {
-  margin-top: 25px;
+  max-width: 575px;
+  margin: 25px auto 25px auto;
 }
 
 .ScrollDown-Centering {

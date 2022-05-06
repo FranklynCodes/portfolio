@@ -5,19 +5,27 @@
 $h1_font_size: 2.5em;
 $h2_font_size: 2em;
 $h3_font_size: 1.5em;
-$h4_font_size: 1.25em;
+$h4_font_size: 1.125em; // 16px base case
+$h4_font_size: 17.5px; // 16px base case
 $h5_font_size: 1.2em;
 $h6_font_size: 1.15em;
 
-$Cert-Compnay-Title_font_addition: 0.25em;
+$Project-h2-font_size: 1.1em;
 
 $Primary_button_font_size: 2.5em;
 $Seconday_Button_font_size: 1.7em;
+
+$Navigation-Horizontal-Font-Size: 26px;
 $Parapgrah_font_size: 1.4em;
-$a_font_size: 1em;
+
 $a_font-btn-size: 1.5em;
 $PrimaryFont: "Lato", sans-serif;
 $SecondaryFont: "Merriweather", serif;
+
+$Cert-Title-h2: 1.8em;
+$Cert-CompletionStatus-Text: 1.525em;
+$Cert-Issuer-Text: 0.95em;
+$Cert-Overview-Anchor: 18px; // 16px base case
 
 h1,
 h2,
@@ -33,7 +41,7 @@ p {
 }
 
 h1 {
-	font-weight: 700;
+	font-weight: 800;
 }
 
 h2,
@@ -43,12 +51,6 @@ h3 {
 
 button {
 	font-weight: 500;
-}
-
-#About {
-	h1 {
-		font-size: $h1_font_size + 1em;
-	}
 }
 
 h1 {
@@ -71,7 +73,11 @@ p {
 	font-size: $Parapgrah_font_size;
 }
 
-$Navigation-Horizontal-Font-Size: 26px;
+#About {
+	h1 {
+		font-size: $h1_font_size + 1em;
+	}
+}
 
 // ! Navigation
 #NavBarHorizontal {
@@ -87,7 +93,7 @@ $Navigation-Horizontal-Font-Size: 26px;
 
 $h1-Subtraction: 0.5em;
 $h2-Subtraction: 0.25em;
-$h3-Subtraction: 0em;
+$h3-Subtraction: 0.15em;
 $p-Subtraction: 0.05em;
 
 // !Buttons Section Start
@@ -108,18 +114,28 @@ $p-Subtraction: 0.05em;
 
 #Certification {
 	.Cert-Compnay-Title {
-		font-size: $h1_font_size - 0.2em;
+		font-size: $h1_font_size - 0.25em;
 	}
 
-	h2 {
-		font-size: $h2_font_size;
+	.Cert-Title-h2 {
+		font-size: $Cert-Title-h2;
+		text-decoration: underline;
+	}
+	#Cert-Issuer-Text {
+		font-size: $Cert-Issuer-Text;
 	}
 
+	.Cert-Completion-Status {
+		font-size: $Cert-CompletionStatus-Text;
+		font-style: italic;
+	}
 	h3 {
-		font-size: $h3_font_size;
 		a {
 			text-decoration: none;
 		}
+	}
+	h4 {
+		font-size: $h4_font_size;
 	}
 
 	.Certification-Anchor-Btn {
@@ -128,7 +144,7 @@ $p-Subtraction: 0.05em;
 	}
 
 	.AnchorLinks-Container-Flex {
-		font-size: $a_font_size;
+		font-size: $Cert-Overview-Anchor;
 		font-family: $SecondaryFont;
 
 		a {

@@ -10,46 +10,44 @@ const socialMedia001Server = "https://fathomless-taiga-28143.herokuapp.com/";
 export default function ProjectContainer() {
 	function Ecommerce1() {
 		return (
-			<div>
-				<div id="ProjectSection" className="Project-Section-A">
-					<div className="Project-Section-Inner">
-						<div id="ImageContainer" className="Project-AreaA-Section">
+			<div id="ProjectSection" className="Project-Section-A">
+				<div className="Project-Section-Inner">
+					<div id="ImageContainer" className="Project-AreaA-Section">
+						<img
+							className="Project-Image"
+							src={"https://picsum.photos/600/400"}
+							alt="Green Hills https://picsum.photos/500/500"
+						/>
+					</div>
+					<div className="Project-AreaB-Section">
+						<h1>Ecommerece 1</h1>
+						<h2>Gems Website</h2>
+						<h1>Full Stack E-Commerece Using Commerce.js API </h1>
+						{/* <h3 id="SubTitle"> React, Redux, Node, Express, MongoDB</h3> */}
+						<h3 id="SubTitle">Stripe - Checkout Website</h3>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
+								id="Project-Image"
 								className="Project-Image"
 								src={"https://picsum.photos/600/400"}
 								alt="Green Hills https://picsum.photos/500/500"
 							/>
 						</div>
-						<div className="Project-AreaB-Section">
-							<h1>Ecommerece 1</h1>
-							<h2>Gems Website</h2>
-							<h1>Full Stack E-Commerece Using Commerce.js API </h1>
-							{/* <h3 id="SubTitle"> React, Redux, Node, Express, MongoDB</h3> */}
-							<h3 id="SubTitle">Stripe - Checkout Website</h3>
-							<div id="ImageContainerB" className="Project-AreaA-Section">
-								<img
-									id="Project-Image"
-									className="Project-Image"
-									src={"https://picsum.photos/600/400"}
-									alt="Green Hills https://picsum.photos/500/500"
-								/>
-							</div>
-							<p>
-								Website surrounding Jewlery - High End Fashion Lorem ipsum dolor sit
-								amet consectetur, adipisicing elit. Doloribus, quis perferendis
-								autem quisquam debitis a aliquam ullam dolore. Labore tempora iure
-								animi nesciunt magni beatae maxime earum odio, officiis similique?
-							</p>
+						<p>
+							Website surrounding Jewlery - High End Fashion Lorem ipsum dolor sit
+							amet consectetur, adipisicing elit. Doloribus, quis perferendis autem
+							quisquam debitis a aliquam ullam dolore. Labore tempora iure animi
+							nesciunt magni beatae maxime earum odio, officiis similique?
+						</p>
 
-							<div className="Btn-Container-Horizontal-Flex">
-								<a href={""} className="Project-Btn-Hover" target={"_blank"}>
-									Live Demo
-								</a>
+						<div className="Btn-Container-Horizontal-Flex">
+							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
+								Live Demo
+							</a>
 
-								<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
-									Source Code
-								</a>
-							</div>
+							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
+								Source Code
+							</a>
 						</div>
 					</div>
 				</div>
@@ -362,50 +360,48 @@ export default function ProjectContainer() {
 	}
 	function SocialMedia001() {
 		return (
-			<div>
-				<div id="ProjectSection">
-					<div className="Project-Section-Inner">
-						<div id="ImageContainer" className="Project-AreaA-Section">
+			<div id="ProjectSection">
+				<div className="Project-Section-Inner">
+					<div id="ImageContainer" className="Project-AreaA-Section">
+						<img
+							className="Project-Image"
+							src={"https://picsum.photos/600/400"}
+							alt="Green Hills https://picsum.photos/500/500"
+						/>
+					</div>
+					<div className="Project-AreaB-Section">
+						<h1>Social Media 001 </h1>
+						<h1>Seconday Title</h1>
+						<h2 id="SubTitle">React, Commerce.js</h2>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
+								id="Project-Image"
 								className="Project-Image"
 								src={"https://picsum.photos/600/400"}
 								alt="Green Hills https://picsum.photos/500/500"
 							/>
 						</div>
-						<div className="Project-AreaB-Section">
-							<h1>Social Media 001 </h1>
-							<h1>Seconday Title</h1>
-							<h2 id="SubTitle">React, Commerce.js</h2>
-							<div id="ImageContainerB" className="Project-AreaA-Section">
-								<img
-									id="Project-Image"
-									className="Project-Image"
-									src={"https://picsum.photos/600/400"}
-									alt="Green Hills https://picsum.photos/500/500"
-								/>
-							</div>
 
-							<p>
-								Full stack social media application, that has a login and
-								registration methods intergrated and time of posts.
-							</p>
-							<div className="Btn-Container-Horizontal-Flex">
-								<a
-									href={socialMedia001Client}
-									className="Project-Btn-Hover"
-									target={"_blank"}
-								>
-									Live Demo
-								</a>
+						<p>
+							Full stack social media application, that has a login and registration
+							methods intergrated and time of posts.
+						</p>
+						<div className="Btn-Container-Horizontal-Flex">
+							<a
+								href={socialMedia001Client}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+							>
+								Live Demo
+							</a>
 
-								<a
-									href={socialMedia001Server}
-									className="Hover-Btn-Type-A"
-									target={"_blank"}
-								>
-									Source Code
-								</a>
-							</div>
+							<a
+								href={socialMedia001Server}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+							>
+								Source Code
+							</a>
 						</div>
 					</div>
 				</div>

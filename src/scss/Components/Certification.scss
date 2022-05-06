@@ -1,5 +1,5 @@
-$A-Certifcation-Margin: 12px;
-$B-Certifcation-Margin: 10px;
+$A-Certifcation-Margin: 0em;
+$B-Certifcation-Margin: 0.1em;
 $C-Certifcation-Margin: 20px;
 
 $Certification-Btn-BorderRadius: 5px;
@@ -20,6 +20,9 @@ $Certification-Btn-BorderRadius: 5px;
 
 	.Cert-Container-Width {
 		width: 100%;
+		// width: 750px;
+		width: 700px;
+		// height: 400px; //TODO: Adjust Height
 		padding: 2em;
 		border-radius: 20px;
 		margin-bottom: 3em;

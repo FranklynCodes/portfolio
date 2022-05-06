@@ -5,7 +5,7 @@
 @use "./util/hover.scss";
 @use "./color.scss";
 
-@use "./Components/util/ScrollDownButton.scss";
+@use "./util/ScrollDownButton.scss";
 
 @use "./Components/SocialContainer.scss";
 @use "./Components/NavBar.scss";
@@ -16,6 +16,4 @@
 @use "./Components/CardContainer.scss";
 @use "./Components/About.scss";
 
-@use "./mediaQuerry.scss"
-
-// ! Transfer Over
+@use "./mediaQuerry.scss"; // ! Transfer Over

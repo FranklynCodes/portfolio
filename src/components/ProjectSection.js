@@ -411,7 +411,9 @@ export default function ProjectContainer() {
 
 	return (
 		<div id="ProjectContainer" className="ProjectContainer Project-Color">
-			<h1 className="Project-Title ">Projects</h1>
+			<h1 id="Project" className="Project-Title">
+				Projects
+			</h1>
 			<SocialMedia001 />
 			<Ecommerce1 /> {/* Jewlery e-store  */}
 			<Ecommerce2 /> {/* Built from scratch, e-store*/}

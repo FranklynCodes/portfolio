@@ -37,7 +37,7 @@ export default function NavBarHorizontalReact() {
 						</a>
 					</div>
 					<div className="align-padding option" onClick={closeMobileMenu}>
-						<a href="#ProjectSection">
+						<a href="#ProjectContainer">
 							<div className="NavHover">Projects</div>
 						</a>
 					</div>

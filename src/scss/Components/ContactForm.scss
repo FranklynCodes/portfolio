@@ -1,7 +1,5 @@
 @use "../mediaQuerry.scss" as mediaQuerry;
 
-
-
 #address-block {
 	// margin: 0 auto;
 	// width: fit-content;
@@ -19,6 +17,9 @@ address {
 }
 #ContactForm {
 	padding-bottom: 20px;
+	height: 100vh;
+	height: 93vh;
+
 	// height: calc(100vh - 80px);
 
 	#FormContainer {
@@ -105,22 +106,22 @@ address {
 	min-width: 100%;
 }
 
-// TODO: Refactor
-@media screen and (max-height: mediaQuerry.$Mobile-BreakPoint-750) and(max-width:mediaQuerry.$Mobile-BreakPoint-350) {
-	#ContactForm {
-		height: 100%;
-		scroll-margin-top: 7vh;
-		.Social_Container_Contact {
-			margin-bottom: 1em;
-		}
-		.form-example {
-			textarea {
-				height: 175px;
-			}
-		}
-	}
-	.TechStack-Title {
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-	}
-} ;
+// // TODO: Refactor
+// @media screen and (max-height: mediaQuerry.$Mobile-BreakPoint-750) and(max-width:mediaQuerry.$Mobile-BreakPoint-350) {
+// 	#ContactForm {
+// 		height: 100%;
+// 		scroll-margin-top: 7vh;
+// 		.Social_Container_Contact {
+// 			margin-bottom: 1em;
+// 		}
+// 		.form-example {
+// 			textarea {
+// 				height: 175px;
+// 			}
+// 		}
+// 	}
+// 	.TechStack-Title {
+// 		padding-top: 0.5em;
+// 		padding-bottom: 0.5em;
+// 	}
+// } ;

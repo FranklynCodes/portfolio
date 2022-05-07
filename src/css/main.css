@@ -299,18 +299,203 @@ p {
     opacity: 1;
   }
 }
+@media screen and (max-width: 2159px) {
+  #NavBar-Horizontal-Flex {
+    height: calc($NavBar-ViewHeight * 0.9);
+  }
+}
+@media screen and (max-width: 4319px) {
+  #NavBar-Horizontal-Flex {
+    height: calc($NavBar-ViewHeight * 0.95);
+  }
+}
+#NavBarHorizontal {
+  top: 0px;
+  position: sticky;
+  z-index: 10;
+}
+
+#NavBar-Horizontal-Flex {
+  min-height: 80px;
+  height: 7vh;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#NavBar-Horizontal-Flex .flex-start {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 250px;
+}
+#NavBar-Horizontal-Flex .flex-center {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  max-width: fit-content;
+}
+#NavBar-Horizontal-Flex .flex-center .align-padding {
+  padding: 0px 1em;
+  margin-top: 3px;
+}
+#NavBar-Horizontal-Flex .flex-end {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 250px;
+  align-items: center;
+}
+#NavBar-Horizontal-Flex #nav-icon-box {
+  margin-right: 20px;
+}
+#NavBar-Horizontal-Flex #nav-contact-btn {
+  padding: 0.4em 1.25em;
+  border: 1.5px solid #000;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#Center-Logo {
+  display: none;
+}
+
+.fas,
+.fa-bars,
+.fa-times {
+  font-size: 54.8px;
+}
+
+#nav-links a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1068px) {
+  #NavBarHorizontal #logo-nav,
+#NavBarHorizontal #nav-links,
+#NavBarHorizontal #nav-contact-btn {
+    font-size: 23px;
+  }
+
+  #NavBar-Horizontal-Flex .flex-center .align-padding {
+    padding: 0px 0.75em;
+  }
+}
+@media screen and (max-width: 907px) {
+  #nav-icon-box {
+    display: none;
+  }
+}
+#Hamburger-block {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  #NavBar-Horizontal-Flex .flex-center {
+    margin-top: 0px;
+    max-width: 100%;
+  }
+
+  #NavBarHorizontal #logo-nav {
+    display: none;
+  }
+  #NavBarHorizontal .icon {
+    /* display: block; */
+  }
+
+  #nav-icon-box {
+    display: none;
+  }
+
+  #Hamburger-block {
+    display: block;
+    flex-basis: 158.45px;
+    text-align: right;
+  }
+
+  #NavBar-Horizontal-Flex .flex-end {
+    display: block;
+    flex-basis: auto;
+  }
+  #NavBar-Horizontal-Flex .flex-center .align-padding {
+    margin-top: 0px;
+  }
+
+  #Center-Logo {
+    display: block;
+  }
+
+  #NavBarHorizontal #nav-contact-btn {
+    font-size: 26px;
+  }
+
+  .flex-center {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+
+  .flex-center.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 50;
+    align-content: center;
+    padding-left: 0px;
+    background-color: #232946;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+  }
+}
+@media screen and (max-width: 454px) {
+  #Hamburger-block {
+    flex-basis: auto;
+  }
+}
 #About,
 #CardContainer,
 #ContactForm,
 #SocialContainer,
+#ProjectContainer,
 #TechStack {
   scroll-margin-top: 7vh;
 }
 
-#ProjectSection {
-  scroll-margin-top: 17vh;
+@media screen and (max-width: 2159px) {
+  #About,
+#CardContainer,
+#ContactForm,
+#SocialContainer,
+#ProjectContainer,
+#TechStack {
+    scroll-margin-top: calc($NavBar-ViewHeight * 0.9);
+  }
 }
-
+@media screen and (max-width: 4319px) {
+  #About,
+#CardContainer,
+#ContactForm,
+#SocialContainer,
+#ProjectContainer,
+#TechStack {
+    scroll-margin-top: calc($NavBar-ViewHeight * 0.95);
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -711,165 +896,6 @@ textarea {
   align-items: center;
 }
 
-#NavBarHorizontal {
-  top: 0px;
-  position: sticky;
-  z-index: 10;
-}
-
-#NavBar-Horizontal-Flex {
-  min-height: 80px;
-  height: 7vh;
-  max-height: 100px;
-  max-width: 1500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-#NavBar-Horizontal-Flex .flex-start {
-  display: flex;
-  justify-content: flex-start;
-  flex-basis: 250px;
-}
-#NavBar-Horizontal-Flex .flex-center {
-  display: flex;
-  justify-content: space-evenly;
-  flex-grow: 1;
-  max-width: fit-content;
-}
-#NavBar-Horizontal-Flex .flex-center .align-padding {
-  padding: 0px 1em;
-  margin-top: 3px;
-}
-#NavBar-Horizontal-Flex .flex-end {
-  display: flex;
-  justify-content: flex-end;
-  flex-basis: 250px;
-  align-items: center;
-}
-#NavBar-Horizontal-Flex #nav-icon-box {
-  margin-right: 20px;
-}
-#NavBar-Horizontal-Flex #nav-contact-btn {
-  padding: 0.4em 1.25em;
-  border: 1.5px solid #000;
-  border-radius: 5px;
-  text-decoration: none;
-}
-#Center-Logo {
-  display: none;
-}
-
-.fas,
-.fa-bars,
-.fa-times {
-  font-size: 54.8px;
-}
-
-#nav-links a {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 1068px) {
-  #NavBarHorizontal #logo-nav,
-#NavBarHorizontal #nav-links,
-#NavBarHorizontal #nav-contact-btn {
-    font-size: 23px;
-  }
-
-  #NavBar-Horizontal-Flex .flex-center .align-padding {
-    padding: 0px 0.75em;
-  }
-}
-@media screen and (max-width: 907px) {
-  #nav-icon-box {
-    display: none;
-  }
-}
-#Hamburger-block {
-  display: none;
-}
-
-@media screen and (max-width: 850px) {
-  #NavBar-Horizontal-Flex .flex-center {
-    margin-top: 0px;
-    max-width: 100%;
-  }
-
-  #NavBarHorizontal #logo-nav {
-    display: none;
-  }
-  #NavBarHorizontal .icon {
-    /* display: block; */
-  }
-
-  #nav-icon-box {
-    display: none;
-  }
-
-  #Hamburger-block {
-    display: block;
-    flex-basis: 158.45px;
-    text-align: right;
-  }
-
-  #NavBar-Horizontal-Flex .flex-end {
-    display: block;
-    flex-basis: auto;
-  }
-  #NavBar-Horizontal-Flex .flex-center .align-padding {
-    margin-top: 0px;
-  }
-
-  #Center-Logo {
-    display: block;
-  }
-
-  #NavBarHorizontal #nav-contact-btn {
-    font-size: 26px;
-  }
-
-  .flex-center {
-    display: flex;
-    width: 100%;
-    height: 350px;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 0;
-    transition: all 0.5s ease;
-    flex-direction: column;
-    list-style-type: none;
-    grid-gap: 0px;
-  }
-
-  .flex-center.active {
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 50;
-    align-content: center;
-    padding-left: 0px;
-    background-color: #232946;
-  }
-
-  .option {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vw;
-    padding: 30px 0px;
-  }
-}
-@media screen and (max-width: 454px) {
-  #Hamburger-block {
-    flex-basis: auto;
-  }
-}
 #Certification .Cert-Container {
   max-width: fit-content;
   margin: 0px auto 0px auto;
@@ -1100,6 +1126,8 @@ address {
 
 #ContactForm {
   padding-bottom: 20px;
+  height: 100vh;
+  height: 93vh;
 }
 #ContactForm #FormContainer {
   max-width: 650px;
@@ -1165,23 +1193,6 @@ address {
   min-width: 100%;
 }
 
-@media screen and (max-height: 750px) and (max-width: 450px) {
-  #ContactForm {
-    height: 100%;
-    scroll-margin-top: 7vh;
-  }
-  #ContactForm .Social_Container_Contact {
-    margin-bottom: 1em;
-  }
-  #ContactForm .form-example textarea {
-    height: 175px;
-  }
-
-  .TechStack-Title {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-  }
-}
 #CardContainer h1 {
   text-align: center;
 }

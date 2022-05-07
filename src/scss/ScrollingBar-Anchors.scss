@@ -1,5 +1,8 @@
 // File to hold anything related to links/anchors and scrolling
 
+@use "./Components/NavBar.scss" as NavBarHeightsWidths;
+@use "./mediaQuerry.scss" as mediaQuerry;
+
 // ~ FireFox
 $ScollBarColorFireFoxBackGround: #e4e4e4;
 $ScollBarColorFireFoxBackGround: rgb(32, 32, 32); // Not bad
@@ -29,11 +32,31 @@ $ScollBar-Color-GoogleChrome-BackGround: rgb(35, 41, 67); // Original color is 3
 #CardContainer,
 #ContactForm,
 #SocialContainer,
+#ProjectContainer,
 #TechStack {
-	scroll-margin-top: 7vh;
+	scroll-margin-top: NavBarHeightsWidths.$NavBar-ViewHeight;
 }
-#ProjectSection {
-	scroll-margin-top: 17vh;
+
+@media screen and (max-width: mediaQuerry.$Desktop-2160p) {
+	#About,
+	#CardContainer,
+	#ContactForm,
+	#SocialContainer,
+	#ProjectContainer,
+	#TechStack {
+		scroll-margin-top: NavBarHeightsWidths.$ScrollMargin-Variable--4k;
+	}
+}
+@media screen and (max-width: mediaQuerry.$Desktop-4320p) {
+	#About,
+	#CardContainer,
+	#ContactForm,
+	#SocialContainer,
+	#ProjectContainer,
+	#TechStack {
+		scroll-margin-top: NavBarHeightsWidths.$ScrollMargin-Variable--8k;
+		// scroll-margin-top: 7vh; // !
+	}
 }
 
 html {

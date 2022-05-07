@@ -4,6 +4,24 @@
 $Flex-Basis-Nav: 250px;
 $nav-icon-box-width: 100.6px;
 
+$NavBar-ViewHeight: 7vh;
+
+$ScrollMargin-Variable--4k: calc($NavBar-ViewHeight * 0.9);
+@debug calc($NavBar-ViewHeight * 0.9);
+$ScrollMargin-Variable--8k: calc($NavBar-ViewHeight * 0.95);
+
+@media screen and (max-width: mediaQuerry.$Desktop-2160p) {
+	#NavBar-Horizontal-Flex {
+		height: $ScrollMargin-Variable--4k;
+	}
+}
+@media screen and (max-width: mediaQuerry.$Desktop-4320p) {
+	#NavBar-Horizontal-Flex {
+		height: $ScrollMargin-Variable--8k;
+		// height: 7vh; // !
+	}
+}
+
 #NavBarHorizontal {
 	top: 0px;
 	position: sticky;
@@ -12,8 +30,8 @@ $nav-icon-box-width: 100.6px;
 
 #NavBar-Horizontal-Flex {
 	min-height: 80px;
-	height: 7vh;
-	max-height: 100px;
+	height: $NavBar-ViewHeight;
+	// max-height: 100px;
 	max-width: 1500px;
 	margin: 0 auto;
 

@@ -299,16 +299,6 @@ p {
     opacity: 1;
   }
 }
-@media screen and (max-width: 2159px) {
-  #NavBar-Horizontal-Flex {
-    height: calc($NavBar-ViewHeight * 0.9);
-  }
-}
-@media screen and (max-width: 4319px) {
-  #NavBar-Horizontal-Flex {
-    height: calc($NavBar-ViewHeight * 0.95);
-  }
-}
 #NavBarHorizontal {
   top: 0px;
   position: sticky;
@@ -467,6 +457,16 @@ p {
     flex-basis: auto;
   }
 }
+@media screen and (min-width: 2160px) {
+  #NavBar-Horizontal-Flex {
+    height: calc(7vh * 0.98);
+  }
+}
+@media screen and (min-width: 4320px) {
+  #NavBar-Horizontal-Flex {
+    height: calc(7vh * 0.9);
+  }
+}
 #About,
 #CardContainer,
 #ContactForm,
@@ -476,24 +476,24 @@ p {
   scroll-margin-top: 7vh;
 }
 
-@media screen and (max-width: 2159px) {
+@media screen and (min-width: 2160px) {
   #About,
 #CardContainer,
 #ContactForm,
 #SocialContainer,
 #ProjectContainer,
 #TechStack {
-    scroll-margin-top: calc($NavBar-ViewHeight * 0.9);
+    scroll-margin-top: calc(7vh * 0.98);
   }
 }
-@media screen and (max-width: 4319px) {
+@media screen and (min-width: 4320px) {
   #About,
 #CardContainer,
 #ContactForm,
 #SocialContainer,
 #ProjectContainer,
 #TechStack {
-    scroll-margin-top: calc($NavBar-ViewHeight * 0.95);
+    scroll-margin-top: calc(7vh * 0.9);
   }
 }
 html {

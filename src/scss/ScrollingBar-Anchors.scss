@@ -37,25 +37,29 @@ $ScollBar-Color-GoogleChrome-BackGround: rgb(35, 41, 67); // Original color is 3
 	scroll-margin-top: NavBarHeightsWidths.$NavBar-ViewHeight;
 }
 
-@media screen and (max-width: mediaQuerry.$Desktop-2160p) {
+// | Scrolling Margin Spacing
+@media screen and (min-width: mediaQuerry.$Desktop-2160p) {
 	#About,
 	#CardContainer,
 	#ContactForm,
 	#SocialContainer,
 	#ProjectContainer,
 	#TechStack {
-		scroll-margin-top: NavBarHeightsWidths.$ScrollMargin-Variable--4k;
+		// scroll-margin-top: NavBarHeightsWidths.$ScrollMargin-Variable--4k;
+		scroll-margin-top: NavBarHeightsWidths.$Calc-Nav-VH-2160p;
+		// scroll-margin-top: calc(7vh - 100px);
 	}
 }
-@media screen and (max-width: mediaQuerry.$Desktop-4320p) {
+@media screen and (min-width: mediaQuerry.$Desktop-4320p) {
 	#About,
 	#CardContainer,
 	#ContactForm,
 	#SocialContainer,
 	#ProjectContainer,
 	#TechStack {
-		scroll-margin-top: NavBarHeightsWidths.$ScrollMargin-Variable--8k;
-		// scroll-margin-top: 7vh; // !
+		// scroll-margin-top: NavBarHeightsWidths.$ScrollMargin-Variable--8k;
+		scroll-margin-top: NavBarHeightsWidths.$Calc-Nav-VH-4320p;
+		// scroll-margin-top: calc(7vh - 100px);
 	}
 }
 

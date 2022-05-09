@@ -5,9 +5,14 @@ $Flex-Basis-Nav: 250px;
 $nav-icon-box-width: 100.6px;
 
 $NavBar-ViewHeight: 7vh;
-
 $Calc-Nav-VH-2160p: calc(7vh * 0.98);
 $Calc-Nav-VH-4320p: calc(7vh * 0.9);
+$Nav-Height-Mobile: 55px;
+// $Nav-Height-Desktop: 53px; // Base Case
+$Nav-Height-Desktop: 70px;
+
+$Nav-Global-Height-Mobile: $Nav-Height-Mobile;
+$Nav-Global-Height-Desktop: $Nav-Height-Desktop;
 
 #NavBarHorizontal {
 	top: 0px;
@@ -16,8 +21,8 @@ $Calc-Nav-VH-4320p: calc(7vh * 0.9);
 }
 
 #NavBar-Horizontal-Flex {
-	min-height: 80px;
-	height: $NavBar-ViewHeight;
+	// min-height: 80px;
+	height: $Nav-Global-Height-Desktop;
 	// max-height: 100px;
 	max-width: 1500px;
 	margin: 0 auto;
@@ -61,7 +66,7 @@ $Calc-Nav-VH-4320p: calc(7vh * 0.9);
 	}
 
 	#nav-contact-btn {
-		padding: 0.4em 1.25em;
+		padding: 0.1em 1em;
 		border: 1.5px solid #000;
 		border-radius: 5px;
 		text-decoration: none;
@@ -164,7 +169,7 @@ $Corner-Nav-Flex-Basis: 158.45px;
 		width: 100%;
 		height: 350px;
 		position: absolute;
-		top: 80px;
+		top: 70px; // ! Adapt
 		left: -100%;
 		opacity: 0;
 		transition: all 0.5s ease;

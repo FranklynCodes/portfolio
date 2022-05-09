@@ -191,7 +191,7 @@ p {
 #NavBarHorizontal #nav-links,
 #NavBarHorizontal #nav-contact-btn {
   font-family: "Lato", sans-serif;
-  font-size: 26px;
+  font-size: 23px;
 }
 
 #About Button {
@@ -306,8 +306,7 @@ p {
 }
 
 #NavBar-Horizontal-Flex {
-  min-height: 80px;
-  height: 7vh;
+  height: 70px;
   max-width: 1500px;
   margin: 0 auto;
   display: flex;
@@ -342,7 +341,7 @@ p {
   margin-right: 20px;
 }
 #NavBar-Horizontal-Flex #nav-contact-btn {
-  padding: 0.4em 1.25em;
+  padding: 0.1em 1em;
   border: 1.5px solid #000;
   border-radius: 5px;
   text-decoration: none;
@@ -425,7 +424,7 @@ p {
     width: 100%;
     height: 350px;
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: -100%;
     opacity: 0;
     transition: all 0.5s ease;
@@ -473,7 +472,7 @@ p {
 #SocialContainer,
 #ProjectContainer,
 #TechStack {
-  scroll-margin-top: 7vh;
+  scroll-margin-top: 70px;
 }
 
 @media screen and (min-width: 2160px) {

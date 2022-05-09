@@ -17,24 +17,24 @@ address {
 }
 #ContactForm {
 	padding-bottom: 20px;
-	height: 100vh;
-	height: 93vh;
-
+	// height: 100vh; // !SWAP
+	// height: 93vh;
 	// height: calc(100vh - 80px);
 
 	#FormContainer {
-		max-width: 650px;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 		margin: 0 auto;
 		padding: 0px 20px;
+		max-width: 650px;
 	}
 
 	h1 {
 		text-align: center;
 	}
 	.Social_Container_Contact {
-		// margin-bottom: 2em;
-		max-width: 575px;
-		margin: 0px auto 2em auto;
+		padding-bottom: 2em;
 	}
 
 	#form_container {
@@ -46,6 +46,7 @@ address {
 
 		#button {
 			display: flex;
+			display: inherit;
 			justify-content: center;
 			width: 250px;
 			// min-width: 100%;
@@ -69,8 +70,11 @@ address {
 		}
 
 		textarea {
-			height: 250px;
 			vertical-align: top;
+		}
+		#message {
+			display: block;
+			height: 250px;
 		}
 
 		input,

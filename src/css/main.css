@@ -194,6 +194,22 @@ p {
   font-size: 23px;
 }
 
+@media screen and (max-width: 1068px) {
+  #NavBarHorizontal #logo-nav,
+#NavBarHorizontal #nav-links,
+#NavBarHorizontal #nav-contact-btn {
+    font-size: 22px;
+  }
+}
+#NavBarHorizontal #nav-contact-btn {
+  font-size: 26px;
+}
+
+@media screen and (max-width: 850px) {
+  #NavBarHorizontal #nav-contact-btn {
+    font-size: 26px;
+  }
+}
 #About Button {
   font-size: 2.5em;
 }
@@ -319,7 +335,7 @@ p {
 #NavBar-Horizontal-Flex .flex-start {
   display: flex;
   justify-content: flex-start;
-  flex-basis: 250px;
+  flex-basis: 200.45px;
 }
 #NavBar-Horizontal-Flex .flex-center {
   display: flex;
@@ -334,7 +350,7 @@ p {
 #NavBar-Horizontal-Flex .flex-end {
   display: flex;
   justify-content: flex-end;
-  flex-basis: 250px;
+  flex-basis: 200.45px;
   align-items: center;
 }
 #NavBar-Horizontal-Flex #nav-icon-box {
@@ -361,12 +377,6 @@ p {
 }
 
 @media screen and (max-width: 1068px) {
-  #NavBarHorizontal #logo-nav,
-#NavBarHorizontal #nav-links,
-#NavBarHorizontal #nav-contact-btn {
-    font-size: 23px;
-  }
-
   #NavBar-Horizontal-Flex .flex-center .align-padding {
     padding: 0px 0.75em;
   }
@@ -399,7 +409,7 @@ p {
 
   #Hamburger-block {
     display: block;
-    flex-basis: 158.45px;
+    flex-basis: 137px;
     text-align: right;
   }
 
@@ -413,10 +423,6 @@ p {
 
   #Center-Logo {
     display: block;
-  }
-
-  #NavBarHorizontal #nav-contact-btn {
-    font-size: 26px;
   }
 
   .flex-center {
@@ -1129,7 +1135,6 @@ address {
 #ContactForm #FormContainer {
   display: flex;
   flex-direction: column;
-  height: 100%;
   margin: 0 auto;
   padding: 0px 20px;
   max-width: 650px;
@@ -1141,8 +1146,7 @@ address {
   padding-bottom: 2em;
 }
 #ContactForm #form_container {
-  padding: 25px;
-  padding: 2em 1em 2em 2em;
+  padding: 2em 2em 2em 2em;
   border-radius: 20px;
 }
 #ContactForm #form_container #button {
@@ -1196,6 +1200,11 @@ address {
   min-width: 100%;
 }
 
+@media screen and (min-width: 2160px) {
+  #ContactForm {
+    height: calc(100vh - 70px);
+  }
+}
 #CardContainer h1 {
   text-align: center;
 }

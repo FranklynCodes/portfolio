@@ -77,13 +77,13 @@ export default function NavBarHorizontalReact() {
 					<i className="fab fa-linkedin Contact-Icons-Fab"></i>
 				</a>
 
-				<div id="Hamburger-block" className="mobile-menu" onClick={handleClick}>
+				<div id="Hamburger-block" className="mobile-menu">
 					{click ? (
-						<a href="#/" className="icon">
+						<a href="#/" className="icon" onClick={handleClick}>
 							<i class="fas fa-times Hover-fab-Type-A"></i>
 						</a>
 					) : (
-						<a href="#/" className="icon">
+						<a href="#/" className="icon" onClick={handleClick}>
 							<i className="fas fa-bars Hover-fab-Type-A"></i>
 						</a>
 					)}

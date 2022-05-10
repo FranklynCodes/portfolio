@@ -1,30 +1,21 @@
 @use "../mediaQuerry.scss" as mediaQuerry;
+@use "../Components/NavBar.scss" as NavBar;
 
-#address-block {
-	// margin: 0 auto;
-	// width: fit-content;
-}
 address {
 	display: flex;
 	justify-content: center;
 }
 
-@mixin TweekLater {
-	// min-height: 100vh;
-	// height: 92vh;
-	// min-height: 1000px;
-	// padding-bottom: 30vh;
-}
 #ContactForm {
 	padding-bottom: 20px;
-	// height: 100vh; // !SWAP
-	// height: 93vh;
-	// height: calc(100vh - 80px);
+	// height: 100vh; //TODO: !SWAP
+	// height: 100vh;
+	// height: calc(100vh - 70px);
 
 	#FormContainer {
 		display: flex;
 		flex-direction: column;
-		height: 100%;
+		// height: 100%;
 		margin: 0 auto;
 		padding: 0px 20px;
 		max-width: 650px;
@@ -38,8 +29,8 @@ address {
 	}
 
 	#form_container {
-		padding: 25px;
-		padding: 2em 1em 2em 2em;
+		// padding: 25px;
+		padding: 2em 2em 2em 2em;
 		border-radius: 20px;
 		// margin: 0px 20px;
 		// width: 700px;
@@ -110,22 +101,9 @@ address {
 	min-width: 100%;
 }
 
-// // TODO: Refactor
-// @media screen and (max-height: mediaQuerry.$Mobile-BreakPoint-750) and(max-width:mediaQuerry.$Mobile-BreakPoint-350) {
-// 	#ContactForm {
-// 		height: 100%;
-// 		scroll-margin-top: 7vh;
-// 		.Social_Container_Contact {
-// 			margin-bottom: 1em;
-// 		}
-// 		.form-example {
-// 			textarea {
-// 				height: 175px;
-// 			}
-// 		}
-// 	}
-// 	.TechStack-Title {
-// 		padding-top: 0.5em;
-// 		padding-bottom: 0.5em;
-// 	}
-// } ;
+@media screen and (min-width: mediaQuerry.$Desktop-2160p) {
+	#ContactForm {
+		// Must subtract the height of NavBar it does not let me pass through in scss maybe in reg css
+		height: (calc(100vh - 70px));
+	}
+}

@@ -1,7 +1,7 @@
 @use "../color.scss" as color;
 @use "../mediaQuerry.scss" as mediaQuerry;
 
-$Flex-Basis-Nav: 250px;
+$Flex-Basis-Nav: 200.45px;
 $nav-icon-box-width: 100.6px;
 
 $NavBar-ViewHeight: 7vh;
@@ -99,12 +99,6 @@ $Shink-Nav-Padding: 0.75em;
 	}
 }
 @media screen and (max-width: mediaQuerry.$Nav-BreakPoint-500) {
-	#NavBarHorizontal #logo-nav,
-	#NavBarHorizontal #nav-links,
-	#NavBarHorizontal #nav-contact-btn {
-		font-size: $Shrink-Nav-Text;
-	}
-
 	#NavBar-Horizontal-Flex .flex-center .align-padding {
 		padding: 0px $Shink-Nav-Padding;
 	}
@@ -120,7 +114,8 @@ $Shink-Nav-Padding: 0.75em;
 	display: none;
 }
 
-$Corner-Nav-Flex-Basis: 158.45px;
+$Corner-Nav-Flex-Basis: 158px; // big button
+$Corner-Nav-Flex-Basis: 137px; // small button
 @media screen and (max-width: mediaQuerry.$Nav-BreakPoint-300) {
 	#NavBar-Horizontal-Flex .flex-center {
 		margin-top: 0px;
@@ -142,6 +137,7 @@ $Corner-Nav-Flex-Basis: 158.45px;
 	#Hamburger-block {
 		display: block;
 		flex-basis: $Corner-Nav-Flex-Basis;
+
 		text-align: right;
 	}
 
@@ -158,9 +154,6 @@ $Corner-Nav-Flex-Basis: 158.45px;
 	}
 	#Center-Logo {
 		display: block;
-	}
-	#NavBarHorizontal #nav-contact-btn {
-		font-size: 26px;
 	}
 
 	$Background-1-OffPurple: #232946;

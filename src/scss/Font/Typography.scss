@@ -79,13 +79,34 @@ p {
 	}
 }
 
-// ! Navigation
+// # Navigation
 #NavBarHorizontal {
 	#logo-nav,
 	#nav-links,
 	#nav-contact-btn {
 		font-family: $PrimaryFont;
 		font-size: $Navigation-Horizontal-Font-Size;
+	}
+}
+
+$Shrink-Nav-Text: 22px;
+
+@media screen and (max-width: mediaQuerry.$Nav-BreakPoint-500) {
+	// TODO: Swap to min-width
+	#NavBarHorizontal #logo-nav,
+	#NavBarHorizontal #nav-links,
+	#NavBarHorizontal #nav-contact-btn {
+		font-size: $Shrink-Nav-Text;
+	}
+}
+
+$Nav-Contact-Btn-Font-Size: 26px;
+#NavBarHorizontal #nav-contact-btn {
+	font-size: $Nav-Contact-Btn-Font-Size;
+}
+@media screen and (max-width: mediaQuerry.$Nav-BreakPoint-300) {
+	#NavBarHorizontal #nav-contact-btn {
+		font-size: $Nav-Contact-Btn-Font-Size;
 	}
 }
 

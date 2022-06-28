@@ -2,15 +2,13 @@
 @use "../mediaQuerry.scss" as mediaQuerry;
 
 $Flex-Basis-Nav: 200.45px;
-$nav-icon-box-width: 100.6px;
 
-$NavBar-ViewHeight: 7vh;
 $Calc-Nav-VH-2160p: calc(7vh * 0.98);
 $Calc-Nav-VH-4320p: calc(7vh * 0.9);
 $Nav-Height-Mobile: 55px;
-// $Nav-Height-Desktop: 53px; // Base Case
 $Nav-Height-Desktop: 70px;
 
+// Passed out 
 $Nav-Global-Height-Mobile: $Nav-Height-Mobile;
 $Nav-Global-Height-Desktop: $Nav-Height-Desktop;
 

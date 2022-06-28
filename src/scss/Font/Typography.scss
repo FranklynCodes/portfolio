@@ -5,8 +5,8 @@
 $h1_font_size: 2.5em;
 $h2_font_size: 2em;
 $h3_font_size: 1.5em;
-$h4_font_size: 1.125em; // 16px base case
 $h4_font_size: 17.5px; // 16px base case
+$h4_font_size: 1.25em; // 16px base case
 $h5_font_size: 1.2em;
 $h6_font_size: 1.15em;
 
@@ -16,7 +16,11 @@ $Primary_button_font_size: 2.5em;
 $Seconday_Button_font_size: 1.7em;
 
 $Navigation-Horizontal-Font-Size: 23px;
+
+$p-size-original: 16px;
 $Parapgrah_font_size: 1.4em;
+
+$li_font_size: $Parapgrah_font_size;
 
 $a_font-btn-size: 1.5em;
 $PrimaryFont: "Lato", sans-serif;
@@ -34,6 +38,9 @@ h4 {
 	font-family: $PrimaryFont;
 }
 
+li {
+	font-family: $PrimaryFont;
+}
 button,
 p {
 	font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +54,9 @@ h1 {
 h2,
 h3 {
 	font-weight: 600;
+}
+h4{
+	font-weight: 400;
 }
 
 button {
@@ -73,6 +83,9 @@ p {
 	font-size: $Parapgrah_font_size;
 }
 
+li {
+	font-size: $li_font_size;
+}
 #About {
 	h1 {
 		font-size: $h1_font_size + 1em;

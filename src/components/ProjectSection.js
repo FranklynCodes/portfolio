@@ -1,36 +1,50 @@
 import React from "react";
 
 import GreenHills from "../image/702-500x500.jpg";
+import Giphy from "./util/Giphy";
+import Imgur from "./util/Imgur";
 
-const socialMedia001Client = "https://happy-borg-176d6b.netlify.app";
-const socialMedia001Server = "https://fathomless-taiga-28143.herokuapp.com/";
-{
-	/* DO NOT STORE THESE IMAGES ON YOUR SERVER */
-}
+import WorldConnectGif from "../image/GIF/WorldConnect.gif";
+import TechCenterGif from "../image/GIF/TechCenter.gif";
+import EarthGemsGif from "../image/GIF/EarthGems.gif";
+
+// const WorldConnectGif =
+// 	"https://camo.githubusercontent.com/6365e894837efac83cb4b7f7b45a7be381981f417c060a3e742347535b86118f/68747470733a2f2f692e696d6775722e636f6d2f4d7975335668432e676966";
+
+// const TechCenterGif =
+// 	"https://camo.githubusercontent.com/135166b9a044dcf2f2b01e419a0f5d572fa61fb848a7450b9c73bd0602f57344/68747470733a2f2f696d6775722e636f6d2f5275624b6f71622e676966";
+
+// const EarthGemsGif =
+// 	"https://camo.githubusercontent.com/dc4c3d45d2c497066086348c5b9804098d66580c23c8cdc9c10cce3926c7a785/68747470733a2f2f692e696d6775722e636f6d2f6b6e55435634572e676966";
+
+const WCLive = "https://worldconnection.netlify.app";
+const WCRepo = "https://github.com/FranklynCodes/SocialMedia001";
+
+const TCLive = "https://techcenter-ecommerce.herokuapp.com";
+const TCRepo = "https://github.com/FranklynCodes/ecommerece2";
+
+const EGLive = "https://earthgems.netlify.app";
+const EGRepo = "https://github.com/FranklynCodes/ecommerece1";
+
 export default function ProjectContainer() {
 	function Ecommerce1() {
 		return (
 			<div id="ProjectSection" className="Project-Section-A">
 				<div className="Project-Section-Inner">
 					<div id="ImageContainer" className="Project-AreaA-Section">
-						<img
-							className="Project-Image"
-							src={"https://picsum.photos/600/400"}
-							alt="Green Hills https://picsum.photos/500/500"
-						/>
+						<img className="Project-Image" src={EarthGemsGif} alt="Earth Gems Gif" />
 					</div>
 					<div className="Project-AreaB-Section">
-						<h1>Ecommerece 1</h1>
+						<h1>EarthGems</h1>
 						<h2>Gems Website</h2>
 						<h1>Full Stack E-Commerece Using Commerce.js API </h1>
 						{/* <h3 id="SubTitle"> React, Redux, Node, Express, MongoDB</h3> */}
 						<h3 id="SubTitle">Stripe - Checkout Website</h3>
 						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
-								id="Project-Image"
 								className="Project-Image"
-								src={"https://picsum.photos/600/400"}
-								alt="Green Hills https://picsum.photos/500/500"
+								src={EarthGemsGif}
+								alt="Earth Gems Gif"
 							/>
 						</div>
 						<p>
@@ -41,11 +55,11 @@ export default function ProjectContainer() {
 						</p>
 
 						<div className="Btn-Container-Horizontal-Flex">
-							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
-								Live Demo
+							<a href={EGLive} className="Project-Btn-Hover" target={"_blank"}>
+								Website
 							</a>
 
-							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
+							<a href={EGRepo} className="Hover-Btn-Type-A" target={"_blank"}>
 								Source Code
 							</a>
 						</div>
@@ -60,22 +74,18 @@ export default function ProjectContainer() {
 			<div id="ProjectSection">
 				<div className="Project-Section-Inner">
 					<div id="ImageContainer" className="Project-AreaA-Section">
-						<img
-							className="Project-Image"
-							src={"https://picsum.photos/600/400"}
-							alt="Green Hills https://picsum.photos/500/500"
-						/>
+						<img className="Project-Image" src={TechCenterGif} alt="Tech Center Gif" />
 					</div>
 					<div className="Project-AreaB-Section">
-						<h1>Ecommerce 2</h1>
+						<h1>Tech Center</h1>
 
 						<h2 id="SubTitle">React, Commerce.js</h2>
 						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
 								id="Project-Image"
 								className="Project-Image"
-								src={"https://picsum.photos/600/400"}
-								alt="Green Hills https://picsum.photos/500/500"
+								src={TechCenterGif}
+								alt="Tech Center Gif"
 							/>
 						</div>
 						<p>
@@ -85,11 +95,11 @@ export default function ProjectContainer() {
 							maxime earum odio, officiis similique?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
-								Live Demo
+							<a href={TCLive} className="Project-Btn-Hover" target={"_blank"}>
+								Website
 							</a>
 
-							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
+							<a href={TCRepo} className="Hover-Btn-Type-A" target={"_blank"}>
 								Source Code
 							</a>
 						</div>
@@ -116,7 +126,6 @@ export default function ProjectContainer() {
 						<h2 id="SubTitle">React, Node.js, Express.js, MongoDB</h2>
 						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
-								id="Project-Image"
 								className="Project-Image"
 								src={"https://picsum.photos/600/400"}
 								alt="Green Hills https://picsum.photos/500/500"
@@ -130,7 +139,7 @@ export default function ProjectContainer() {
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
 							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
-								Live Demo
+								Website
 							</a>
 
 							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
@@ -160,7 +169,6 @@ export default function ProjectContainer() {
 						<h2 id="SubTitle">Google Maps Api, GooglePlaces Api, React, GPS</h2>
 						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
-								id="Project-Image"
 								className="Project-Image"
 								src={"https://picsum.photos/600/400"}
 								alt="Green Hills https://picsum.photos/500/500"
@@ -174,7 +182,7 @@ export default function ProjectContainer() {
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
 							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
-								Live Demo
+								Website
 							</a>
 
 							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
@@ -202,7 +210,6 @@ export default function ProjectContainer() {
 						<h2 id="SubTitle">Firebase</h2>
 						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
-								id="Project-Image"
 								className="Project-Image"
 								src={"https://picsum.photos/600/400"}
 								alt="Green Hills https://picsum.photos/500/500"
@@ -216,7 +223,7 @@ export default function ProjectContainer() {
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
 							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
-								Live Demo
+								Website
 							</a>
 
 							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
@@ -245,7 +252,6 @@ export default function ProjectContainer() {
 						<h2>React, React id="SubTitle"-Dropable</h2>
 						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
-								id="Project-Image"
 								className="Project-Image"
 								src={"https://picsum.photos/600/400"}
 								alt="Green Hills https://picsum.photos/500/500"
@@ -259,7 +265,7 @@ export default function ProjectContainer() {
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
 							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
-								Live Demo
+								Website
 							</a>
 
 							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
@@ -288,7 +294,6 @@ export default function ProjectContainer() {
 						<h2>API Calls To Fetch id="SubTitle" Currency</h2>
 						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
-								id="Project-Image"
 								className="Project-Image"
 								src={"https://picsum.photos/600/400"}
 								alt="Green Hills https://picsum.photos/500/500"
@@ -302,7 +307,7 @@ export default function ProjectContainer() {
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
 							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
-								Live Demo
+								Website
 							</a>
 
 							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
@@ -332,7 +337,6 @@ export default function ProjectContainer() {
 						<h2>Vanilia Javascript</h2>
 						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
-								id="Project-Image"
 								className="Project-Image"
 								src={"https://picsum.photos/600/400"}
 								alt="Green Hills https://picsum.photos/500/500"
@@ -346,7 +350,7 @@ export default function ProjectContainer() {
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
 							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
-								Live Demo
+								Website
 							</a>
 
 							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
@@ -358,6 +362,7 @@ export default function ProjectContainer() {
 			</div>
 		);
 	}
+
 	function SocialMedia001() {
 		return (
 			<div id="ProjectSection">
@@ -365,41 +370,65 @@ export default function ProjectContainer() {
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img
 							className="Project-Image"
-							src={"https://picsum.photos/600/400"}
-							alt="Green Hills https://picsum.photos/500/500"
+							src={WorldConnectGif}
+							alt="World Connect Gif"
 						/>
 					</div>
+
 					<div className="Project-AreaB-Section">
-						<h1>Social Media 001 </h1>
-						<h1>Seconday Title</h1>
-						<h2 id="SubTitle">React, Commerce.js</h2>
+						<h1>World Connect</h1>
+						{/* <h2>Social Media Applicaion </h2> */}
+						{/* <h2 id="SubTitle">React</h2> */}
 						<div id="ImageContainerB" className="Project-AreaA-Section">
 							<img
-								id="Project-Image"
 								className="Project-Image"
-								src={"https://picsum.photos/600/400"}
-								alt="Green Hills https://picsum.photos/500/500"
+								src={WorldConnectGif}
+								alt="World Connect Gif"
 							/>
 						</div>
+						<h3>
+							Social Media App, users can create posts while liking, commenting and
+							updating in real time.
+						</h3>
+						<h4>
+							Technology: GraphQL, Node, MongoDB, Express, React, Heroku, Netlify,
+							Semantic UI
+						</h4>
 
-						<p>
-							Full stack social media application, that has a login and registration
-							methods intergrated and time of posts.
-						</p>
+						<ol>
+							<li>
+								Secured authentication and authorization for login and registration
+								to prevent impersonations amongst users.
+							</li>
+							<li>
+								Generated login JWT tokens, to differentiate users to prevent a user
+								from liking a post more than once.
+							</li>
+							<li>
+								Connected and created parameters for MongoDB to receive data from
+								Apollo schema and mutations.
+							</li>
+							<li>
+								Constructed CRUD resolvers for implementing form posts, referencing
+								Apollo schema for specific data writes. Such as getPost, createPost,
+								deletePost, likePost, login, register, createComment, deleteComment.
+							</li>
+							<li>
+								Dispatched and received actions types or payload using useReducer to
+								run events if specific actions received.
+							</li>
+							<li>
+								Optimized removal of post by using cache to rerender change in only
+								UI to avoid constant server fetches.
+							</li>
+						</ol>
+
 						<div className="Btn-Container-Horizontal-Flex">
-							<a
-								href={socialMedia001Client}
-								className="Project-Btn-Hover"
-								target={"_blank"}
-							>
-								Live Demo
+							<a href={WCLive} className="Project-Btn-Hover" target={"_blank"}>
+								Website
 							</a>
 
-							<a
-								href={socialMedia001Server}
-								className="Hover-Btn-Type-A"
-								target={"_blank"}
-							>
+							<a href={WCRepo} className="Hover-Btn-Type-A" target={"_blank"}>
 								Source Code
 							</a>
 						</div>

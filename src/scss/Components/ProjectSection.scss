@@ -2,7 +2,7 @@
 @use "../mediaQuerry.scss" as mediaQuerry;
 
 $Item-A-Margin-Btm: 6px; // H1,H2
-$Item-B-Margin-Btm: 3px; // H3
+$Item-B-Margin-Btm: 0px; // H3
 $Item-C-Margin-Btm: 20px; // P
 
 $ProjS-Btn-Size: 5px;
@@ -39,7 +39,8 @@ $ProjS-Btn-Size: 5px;
 		border-radius: 15px;
 
 		.Project-AreaA-Section {
-			max-height: 500px;
+			// max-height: 600px;
+			max-width: 1100px;
 		}
 
 		.Project-AreaB-Section {

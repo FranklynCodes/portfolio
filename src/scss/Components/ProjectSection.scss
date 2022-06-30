@@ -37,6 +37,7 @@ $ProjS-Btn-Size: 5px;
 		// margin-top: 25px;
 		padding: 2em;
 		border-radius: 15px;
+		max-width: 1705px;
 
 		.Project-AreaA-Section {
 			// max-height: 600px;
@@ -83,10 +84,9 @@ $ProjS-Btn-Size: 5px;
 @media screen and (max-width: mediaQuerry.$Desktop-Half-1080p) {
 	#ProjectSection {
 		.Project-Section-Inner {
-			// padding: 1.0em;
 			// gap: 2.5em;
 			gap: 1.25em;
-			padding: 1.2em;
+			// padding: 1.2em;
 		}
 	}
 }
@@ -108,6 +108,9 @@ $Mobile-Image: 375px;
 		}
 		#ImageContainerB {
 			display: block;
+		}
+		.Project-Section-Inner .Project-AreaB-Section {
+			max-width: 100%;
 		}
 	}
 	// TODO: USE JS TO SWITCH IMAGE POISTION WHEN YOU HIT MOBILE VIEW

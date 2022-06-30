@@ -1,8 +1,8 @@
 import React from "react";
 
 import GreenHills from "../image/702-500x500.jpg";
-import Giphy from "./util/Giphy";
-import Imgur from "./util/Imgur";
+// import Giphy from "./util/Giphy";
+// import Imgur from "./util/Imgur";
 
 import WorldConnectGif from "../image/GIF/WorldConnect.gif";
 import TechCenterGif from "../image/GIF/TechCenter.gif";
@@ -80,7 +80,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -133,7 +133,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -184,7 +184,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -236,7 +236,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -288,7 +288,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -341,7 +341,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -353,10 +353,10 @@ export default function ProjectContainer() {
 		return (
 			<div id="ProjectSection">
 				<div
-					data-aos="fade-right"
-					data-aos-offset="300"
-					data-aos-easing="ease-out"
 					className="Project-Section-Inner flex-direction-rr "
+					data-aos="fade-right"
+					// data-aos-offset="300"
+					// data-aos-easing="ease-out"
 				>
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img
@@ -430,7 +430,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -508,7 +508,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -519,7 +519,7 @@ export default function ProjectContainer() {
 	function Ecommerce1() {
 		return (
 			<div id="ProjectSection">
-				<div className="Project-Section-Inner">
+				<div className="Project-Section-Inner" data-aos="fade-left">
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img className="Project-Image" src={EarthGemsGif} alt="Earth Gems Gif" />
 					</div>
@@ -576,7 +576,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -588,7 +588,7 @@ export default function ProjectContainer() {
 	function Ecommerce2() {
 		return (
 			<div id="ProjectSection">
-				<div className="Project-Section-Inner flex-direction-rr">
+				<div className="Project-Section-Inner flex-direction-rr" data-aos="fade-right">
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img className="Project-Image" src={TechCenterGif} alt="Tech Connect Gif" />
 					</div>
@@ -651,7 +651,7 @@ export default function ProjectContainer() {
 								target={"_blank"}
 								rel="noreferrer"
 							>
-								Source Code
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -661,7 +661,11 @@ export default function ProjectContainer() {
 	}
 
 	return (
-		<div id="ProjectContainer" className="ProjectContainer Project-Color">
+		<div
+			id="ProjectContainer"
+			className="ProjectContainer Project-Color"
+			style={{ overflowX: "hidden" }}
+		>
 			<h1 id="Project" className="Project-Title">
 				Projects
 			</h1>

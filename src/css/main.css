@@ -802,7 +802,7 @@ ol {
 #Hamburger-block > a:focus-visible {
   transition: text-shadow 0.3s ease-out, color 0.3s ease-out;
   text-shadow: 0px 0px 2px #fffffe;
-  color: #d4d8f0;
+  color: #e4e8fc;
 }
 
 #nav-contact-btn:hover,
@@ -1076,6 +1076,7 @@ textarea {
   gap: 1.85em;
   padding: 2em;
   border-radius: 15px;
+  max-width: 1705px;
 }
 #ProjectSection .Project-Section-Inner .Project-AreaA-Section {
   max-width: 1100px;
@@ -1112,7 +1113,6 @@ textarea {
 @media screen and (max-width: 975px) {
   #ProjectSection .Project-Section-Inner {
     gap: 1.25em;
-    padding: 1.2em;
   }
 }
 #ImageContainerB {
@@ -1128,6 +1128,9 @@ textarea {
   }
   #ProjectSection #ImageContainerB {
     display: block;
+  }
+  #ProjectSection .Project-Section-Inner .Project-AreaB-Section {
+    max-width: 100%;
   }
 }
 .TechStack-Title {

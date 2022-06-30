@@ -5,7 +5,7 @@ export default function ContactForm() {
 	return (
 		<div id="ContactForm">
 			<h1 className="TechStack-Title">Contact</h1>
-			<div id="FormContainer">
+			<div id="FormContainer" data-aos="zoom-out">
 				<div className="Social_Container_Contact">
 					<div id="Social_Container">
 						<a

@@ -80,7 +80,7 @@ export default function NavBarHorizontalReact() {
 				<div id="Hamburger-block" className="mobile-menu">
 					{click ? (
 						<a href="#/" className="icon" onClick={handleClick}>
-							<i class="fas fa-times Hover-fab-Type-A"></i>
+							<i className="fas fa-times Hover-fab-Type-A"></i>
 						</a>
 					) : (
 						<a href="#/" className="icon" onClick={handleClick}>

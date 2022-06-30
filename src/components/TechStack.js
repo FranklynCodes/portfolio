@@ -263,18 +263,20 @@ export default function TechStack() {
 		<div id="TechStack">
 			<h1 className="TechStack-Title">TechStack</h1>
 
-			<div className="Skills-Card-Flex Skills-ContainerA">
-				<Languages />
-				<QueryTech />
-				<Database />
-			</div>
-			<div className="Skills-Card-Flex Skills-ContainerB">
-				<Hosting />
-				<FrontEnd />
-			</div>
+			<div data-aos="fade-in">
+				<div className="Skills-Card-Flex Skills-ContainerA">
+					<Languages />
+					<QueryTech />
+					<Database />
+				</div>
+				<div className="Skills-Card-Flex Skills-ContainerB">
+					<Hosting />
+					<FrontEnd />
+				</div>
 
-			<div className="Skills-Card-Flex">
-				<BackEnd />
+				<div className="Skills-Card-Flex">
+					<BackEnd />
+				</div>
 			</div>
 		</div>
 	);

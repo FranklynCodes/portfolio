@@ -226,7 +226,7 @@ $ButtonShadow: 0px 0px 1px black;
 	transition: text-shadow 0.3s ease-out, color 0.3s ease-out;
 	text-shadow: 0px 0px 2px color.$Header-1-A--OffWhite;
 	// color: color.$Background-2-OffPurple;
-	color: color-Scrollbar.$ScrollBar-Background-Color--GoogleChrome;
+	color: color-Scrollbar.$ScrollBar-Color-Hover--GoogleChrome;
 }
 
 #nav-contact-btn:hover,

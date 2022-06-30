@@ -3,8 +3,8 @@ import React from "react";
 export default function Certification() {
 	function InProgressCert() {
 		return (
-			<div className="Certification-Container-flex">
-				<div class="Cert-Container-Width Cert-Container-Flex-Button">
+			<div className="Certification-Container-flex" data-aos="fade-down">
+				<div className="Cert-Container-Width Cert-Container-Flex-Button">
 					<div className="Cert-ImageAndDescription-Flex">
 						<div>
 							<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">
@@ -58,8 +58,8 @@ export default function Certification() {
 			"https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/";
 
 		return (
-			<div className="Certification-Container-flex">
-				<div class="Cert-Container-Width Cert-Container-Flex-Button">
+			<div className="Certification-Container-flex" data-aos="fade-down">
+				<div className="Cert-Container-Width Cert-Container-Flex-Button">
 					<div className=" Cert-ImageAndDescription-Flex">
 						<div>
 							<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">
@@ -111,7 +111,7 @@ export default function Certification() {
 			"https://www.theforage.com/virtual-internships/prototype/R5iK7HMxJGBgaSbvk/JP-Morgan-Banking-Technology-Virtual-Program";
 
 		return (
-			<div className="Certification-Container-flex">
+			<div className="Certification-Container-flex" data-aos="fade-down">
 				<div className="Cert-Container-Width">
 					<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">
 						JPMorgan Chase & Co.
@@ -160,7 +160,7 @@ export default function Certification() {
 			"https://www.theforage.com/virtual-internships/prototype/NPdeQ43o8P9HJmJzg/Goldman-Sachs-Virtual-Experience-Program";
 
 		return (
-			<div className="Certification-Container-flex">
+			<div className="Certification-Container-flex" data-aos="fade-down">
 				{/* <div>
 					<img src={AwsCloudPractitioner} alt="AWS Cloud Practitioner Certification" />
 				</div> */}

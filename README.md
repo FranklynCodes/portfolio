@@ -3,7 +3,6 @@
 - Linkedin  - [Franklyn C](https://www.linkedin.com/in/franklyncodes/)
 - Twitter   - [FranklynCodes](https://twitter.com/FranklynCodes) 
 - GitHub    - [FranklynCodes](https://github.com/FranklynCodes)
-- Youtube   - [franklyncodes](https://www.youtube.com/channel/UCtv54ZCDs8JrmHRO7nN6bag)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 

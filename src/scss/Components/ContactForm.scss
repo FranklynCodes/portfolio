@@ -102,8 +102,13 @@ address {
 }
 
 @media screen and (min-width: mediaQuerry.$Desktop-2160p) {
-	#ContactForm {
-		// Must subtract the height of NavBar it does not let me pass through in scss maybe in reg css
-		height: (calc(100vh - 70px));
-	}
+	// #ContactForm {
+	// Must subtract the height of NavBar it does not let me pass through in scss maybe in reg css
+	// 	height: (calc(100vh - 70px));
+	// }
+}
+
+#ContactForm {
+	// Must subtract the height of NavBar it does not let me pass through in scss maybe in reg css
+	height: (calc(100vh - 70px));
 }

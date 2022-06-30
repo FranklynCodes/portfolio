@@ -66,7 +66,7 @@
 }
 #TechStack #Skill-Container {
   background-color: #fffffe;
-  border: 1px solid #232946;
+  box-shadow: 0px 0px 2px #121629;
 }
 #TechStack h1,
 #TechStack h2,
@@ -106,6 +106,13 @@
   background-color: #fffffe;
   font-weight: bold;
   box-shadow: 0px 0px 3px #121629;
+}
+#ContactForm #form_container:hover {
+  background-color: #232946;
+  box-shadow: 0px 0px 4px #121629;
+}
+#ContactForm #form_container:hover address {
+  color: #fffffe;
 }
 #ContactForm label,
 #ContactForm select,
@@ -184,19 +191,23 @@ h3 {
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1.41em;
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 1.36em;
 }
 
 li {
-  font-size: 1.4em;
+  font-size: 1.36em;
 }
 
 #About h1 {
   font-size: 3.5em;
+}
+
+address {
+  font-size: 1.31em;
 }
 
 #NavBarHorizontal #logo-nav,
@@ -233,14 +244,17 @@ li {
 }
 
 #Certification .Cert-Compnay-Title {
-  font-size: 2.25em;
+  font-size: 2.4em;
 }
 #Certification .Cert-Title-h2 {
   font-size: 1.8em;
   text-decoration: underline;
 }
-#Certification #Cert-Issuer-Text {
-  font-size: 0.95em;
+#Certification .Cert-InProgressFont {
+  font-size: 1.8em;
+}
+#Certification #Cert-Issuer-Font {
+  font-size: 1.41em;
 }
 #Certification .Cert-Completion-Status {
   font-size: 1.525em;
@@ -250,14 +264,13 @@ li {
   text-decoration: none;
 }
 #Certification h4 {
-  font-size: 1.25em;
+  font-size: 1.41em;
 }
 #Certification .Certification-Anchor-Btn {
   font-size: 1.7em;
   font-family: "Merriweather", serif;
 }
 #Certification .AnchorLinks-Container-Flex {
-  font-size: 18px;
   font-family: "Merriweather", serif;
 }
 #Certification .AnchorLinks-Container-Flex a {
@@ -556,12 +569,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.inline {
+  display: inline;
+}
+
+.underlineNone {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
 Button {
   cursor: pointer;
 }
 
-html {
-  background-color: red;
+.button-PaddingTop {
+  margin-top: 0.8em;
 }
 
 h1,
@@ -587,6 +612,10 @@ ol {
     padding-bottom: 10px;
   }
 }
+.flex-direction-rr {
+  flex-direction: row-reverse;
+}
+
 .NavHover:hover:after {
   width: 100%;
   left: calc(50% - 40%);
@@ -707,14 +736,14 @@ ol {
   color: #fffffe;
 }
 
-#Certification #Cert-Issuer-Text {
+#Certification #Cert-Issuer-Font {
   transition: all 0.2s linear;
 }
-#Certification #Cert-Issuer-Text:focus {
+#Certification #Cert-Issuer-Font:focus {
   outline-offset: 4px;
   transition-timing-function: linear;
 }
-#Certification #Cert-Issuer-Text:focus-visible {
+#Certification #Cert-Issuer-Font:focus-visible {
   outline-offset: 4px;
   transition-timing-function: linear;
 }
@@ -745,6 +774,14 @@ ol {
   background-color: #d4d8f0;
 }
 
+#form_container {
+  transition: color 5s, background-color 0.2s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+#form_container address {
+  transition: all 0.15s ease-out;
+}
+
 .Contact-Icons-Fab {
   transition: all 0.5s ease-out;
 }
@@ -761,8 +798,16 @@ ol {
   color: #d4d8f0;
 }
 
+#Hamburger-block > a:hover,
+#Hamburger-block > a:focus-visible {
+  transition: text-shadow 0.3s ease-out, color 0.3s ease-out;
+  text-shadow: 0px 0px 2px #fffffe;
+  color: #d4d8f0;
+}
+
 #nav-contact-btn:hover,
 #nav-contact-btn:focus-visible {
+  transition: all 0.3s ease-out;
   text-shadow: 0px 0px 1px #fffffe;
   background-color: #d4d8f0;
 }
@@ -939,13 +984,24 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3em;
+}
+#Certification .Certification-Container-flex:last-of-type {
+  padding-bottom: 3.5em;
 }
 #Certification .Cert-Container-Width {
   width: 100%;
   width: 700px;
   padding: 2em;
   border-radius: 20px;
-  margin-bottom: 3em;
+}
+#Certification .Cert-ImageAndDescription-Flex {
+  display: flex;
+  justify-content: space-between;
+}
+#Certification .Cert-Container-Flex-Button {
+  display: flex;
+  flex-direction: column;
 }
 #Certification h1 {
   text-align: center;
@@ -958,9 +1014,6 @@ textarea {
 }
 #Certification .align-L {
   text-align: left;
-}
-#Certification .underline {
-  text-decoration: underline;
 }
 #Certification .Certification-Padding-A {
   margin-bottom: 0em;
@@ -990,6 +1043,15 @@ textarea {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 424.141px) {
+  #Certification .Cert-ImageAndDescription-Flex {
+    display: block;
+  }
+  #Certification img {
+    display: flex;
+    margin: 0 auto;
+  }
+}
 #ProjectContainer .Project-Title {
   text-align: center;
   padding-top: 1em;
@@ -1073,36 +1135,36 @@ textarea {
   padding-bottom: 1em;
 }
 
+#TechStack {
+  padding-bottom: 3.5em;
+}
 #TechStack h1,
 #TechStack h2 {
   text-align: center;
-}
-#TechStack h2 {
   padding-bottom: 0.5em;
 }
 #TechStack .Skills-Card-Flex {
   display: flex;
   justify-content: center;
-  margin: 0px auto 0 auto;
-  padding-bottom: 3.2em;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0px auto;
+  padding: 0px 20px 10px 20px;
+}
+#TechStack .Skills-Card-Flex:last-of-type {
+  padding-bottom: 0px;
 }
 #TechStack .Skills-Card-Flex .Center-Card-Padding {
-  margin: 0px 8px;
+  margin: 0px 10px;
 }
 #TechStack .Skills-Card-Flex .Card-Padding-B {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 #TechStack .Skills-ContainerA {
   display: flex;
   max-width: 1600px;
-  justify-content: space-between;
 }
 #TechStack .Skills-ContainerB {
   display: flex;
   max-width: 1248px;
-  justify-content: space-between;
 }
 
 #Skill-Container {
@@ -1127,9 +1189,9 @@ textarea {
   margin: 0px 7px;
 }
 #Skill-Container .card_container_Outer_A .img_logos {
+  display: block;
   width: 110px;
   height: 110px;
-  display: block;
   margin: 0 auto;
 }
 #Skill-Container .cards_container_Inner_B:first-of-type {
@@ -1144,12 +1206,15 @@ textarea {
     flex-direction: column;
   }
 
+  #TechStack .Skills-Card-Flex {
+    padding-bottom: 10px;
+  }
   #TechStack .Skills-Card-Flex .Center-Card-Padding {
-    margin: 20px 0px;
+    margin: 10px 0px;
   }
   #TechStack .Skills-Card-Flex .Card-Padding-B {
     margin-right: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 address {
@@ -1228,11 +1293,10 @@ address {
   min-width: 100%;
 }
 
-@media screen and (min-width: 2160px) {
-  #ContactForm {
-    height: calc(100vh - 70px);
-  }
+#ContactForm {
+  height: calc(100vh - 70px);
 }
+
 #CardContainer h1 {
   text-align: center;
 }

@@ -2,41 +2,46 @@
 
 @use "../mediaQuerry.scss" as mediaQuerry;
 
+$Cert-Skills-Card-SpaceBetween: 10px;
+
 .TechStack-Title {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
 #TechStack {
+	padding-bottom: 3.5em;
 	h1,
 	h2 {
 		text-align: center;
-	}
-	h2 {
 		padding-bottom: 0.5em;
 	}
+
 	.Skills-Card-Flex {
 		display: flex;
 		justify-content: center;
-		margin: 0px auto 0 auto;
-		padding-bottom: 3.2em;
-		padding-left: 20px;
-		padding-right: 20px;
+		margin: 0px auto;
+		// padding: 0px 20px 2em 20px; // Original
+		padding: 0px 20px $Cert-Skills-Card-SpaceBetween 20px;
+		&:last-of-type {
+			padding-bottom: 0px;
+		}
 		.Center-Card-Padding {
-			margin: 0px 8px;
+			margin: 0px $Cert-Skills-Card-SpaceBetween;
 		}
 		.Card-Padding-B {
-			margin-right: 8px;
+			margin-right: $Cert-Skills-Card-SpaceBetween;
 		}
 	}
+
 	.Skills-ContainerA {
 		display: flex;
 		max-width: 1600px;
-		justify-content: space-between;
+		// justify-content: space-between;
 	}
 	.Skills-ContainerB {
 		display: flex;
 		max-width: 1248px;
-		justify-content: space-between;
+		// justify-content: space-between;
 	}
 }
 
@@ -72,12 +77,13 @@
 		}
 
 		.img_logos {
+			display: block;
 			width: 110px;
 			height: 110px;
-			display: block;
 			margin: 0 auto;
 		}
 	}
+
 	.cards_container_Inner_B:first-of-type {
 		margin-left: 0px;
 	}
@@ -95,12 +101,13 @@
 
 	#TechStack {
 		.Skills-Card-Flex {
+			padding-bottom: $Cert-Skills-Card-SpaceBetween;
 			.Center-Card-Padding {
-				margin: 20px 0px;
+				margin: $Cert-Skills-Card-SpaceBetween 0px;
 			}
 			.Card-Padding-B {
 				margin-right: 0px;
-				margin-bottom: 20px;
+				margin-bottom: $Cert-Skills-Card-SpaceBetween;
 			}
 		}
 	}

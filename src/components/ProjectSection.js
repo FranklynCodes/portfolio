@@ -8,6 +8,9 @@ import WorldConnectGif from "../image/GIF/WorldConnect.gif";
 import TechCenterGif from "../image/GIF/TechCenter.gif";
 import EarthGemsGif from "../image/GIF/EarthGems.gif";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 // const WorldConnectGif =
 // 	"https://camo.githubusercontent.com/6365e894837efac83cb4b7f7b45a7be381981f417c060a3e742347535b86118f/68747470733a2f2f692e696d6775722e636f6d2f4d7975335668432e676966";
 
@@ -17,97 +20,21 @@ import EarthGemsGif from "../image/GIF/EarthGems.gif";
 // const EarthGemsGif =
 // 	"https://camo.githubusercontent.com/dc4c3d45d2c497066086348c5b9804098d66580c23c8cdc9c10cce3926c7a785/68747470733a2f2f692e696d6775722e636f6d2f6b6e55435634572e676966";
 
-const WCLive = "https://worldconnection.netlify.app";
-const WCRepo = "https://github.com/FranklynCodes/SocialMedia001";
-
-const TCLive = "https://techcenter-ecommerce.herokuapp.com";
-const TCRepo = "https://github.com/FranklynCodes/ecommerece2";
-
-const EGLive = "https://earthgems.netlify.app";
-const EGRepo = "https://github.com/FranklynCodes/ecommerece1";
-
 export default function ProjectContainer() {
-	function Ecommerce1() {
-		return (
-			<div id="ProjectSection" className="Project-Section-A">
-				<div className="Project-Section-Inner">
-					<div id="ImageContainer" className="Project-AreaA-Section">
-						<img className="Project-Image" src={EarthGemsGif} alt="Earth Gems Gif" />
-					</div>
-					<div className="Project-AreaB-Section">
-						<h1>EarthGems</h1>
-						<h2>Gems Website</h2>
-						<h1>Full Stack E-Commerece Using Commerce.js API </h1>
-						{/* <h3 id="SubTitle"> React, Redux, Node, Express, MongoDB</h3> */}
-						<h3 id="SubTitle">Stripe - Checkout Website</h3>
-						<div id="ImageContainerB" className="Project-AreaA-Section">
-							<img
-								className="Project-Image"
-								src={EarthGemsGif}
-								alt="Earth Gems Gif"
-							/>
-						</div>
-						<p>
-							Website surrounding Jewlery - High End Fashion Lorem ipsum dolor sit
-							amet consectetur, adipisicing elit. Doloribus, quis perferendis autem
-							quisquam debitis a aliquam ullam dolore. Labore tempora iure animi
-							nesciunt magni beatae maxime earum odio, officiis similique?
-						</p>
+	// const ProjectAOS = { duration: 1000 };
 
-						<div className="Btn-Container-Horizontal-Flex">
-							<a href={EGLive} className="Project-Btn-Hover" target={"_blank"}>
-								Website
-							</a>
+	// Aos.init(ProjectAOS);
+	Aos.init({ duration: 1000 });
 
-							<a href={EGRepo} className="Hover-Btn-Type-A" target={"_blank"}>
-								Source Code
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-	}
+	// Ecommerce2Old is ref to the old style, can delete
+	const WCLive = "https://worldconnection.netlify.app";
+	const WCRepo = "https://github.com/FranklynCodes/SocialMedia001";
 
-	function Ecommerce2() {
-		return (
-			<div id="ProjectSection">
-				<div className="Project-Section-Inner">
-					<div id="ImageContainer" className="Project-AreaA-Section">
-						<img className="Project-Image" src={TechCenterGif} alt="Tech Center Gif" />
-					</div>
-					<div className="Project-AreaB-Section">
-						<h1>Tech Center</h1>
+	const TCLive = "https://techcenter-ecommerce.herokuapp.com";
+	const TCRepo = "https://github.com/FranklynCodes/ecommerece2";
 
-						<h2 id="SubTitle">React, Commerce.js</h2>
-						<div id="ImageContainerB" className="Project-AreaA-Section">
-							<img
-								id="Project-Image"
-								className="Project-Image"
-								src={TechCenterGif}
-								alt="Tech Center Gif"
-							/>
-						</div>
-						<p>
-							e-Commerce Website from scatch Lorem ipsum dolor sit amet consectetur,
-							adipisicing elit. Doloribus, quis perferendis autem quisquam debitis a
-							aliquam ullam dolore. Labore tempora iure animi nesciunt magni beatae
-							maxime earum odio, officiis similique?
-						</p>
-						<div className="Btn-Container-Horizontal-Flex">
-							<a href={TCLive} className="Project-Btn-Hover" target={"_blank"}>
-								Website
-							</a>
-
-							<a href={TCRepo} className="Hover-Btn-Type-A" target={"_blank"}>
-								Source Code
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-	}
+	const EGLive = "https://earthgems.netlify.app";
+	const EGRepo = "https://github.com/FranklynCodes/ecommerece1";
 
 	function MernMarkDownBlog() {
 		return (
@@ -138,11 +65,21 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
+							<a
+								href={""}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Website
 							</a>
 
-							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
+							<a
+								href={""}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Source Code
 							</a>
 						</div>
@@ -181,11 +118,21 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
+							<a
+								href={""}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Website
 							</a>
 
-							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
+							<a
+								href={""}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Source Code
 							</a>
 						</div>
@@ -222,11 +169,21 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
+							<a
+								href={""}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Website
 							</a>
 
-							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
+							<a
+								href={""}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Source Code
 							</a>
 						</div>
@@ -264,11 +221,21 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
+							<a
+								href={""}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Website
 							</a>
 
-							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
+							<a
+								href={""}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Source Code
 							</a>
 						</div>
@@ -306,11 +273,21 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
+							<a
+								href={""}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Website
 							</a>
 
-							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
+							<a
+								href={""}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Source Code
 							</a>
 						</div>
@@ -349,11 +326,21 @@ export default function ProjectContainer() {
 							consequuntur?
 						</p>
 						<div className="Btn-Container-Horizontal-Flex">
-							<a href={""} className="Project-Btn-Hover" target={"_blank"}>
+							<a
+								href={""}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Website
 							</a>
 
-							<a href={""} className="Hover-Btn-Type-A" target={"_blank"}>
+							<a
+								href={""}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Source Code
 							</a>
 						</div>
@@ -362,11 +349,15 @@ export default function ProjectContainer() {
 			</div>
 		);
 	}
-
 	function SocialMedia001() {
 		return (
 			<div id="ProjectSection">
-				<div className="Project-Section-Inner">
+				<div
+					data-aos="fade-right"
+					data-aos-offset="300"
+					data-aos-easing="ease-out"
+					className="Project-Section-Inner flex-direction-rr "
+				>
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img
 							className="Project-Image"
@@ -424,11 +415,242 @@ export default function ProjectContainer() {
 						</ol>
 
 						<div className="Btn-Container-Horizontal-Flex">
-							<a href={WCLive} className="Project-Btn-Hover" target={"_blank"}>
+							<a
+								href={WCLive}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Website
 							</a>
 
-							<a href={WCRepo} className="Hover-Btn-Type-A" target={"_blank"}>
+							<a
+								href={WCRepo}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
+
+	function Ecommerce1Old() {
+		// ! Old Data
+		return (
+			<div id="ProjectSection" className="Project-Section-A">
+				<div className="Project-Section-Inner">
+					<div id="ImageContainer" className="Project-AreaA-Section">
+						<img className="Project-Image" src={EarthGemsGif} alt="Earth Gems Gif" />
+					</div>
+					<div className="Project-AreaB-Section">
+						<h1>EarthGems</h1>
+						<h2>Gems Website</h2>
+						<h1>Full Stack E-Commerece Using Commerce.js API </h1>
+						{/* <h3 id="SubTitle"> React, Redux, Node, Express, MongoDB</h3> */}
+						<h3 id="SubTitle">Stripe - Checkout Website</h3>
+						<div id="ImageContainerB" className="Project-AreaA-Section"></div>
+						<p>
+							Website surrounding Jewlery - High End Fashion Lorem ipsum dolor sit
+							amet consectetur, adipisicing elit. Doloribus, quis perferendis autem
+							quisquam debitis a aliquam ullam dolore. Labore tempora iure animi
+							nesciunt magni beatae maxime earum odio, officiis similique?
+						</p>
+
+						<div className="Btn-Container-Horizontal-Flex"></div>
+					</div>
+				</div>
+			</div>
+		);
+	}
+	function Ecommerce2Old() {
+		return (
+			<div id="ProjectSection">
+				<div className="Project-Section-Inner">
+					<div id="ImageContainer" className="Project-AreaA-Section">
+						<img className="Project-Image" src={TechCenterGif} alt="Tech Center Gif" />
+					</div>
+					<div className="Project-AreaB-Section">
+						<h1>Tech Center</h1>
+
+						<h2 id="SubTitle">React, Commerce.js</h2>
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								id="Project-Image"
+								className="Project-Image"
+								src={TechCenterGif}
+								alt="Tech Center Gif"
+							/>
+						</div>
+						<p>
+							e-Commerce Website from scatch Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Doloribus, quis perferendis autem quisquam debitis a
+							aliquam ullam dolore. Labore tempora iure animi nesciunt magni beatae
+							maxime earum odio, officiis similique?
+						</p>
+						<div className="Btn-Container-Horizontal-Flex">
+							<a
+								href={TCLive}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
+								Website
+							</a>
+
+							<a
+								href={TCRepo}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
+	function Ecommerce1() {
+		return (
+			<div id="ProjectSection">
+				<div className="Project-Section-Inner">
+					<div id="ImageContainer" className="Project-AreaA-Section">
+						<img className="Project-Image" src={EarthGemsGif} alt="Earth Gems Gif" />
+					</div>
+
+					<div className="Project-AreaB-Section">
+						<h1>EarthGems</h1>
+						{/* <h2>Social Media Applicaion </h2> */}
+						{/* <h2 id="SubTitle">React</h2> */}
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								className="Project-Image"
+								src={EarthGemsGif}
+								alt="Earth Gems Gif"
+							/>
+						</div>
+						<h3>
+							Applied Stripe and Commerce api to bridge payments and merchandise
+							functions for e-commerce.
+						</h3>
+						<h4>
+							Technology: Stripe.js, Commerce.js, React, Material UI,
+							React-Hook-Forms, Netlify
+						</h4>
+
+						<ol>
+							<li>
+								Finalized order data in object format to be properly received by
+								commerce.js in PaymentForm.js then emailing both the distributor and
+								customer of the order reference number.
+							</li>
+							<li>
+								Linked react components to receive promises and translate a database
+								from commerce.js.
+							</li>
+							<li>
+								Dynamically loaded an UI that can be reinitialized with new data and
+								maintain backwards compatibility.
+							</li>
+						</ol>
+
+						<div className="Btn-Container-Horizontal-Flex">
+							<a
+								href={EGLive}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
+								Website
+							</a>
+
+							<a
+								href={EGRepo}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
+
+	function Ecommerce2() {
+		return (
+			<div id="ProjectSection">
+				<div className="Project-Section-Inner flex-direction-rr">
+					<div id="ImageContainer" className="Project-AreaA-Section">
+						<img className="Project-Image" src={TechCenterGif} alt="Tech Connect Gif" />
+					</div>
+
+					<div className="Project-AreaB-Section">
+						<h1>Tech Center</h1>
+						{/* <h2>Social Media Applicaion </h2> */}
+						{/* <h2 id="SubTitle">React</h2> */}
+						<div id="ImageContainerB" className="Project-AreaA-Section">
+							<img
+								className="Project-Image"
+								src={TechCenterGif}
+								alt="Tech Connect Gif"
+							/>
+						</div>
+						<h3>
+							Redux variation of an e-commerce website instead of using useContext.
+						</h3>
+						<h4>Technology: Redux, Node.js, MongoDB, Express, React, Axios, Heroku</h4>
+
+						<ol>
+							<li>
+								Transitions react state management from useContext to redux by
+								having a single source of truth, making state read-only, and having
+								changes to be made with pure functions. Similar to the
+								single-responsibility principle in SOLID design principles; reducing
+								the complexity when multiple models start influencing each other.
+							</li>
+							<li>
+								Iterations through state by reducer to check truty of item in
+								checkout cart to call the desired function.
+							</li>
+							<li>
+								Saved state of cart via dispatch chaining to local storage
+								asynchrony using promises in addToCart and more.
+							</li>
+							<li>
+								Connected middleware to express router to dynamically call functions
+								on when user changes web pages.
+							</li>
+							<li>
+								Formatted HTTP requests with Axios to receive product url slug date
+								based on id number.
+							</li>
+						</ol>
+
+						<div className="Btn-Container-Horizontal-Flex">
+							<a
+								href={TCLive}
+								className="Project-Btn-Hover"
+								target={"_blank"}
+								rel="noreferrer"
+							>
+								Website
+							</a>
+
+							<a
+								href={TCRepo}
+								className="Hover-Btn-Type-A"
+								target={"_blank"}
+								rel="noreferrer"
+							>
 								Source Code
 							</a>
 						</div>
@@ -446,12 +668,12 @@ export default function ProjectContainer() {
 			<SocialMedia001 />
 			<Ecommerce1 /> {/* Jewlery e-store  */}
 			<Ecommerce2 /> {/* Built from scratch, e-store*/}
-			<MernMarkDownBlog /> {/* Merge Blog with ReactAuthFirebase project  */}
-			<TravelGuideApplication /> {/* Careful Connected to Google API  */}
-			<ReactAuthFirebase /> {/* TODO: Finish and impliment to future projects  */}
-			<ToDoList /> {/* Similar to trello  */}
-			<CurencyConverter /> {/* TODO: Remove to simple*/}
-			<JavascriptClock /> {/* TODO: Remove to simple*/}
+			{/* <MernMarkDownBlog />  Merge Blog with ReactAuthFirebase project  */}
+			{/* <TravelGuideApplication />  Careful Connected to Google API  */}
+			{/* <ReactAuthFirebase />  TODO: Finish and impliment to future projects  */}
+			{/* <ToDoList />  Similar to trello  */}
+			{/* <CurencyConverter />  TODO: Remove to simple*/}
+			{/*<JavascriptClock />  TODO: Remove to simple*/}
 		</div>
 	);
 }

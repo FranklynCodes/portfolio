@@ -16,12 +16,27 @@ body {
 	// background-color: #f4f4f4;
 }
 
+.inline {
+	display: inline;
+}
+.underlineNone {
+	text-decoration: none;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
 Button {
 	cursor: pointer;
 }
 
 html {
-	background-color: red;
+	// background-color: red;
+}
+
+.button-PaddingTop {
+	margin-top: 0.8em;
 }
 
 h1,
@@ -61,4 +76,8 @@ ol {
 			// font-size: $h3_font_size - $p-Subtraction;
 		}
 	}
+}
+
+.flex-direction-rr {
+	flex-direction: row-reverse;
 }

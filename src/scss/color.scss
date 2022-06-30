@@ -92,6 +92,9 @@ $Contact-Btn-Bg-Color: #eebbc3;
 $Contact-Send-Btn-Bg-Color-Hover: #232946;
 $Contact-Send-Btn-Color-Hover: #fffffe;
 
+$Contact-Email-Background-Color_Hover: $Contact-Icon-Color;
+$Contact-Email-Color-Hover: $Contact-Card-Bg-Color;
+
 .NavBar-Colors {
 	// background: $NavBar-PurpleBackground-;
 	background-color: $NavBar-BackGround-Color;
@@ -173,7 +176,8 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 	background-color: $TechStack-BG-Color;
 	#Skill-Container {
 		background-color: $TechStack-Card-BG-Color;
-		border: 1px solid $TechStack-Header-Color;
+		// border: 1px solid $TechStack-Header-Color; // ! Adjust
+		box-shadow: 0px 0px 2px $Contact-Input-Text-Color;
 	}
 	h1,
 	h2,
@@ -205,16 +209,22 @@ $Contact-Send-Btn-Color-Hover: #fffffe;
 }
 
 #ContactForm {
+	background-color: $ContactForm-Bg-Color;
 	h1 {
 		color: $Contact-Heading-Color;
 	}
-	background-color: $ContactForm-Bg-Color;
 
 	#form_container {
 		background-color: $Contact-Card-Bg-Color;
-
 		font-weight: bold;
 		box-shadow: 0px 0px 3px $Contact-Input-Text-Color;
+		&:hover {
+			background-color: $Contact-Email-Background-Color_Hover;
+			box-shadow: 0px 0px 4px $Contact-Input-Text-Color;
+			address {
+				color: $Contact-Email-Color-Hover;
+			}
+		}
 	}
 
 	label,

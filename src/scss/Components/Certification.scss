@@ -4,6 +4,8 @@ $C-Certifcation-Margin: 20px;
 
 $Certification-Btn-BorderRadius: 5px;
 
+@use "../mediaQuerry.scss" as mediaQuerry;
+
 #Certification {
 	.Cert-Container {
 		max-width: fit-content;
@@ -16,16 +18,26 @@ $Certification-Btn-BorderRadius: 5px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding-bottom: 3em;
+		&:last-of-type {
+			padding-bottom: 3.5em;
+		}
 	}
 
 	.Cert-Container-Width {
 		width: 100%;
-		// width: 750px;
 		width: 700px;
 		// height: 400px; //TODO: Adjust Height
 		padding: 2em;
 		border-radius: 20px;
-		margin-bottom: 3em;
+	}
+	.Cert-ImageAndDescription-Flex {
+		display: flex;
+		justify-content: space-between;
+	}
+	.Cert-Container-Flex-Button {
+		display: flex;
+		flex-direction: column;
 	}
 	h1 {
 		text-align: center;
@@ -41,10 +53,6 @@ $Certification-Btn-BorderRadius: 5px;
 
 	.align-L {
 		text-align: left;
-	}
-
-	.underline {
-		text-decoration: underline;
 	}
 
 	.Certification-Padding-A {
@@ -63,7 +71,7 @@ $Certification-Btn-BorderRadius: 5px;
 		text-decoration: none;
 	}
 
-	.Btn-Container-Horizontal-Flex {
+	.Btn-Container-Horizontal-Flex { // TODO: It is affecting too much break it down 
 		margin-top: $B-Certifcation-Margin;
 	}
 
@@ -79,5 +87,16 @@ $Certification-Btn-BorderRadius: 5px;
 	.Certification-Anchor-Btn {
 		padding: 0px 20px;
 		border-radius: $Certification-Btn-BorderRadius;
+	}
+}
+@media screen and (max-width: mediaQuerry.$Mobile-BreakPoint-199) {
+	#Certification {
+		.Cert-ImageAndDescription-Flex {
+			display: block;
+		}
+		img {
+			display: flex;
+			margin: 0 auto;
+		}
 	}
 }

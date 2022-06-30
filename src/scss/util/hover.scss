@@ -1,4 +1,5 @@
 @use "../color.scss" as color;
+@use "../ScrollingBar-Anchors.scss" as color-Scrollbar;
 
 $ButtonShadow: 0px 0px 1px black;
 
@@ -165,7 +166,7 @@ $ButtonShadow: 0px 0px 1px black;
 }
 // TODO: Switch CertButton :focus outline-offset to a more natural version
 #Certification {
-	#Cert-Issuer-Text {
+	#Cert-Issuer-Font {
 		@include Focus-Outline-Offset();
 	}
 	.AnchorLinks-Container-Flex {
@@ -196,6 +197,14 @@ $ButtonShadow: 0px 0px 1px black;
 	}
 }
 
+#form_container {
+	transition: color 5s, background-color 0.2s ease-out;
+	transition: background-color 0.3s ease-out;
+	address {
+		transition: all 0.15s ease-out;
+	}
+}
+
 .Contact-Icons-Fab {
 	transition: all 0.5s ease-out;
 }
@@ -211,8 +220,18 @@ $ButtonShadow: 0px 0px 1px black;
 	text-shadow: 0px 0px 2px color.$Header-1-A--OffWhite;
 	color: color.$Background-2-OffPurple;
 }
+
+#Hamburger-block > a:hover,
+#Hamburger-block > a:focus-visible {
+	transition: text-shadow 0.3s ease-out, color 0.3s ease-out;
+	text-shadow: 0px 0px 2px color.$Header-1-A--OffWhite;
+	// color: color.$Background-2-OffPurple;
+	color: color-Scrollbar.$ScrollBar-Background-Color--GoogleChrome;
+}
+
 #nav-contact-btn:hover,
 #nav-contact-btn:focus-visible {
+	transition: all 0.3s ease-out;
 	text-shadow: 0px 0px 1px color.$Header-1-A--OffWhite;
 	background-color: color.$Background-2-OffPurple;
 }

@@ -5,8 +5,8 @@
 $h1_font_size: 2.5em;
 $h2_font_size: 2em;
 $h3_font_size: 1.5em;
-$h4_font_size: 17.5px; // 16px base case
-$h4_font_size: 1.25em; // 16px base case
+// $h4_font_size: 17.5px; // 16px base case
+$h4_font_size: 1.41em; // 16px base case
 $h5_font_size: 1.2em;
 $h6_font_size: 1.15em;
 
@@ -18,18 +18,20 @@ $Seconday_Button_font_size: 1.7em;
 $Navigation-Horizontal-Font-Size: 23px;
 
 $p-size-original: 16px;
-$Parapgrah_font_size: 1.4em;
+$Parapgrah_font_size: 1.36em;
 
 $li_font_size: $Parapgrah_font_size;
 
 $a_font-btn-size: 1.5em;
-$PrimaryFont: "Lato", sans-serif;
-$SecondaryFont: "Merriweather", serif;
 
 $Cert-Title-h2: 1.8em;
 $Cert-CompletionStatus-Text: 1.525em;
-$Cert-Issuer-Text: 0.95em;
-$Cert-Overview-Anchor: 18px; // 16px base case
+$Cert-Issuer-Font: $h4_font_size;
+
+$address-font-size: $h4_font_size - 0.1em;
+
+$PrimaryFont: "Lato", sans-serif;
+$SecondaryFont: "Merriweather", serif;
 
 h1,
 h2,
@@ -55,7 +57,7 @@ h2,
 h3 {
 	font-weight: 600;
 }
-h4{
+h4 {
 	font-weight: 400;
 }
 
@@ -90,6 +92,10 @@ li {
 	h1 {
 		font-size: $h1_font_size + 1em;
 	}
+}
+
+address {
+	font-size: $address-font-size;
 }
 
 // # Navigation
@@ -148,15 +154,18 @@ $p-Subtraction: 0.05em;
 
 #Certification {
 	.Cert-Compnay-Title {
-		font-size: $h1_font_size - 0.25em;
+		font-size: $h1_font_size - 0.1em;
 	}
 
 	.Cert-Title-h2 {
 		font-size: $Cert-Title-h2;
 		text-decoration: underline;
 	}
-	#Cert-Issuer-Text {
-		font-size: $Cert-Issuer-Text;
+	.Cert-InProgressFont {
+		font-size: $Cert-Title-h2;
+	}
+	#Cert-Issuer-Font {
+		font-size: $Cert-Issuer-Font;
 	}
 
 	.Cert-Completion-Status {
@@ -178,7 +187,6 @@ $p-Subtraction: 0.05em;
 	}
 
 	.AnchorLinks-Container-Flex {
-		font-size: $Cert-Overview-Anchor;
 		font-family: $SecondaryFont;
 
 		a {

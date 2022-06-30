@@ -1,67 +1,98 @@
 import React from "react";
-import AwsCloudPractitioner from "../image/Certification/AWS-Certified_Cloud-Practitioner_512x512.bc006f14f986fa4f3ca238b0b62be458ce1fb5ce.png";
-
-// Cited from https://www.credly.com/org/amazon-web-services/badge/aws-certified-cloud-practitioner
 
 export default function Certification() {
-	const AwsCertifcationInfromation =
-		"https://aws.amazon.com/certification/certified-cloud-practitioner/";
-	const AwsExamGuide =
-		"https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf";
-
-	const AwsRampUpGuide =
-		"https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_CloudPractitioner.pdf";
-
-	function AwsCloudPract() {
+	function InProgressCert() {
 		return (
 			<div className="Certification-Container-flex">
-				<div className="Cert-Container-Width">
-					<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">Amazon</h2>
-					<h2 className="align-L Certification-Padding-A Cert-Title-h2">
-						Certified Cloud Practitioner
-					</h2>
-					<div>
-						{/* <img src={AwsCloudPractitioner} alt="AWS Cloud Practitioner Certification" /> */}
-						<h3 className="Certification-Padding-B Cert-Completion-Status">
-							In-Progress
-						</h3>
-						<div className="Certification-Padding-B">
-							<h3>
+				<div class="Cert-Container-Width Cert-Container-Flex-Button">
+					<div className="Cert-ImageAndDescription-Flex">
+						<div>
+							<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">
+								In Progress
+							</h2>
+							<h2 className="Cert-InProgressFont">
+								Microsoft -{" "}
+								<div className="inline align-L Certification-Padding-A underline">
+									AZ-204 - Azure Developer Associate
+								</div>
+							</h2>
+							<h2 className="Cert-InProgressFont">
+								Microsoft -{" "}
+								<div className="inline align-L Certification-Padding-A underline">
+									DP-900 - Azure Data Fundamentals
+								</div>
+							</h2>
+							<h2 className="Cert-InProgressFont">
+								Apollo -{" "}
+								<div className="inline align-L Certification-Padding-A underline">
+									Graph Developer - Associate
+								</div>
+							</h2>
+							<div>
+								{/* <h3 className="Cert-Completion-Status">Completed June 2022</h3> */}
+								<div className="Certification-Padding-B"></div>
+							</div>
+							{/* <h4>Credentail ID: {"#"}</h4> */}
+						</div>
+					</div>
+					{/* <div className="Btn-Container-Horizontal-Flex">
+						<a
+							className="Certification-Anchor-Btn button-PaddingTop"
+							href={"#"}
+							target="_blank"
+							rel="noreferrer"
+						>
+							See Credentail
+						</a>
+					</div> */}
+				</div>
+			</div>
+		);
+	}
+
+	function MicrosoftDp900() {
+		const MicrosoftCredentailId = "I301-9201";
+		const MicrosoftCredentailUrl =
+			"https://www.credly.com/badges/64d84739-3b5d-464b-b7c2-eed95ac0c358/public_url";
+		const MicrosoftCertifcationInformation =
+			"https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/";
+
+		return (
+			<div className="Certification-Container-flex">
+				<div class="Cert-Container-Width Cert-Container-Flex-Button">
+					<div className=" Cert-ImageAndDescription-Flex">
+						<div>
+							<h2 className="align-L Cert-Compnay-Title Certification-Padding-A">
+								Microsoft
+							</h2>
+							<h2 className="align-L Certification-Padding-A Cert-Title-h2">
+								AZ-900 - Azure Fundamentals
+							</h2>
+							<div>
+								<h3 className="Cert-Completion-Status">Completed June 2022</h3>
+								<div className="Certification-Padding-B"></div>
+							</div>
+							<div className="AnchorLinks-Container-Flex">
 								<a
-									id="Cert-Issuer-Text"
-									href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"
-									target="_blank"
+									id="Cert-Issuer-Font"
+									href={MicrosoftCertifcationInformation}
+									target={"_blank"}
 									rel="noreferrer"
 								>
-									Issued by Amazon Web Services Training and Certification
+									Certification Overview
 								</a>
-							</h3>
+							</div>
+							<h4>Credentail ID: {MicrosoftCredentailId}</h4>
 						</div>
-						{/* <p className="Certification-Padding-C">
-								Earners of this certification have a fundamental understanding of IT
-								services and their uses in the AWS Cloud. They demonstrated cloud
-								fluency and foundational AWS knowledge. Badge owners are able to
-								identify essential AWS services necessary to set up AWS-focused
-								projects.
-							</p> */}
+						<img
+							src="https://images.credly.com/size/680x680/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png"
+							alt="AZ-900 - Azure Fundamentals Badge"
+						/>
 					</div>
-					<div className="AnchorLinks-Container-Flex">
-						<a href={AwsCertifcationInfromation} target={"_blank"} rel="noreferrer">
-							Certification Overview
-						</a>
-						<a href={AwsExamGuide} target={"_blank"} rel="noreferrer">
-							Certification Details
-						</a>
-						<a href={AwsRampUpGuide} target={"_blank"} rel="noreferrer">
-							AWS Ramp-Up Guide
-						</a>
-					</div>
-					<h4>Credentail ID: ...</h4>
-
 					<div className="Btn-Container-Horizontal-Flex">
 						<a
-							className="Certification-Anchor-Btn"
-							href={"/#/"}
+							className="Certification-Anchor-Btn button-PaddingTop"
+							href={MicrosoftCredentailUrl}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -72,7 +103,6 @@ export default function Certification() {
 			</div>
 		);
 	}
-
 	function JPMorganChaseCo() {
 		const ChaseCredentailId = "AdR2K4ym4gr8FKvaX";
 		const ChaseCredentailUrl =
@@ -92,13 +122,12 @@ export default function Certification() {
 
 					<div>
 						<h3 className="Cert-Completion-Status">Completed October 2021</h3>
-						<div className="Certification-Padding-B">
-							<h3>Issued by Forage</h3>
-						</div>
+						<h3>Issued by Forage</h3>
+						<div className="Certification-Padding-B"></div>
 					</div>
 					<div className="AnchorLinks-Container-Flex">
 						<a
-							id="Cert-Issuer-Text"
+							id="Cert-Issuer-Font"
 							href={ChaseCertifcationInformation}
 							target={"_blank"}
 							rel="noreferrer"
@@ -110,7 +139,7 @@ export default function Certification() {
 					<div className="Btn-Container-Horizontal-Flex">
 						<a
 							href={ChaseCredentailUrl}
-							className="Certification-Anchor-Btn"
+							className="Certification-Anchor-Btn button-PaddingTop"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -144,10 +173,10 @@ export default function Certification() {
 					</h2>
 
 					<div>
+						{/* <h3 className="Cert-Completion-Status">Completed October 2021</h3> */}
 						<h3 className="Cert-Completion-Status">Completed October 2021</h3>
-						<div className="Certification-Padding-B">
-							<h3>Issued by Forage</h3>
-						</div>
+						<h3>Issued by Forage</h3>
+						<div className="Certification-Padding-B"></div>
 						{/* <p className="Certification-Padding-C">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							vehicula cursus tellus ac lacinia. Etiam ut est in justo congue iaculis
@@ -157,7 +186,7 @@ export default function Certification() {
 					</div>
 					<div className="AnchorLinks-Container-Flex">
 						<a
-							id="Cert-Issuer-Text"
+							id="Cert-Issuer-Font"
 							href={GoldmanSachInformation}
 							target={"_blank"}
 							rel="noreferrer"
@@ -170,7 +199,7 @@ export default function Certification() {
 					<div className="Btn-Container-Horizontal-Flex">
 						<a
 							href={GoldmanSachCredentailUrl}
-							className="Certification-Anchor-Btn"
+							className="Certification-Anchor-Btn button-PaddingTop"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -185,7 +214,8 @@ export default function Certification() {
 		<div id="Certification">
 			<h1 className="TechStack-Title">Certifications</h1>
 			<div className="Cert-Container">
-				<AwsCloudPract />
+				<MicrosoftDp900 />
+				<InProgressCert />
 				<JPMorganChaseCo />
 				<GoldmanSach />
 			</div>

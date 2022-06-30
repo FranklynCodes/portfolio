@@ -4,6 +4,7 @@ import ContactFormTemp from "./ContactFormTemp";
 export default function ContactForm() {
 	return (
 		<div id="ContactForm">
+			{/* <div id="ContactForm" style={{ overflowX: "hidden" }}> */}
 			<h1 className="TechStack-Title">Contact</h1>
 			<div id="FormContainer" data-aos="zoom-out">
 				<div className="Social_Container_Contact">

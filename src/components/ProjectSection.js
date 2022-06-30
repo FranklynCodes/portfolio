@@ -661,11 +661,7 @@ export default function ProjectContainer() {
 	}
 
 	return (
-		<div
-			id="ProjectContainer"
-			className="ProjectContainer Project-Color"
-			style={{ overflowX: "hidden" }}
-		>
+		<div id="ProjectContainer" className="ProjectContainer Project-Color">
 			<h1 id="Project" className="Project-Title">
 				Projects
 			</h1>

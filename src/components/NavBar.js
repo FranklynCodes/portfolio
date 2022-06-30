@@ -37,12 +37,21 @@ export default function NavBarHorizontalReact() {
 						</a>
 					</div>
 					<div className="align-padding option" onClick={closeMobileMenu}>
+						<a href="#Certification">
+							<div className="NavHover">Certification</div>
+						</a>
+					</div>
+					<div className="align-padding option" onClick={closeMobileMenu}>
 						<a href="#ProjectContainer">
 							<div className="NavHover">Projects</div>
 						</a>
 					</div>
 					<div className="align-padding option" onClick={closeMobileMenu}>
-						<a href="https://www.google.com/drive/" target="_blank" rel="noreferrer">
+						<a
+							href="https://drive.google.com/file/d/1yFsJij7xV2ar8H8EnfcyXTK6z3nzdpsw/view?usp=sharing"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<div className="NavHover">Resume</div>
 						</a>
 					</div>

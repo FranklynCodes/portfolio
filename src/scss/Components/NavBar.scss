@@ -8,7 +8,6 @@ $Calc-Nav-VH-4320p: calc(7vh * 0.9);
 $Nav-Height-Mobile: 55px;
 $Nav-Height-Desktop: 70px;
 
-// Passed out 
 $Nav-Global-Height-Mobile: $Nav-Height-Mobile;
 $Nav-Global-Height-Desktop: $Nav-Height-Desktop;
 
@@ -147,6 +146,11 @@ $Corner-Nav-Flex-Basis: 137px; // small button
 		.flex-center {
 			.align-padding {
 				margin-top: 0px;
+
+				a {
+					// padding-top: 10px;
+					// padding-bottom: 10px;
+				}
 			}
 		}
 	}
@@ -158,7 +162,8 @@ $Corner-Nav-Flex-Basis: 137px; // small button
 	.flex-center {
 		display: flex;
 		width: 100%;
-		height: 350px;
+		// height: 350px; // ! Danger
+		height: fit-content;
 		position: absolute;
 		top: 70px; // ! Adapt
 		left: -100%;
@@ -186,7 +191,7 @@ $Corner-Nav-Flex-Basis: 137px; // small button
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 10vw;
+		height: 10vw; // ! Danger
 		padding: 30px 0px;
 	}
 }
@@ -209,5 +214,19 @@ $Corner-Nav-Flex-Basis: 137px; // small button
 		height: $Calc-Nav-VH-4320p;
 		// height: calc(7vh - 100px);
 		// height: 7vh; // !TODO adjust this so we change dynamically
+	}
+}
+
+@media screen and (max-width: mediaQuerry.$Nav-BreakPoint-600) {
+	#NavBarHorizontal #logo-nav {
+		display: none;
+	}
+}
+@media screen and (max-width: mediaQuerry.$Nav-BreakPoint-500) {
+}
+@media screen and (max-width: mediaQuerry.$Nav-BreakPoint-300) {
+	#NavBar-Horizontal-Flex .flex-center .align-padding {
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 }

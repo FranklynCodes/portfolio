@@ -7,6 +7,8 @@ import { Link as Links } from "react-scroll";
 // const NavLink = styled(Links)``;
 
 export default function NavBarHorizontalReact() {
+	const ProductionResumeURL =
+		"https://drive.google.com/file/d/1CQsyAwtGaWXJBNZTruBIj9_t96Re15AO/view?usp=sharing";
 	const [click, setClick] = useState(false);
 	const handleClick = () => setClick(!click);
 	const closeMobileMenu = () => setClick(false);
@@ -47,11 +49,7 @@ export default function NavBarHorizontalReact() {
 						</a>
 					</div>
 					<div className="align-padding option" onClick={closeMobileMenu}>
-						<a
-							href="https://drive.google.com/file/d/1yFsJij7xV2ar8H8EnfcyXTK6z3nzdpsw/view?usp=sharing"
-							target="_blank"
-							rel="noreferrer"
-						>
+						<a href={ProductionResumeURL} target="_blank" rel="noreferrer">
 							<div className="NavHover">Resume</div>
 						</a>
 					</div>

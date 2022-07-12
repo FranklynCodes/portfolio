@@ -1,6 +1,5 @@
 import React from "react";
 
-import GreenHills from "../image/702-500x500.jpg";
 // import Giphy from "./util/Giphy";
 // import Imgur from "./util/Imgur";
 
@@ -43,7 +42,7 @@ export default function ProjectContainer() {
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img
 							className="Project-Image"
-							src={GreenHills}
+							src={""}
 							alt="Green Hills https://picsum.photos/500/500"
 						/>
 					</div>
@@ -96,7 +95,7 @@ export default function ProjectContainer() {
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img
 							className="Project-Image"
-							src={GreenHills}
+							src={""}
 							alt="Green Hills https://picsum.photos/500/500"
 						/>
 					</div>
@@ -148,7 +147,7 @@ export default function ProjectContainer() {
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img
 							className="Project-Image"
-							src={GreenHills}
+							src={""}
 							alt="Green Hills https://picsum.photos/500/500"
 						/>
 					</div>
@@ -200,7 +199,7 @@ export default function ProjectContainer() {
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img
 							className="Project-Image"
-							src={GreenHills}
+							src={""}
 							alt="Green Hills https://picsum.photos/500/500"
 						/>
 					</div>
@@ -252,7 +251,7 @@ export default function ProjectContainer() {
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img
 							className="Project-Image"
-							src={GreenHills}
+							src={""}
 							alt="Green Hills https://picsum.photos/500/500"
 						/>
 					</div>
@@ -304,7 +303,7 @@ export default function ProjectContainer() {
 					<div id="ImageContainer" className="Project-AreaA-Section">
 						<img
 							className="Project-Image"
-							src={GreenHills}
+							src={""}
 							alt="Green Hills https://picsum.photos/500/500"
 						/>
 					</div>

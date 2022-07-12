@@ -1,5 +1,7 @@
 import React from "react";
 
+import AZ900Badge from "../image/TechStackImages/back/microsoft-certified-azure-fundamentals-1.png";
+
 export default function Certification() {
 	function InProgressCert() {
 		return (
@@ -57,6 +59,11 @@ export default function Certification() {
 		const MicrosoftCertifcationInformation =
 			"https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/";
 
+		// const AZ900Badge =
+		// 	"https://images.credly.com/size/220x220/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png";
+		// const AZ900Badge =
+		// 	"https://images.credly.com/size/220x220/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png";
+
 		return (
 			<div className="Certification-Container-flex" data-aos="fade-down">
 				<div className="Cert-Container-Width Cert-Container-Flex-Button">
@@ -84,10 +91,7 @@ export default function Certification() {
 							</div>
 							<h4>Credentail ID: {MicrosoftCredentailId}</h4>
 						</div>
-						<img
-							src="https://images.credly.com/size/680x680/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png"
-							alt="AZ-900 - Azure Fundamentals Badge"
-						/>
+						<img src={AZ900Badge} alt="AZ-900 - Azure Fundamentals Badge" />
 					</div>
 					<div className="Btn-Container-Horizontal-Flex">
 						<a
